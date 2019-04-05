@@ -8,8 +8,8 @@
 
 <body>
   <header class="page-header">
-    <div class="menu-burger">
-      <img class="logo" src="http://placehold.it/75x22" width="75" height="22" alt="Логотип PINK">
+    <div class="page-header__burger  burger">
+      <img class="page-header__logo  logo" src="http://placehold.it/75x22" width="75" height="22" alt="Логотип PINK">
       <button class="burger__toggle  burger__toggle--no-js" type="button"><span class="visually-hidden">Открыть
           меню</span></button>
     </div>
@@ -27,73 +27,75 @@
   <main class="page-main">
     <h1 class="visually-hidden">Приложение PINK – новый взгляд на привычные серые вещи</h1>
     <div class="intro">
-      <div class="main-img">
-        <img class="main-img__img" src="http://placehold.it/320x314" width="320" height="314" alt="Рука с телефоном">
+      <div class="intro__img">
+        <img class="intro__main-img" src="http://placehold.it/320x314" width="320" height="314" alt="Рука с телефоном">
       </div>
 
-      <section class="marketplace">
-        <a class="marketplace_button" href="https://www.apple.com/ru/ios/app-store/"></a>
-        <a class="marketplace_applestore" href="https://www.apple.com/ru/ios/"></a>
-        <a class="marketplace_googleplay" href="https://play.google.com/store/apps?hl=ru/"></a>
-        <a class="marketplace_microsoftstore" href="https://www.microsoft.com/ru-ru/store/apps"></a>
-        <p class="marketplace-content">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Window 8</p>
-      </section>
+      <a class="intro__download" href="https://www.apple.com/ru/ios/app-store/">СКАЧАТЬ ПРИЛОЖЕНИЕ</a>
+      <div class="intro__marketplace">
+        <a class="intro__applestore" href="https://www.apple.com/ru/ios/">applestore</a>
+        <a class="intro__googleplay" href="https://play.google.com/store/apps?hl=ru/">googleplay</a>
+        <a class="intro__microsoftstore" href="https://www.microsoft.com/ru-ru/store/apps">microsoftstore</a>
+      </div>
+      <p class="intro__content">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Window 8</p>
+
     </div>
 
     <section class="information">
-      <h2 class="visually-hidden">Наши преимущества</h2>
-      <p class="information__item">Устали от серости мегаполиса?</p>
-      <p class="information__item">Нам есть, что вам предложить!</p>
 
-      <div class="advantages">
-        <section class="advantages__inner">
-          <h2 class="advantages__title">Поднимает настроение
-          </h2>
-          <p class="advantages__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько
-            кликов!</p>
+      <h2 class="information__title">
+        <span class="information__title-item">Устали от серости мегаполиса?</span>
+        <span class="information__title-item">Нам есть, что вам предложить!</span>
+      </h2>
+
+      <div class="information__advantages">
+        <section class="information__advantages-inner">
+          <h2 class="information__advantages-title">Поднимает настроение</h2>
+          <p class="information__advantages-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально
+            в несколько кликов!</p>
         </section>
 
-        <section class="advantages__inner">
-          <h2 class="advantages__title">Меняет мир вокруг</h2>
-          <p class="advantages__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить
-            эффект!</p>
+        <section class="information__advantages-inner">
+          <h2 class="information__advantages-title">Меняет мир вокруг</h2>
+          <p class="information__advantages-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
+            усилить эффект!</p>
         </section>
 
-        <section class="advantages__inner">
-          <h2 class="advantages__title">Заводит новых друзей</h2>
-          <p class="advantages__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
-          </p>
+        <section class="information__advantages-inner">
+          <h2 class="information__advantages-title">Заводит новых друзей</h2>
+          <p class="information__advantages-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и
+            заводите новых</p>
         </section>
       </div>
 
-      <img class="information__img" src="http://placehold.it/157x320" alt="Экран телефона с приветсвием приложения">
+      <img class="information__img" src="http://placehold.it/157x320" alt="Экран телефона с приветствием приложения">
     </section>
 
     <section class="rewiew">
       <div class="reviews__wrapper  slider">
         <h2 class="visually-hidden">Отзывы пользователей</h2>
         <div class="review__list  slider__list">
-          <blockquote class="rewiews__item  slider__list">
+          <blockquote class="rewiews__item  slider__list-item">
             <cite class="reviews__author-name">Николай Петров</cite>
             <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
               серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
           </blockquote>
 
-          <blockquote class="rewiews__item  slider__list">
+          <blockquote class="rewiews__item  slider__list-item">
             <cite class="reviews__author-name">Петр Николаев</cite>
             <p class="reviews__text">«Это приложение вернуло мой мир в нормальное состояние и позволило по-новому
               взглянуть на привычные вещи! А еще я расстался со своей женой из-за комментариев к опубликованной
               фотографии...»</p>
           </blockquote>
 
-          <blockquote class="rewiews__item  slider__list">
+          <blockquote class="rewiews__item  slider__list-item">
             <cite class="reviews__author-name">Джон Смит</cite>
             <p class="reviews__text">Это приложение оставило меня равнодушным. А еще это бесполезная вещь. Жаль
               потраченных денег.»</p>
           </blockquote>
         </div>
-        <button class="reviews__prev" type="button">Предыдущий отзыв</button>
-        <button class="reviews__next" type="button">Следующий отзыв</button>
+        <button class=" slider__prev" type="button">Предыдущий отзыв</button>
+        <button class=" slider__next" type="button">Следующий отзыв</button>
       </div>
 
       <p class="rewiew__toggles  slider__toggles">
@@ -103,9 +105,9 @@
       </p>
     </section>
 
-    <div class="price">
-      <!-- Здесь будет таблица с ценами -->
-    </div>
+    <!-- <div class="price">
+      Здесь будет таблица с ценами
+    </div> -->
   </main>
 
   <footer class="page-footer">
