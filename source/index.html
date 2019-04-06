@@ -8,18 +8,23 @@
 
 <body>
   <header class="page-header">
-    <div class="page-header__burger  burger">
-      <img class="page-header__logo  logo" src="http://placehold.it/75x22" width="75" height="22" alt="Логотип PINK">
-      <button class="burger__toggle  burger__toggle--no-js" type="button"><span class="visually-hidden">Открыть
-          меню</span></button>
+    <div class="page-header-wrap">
+      <svg class="page-header-wrap__logo" role="presentation" width="75" height="22">
+        <use xlink:href="#icon-pink"></use>
+      </svg>
+
+      <div class="page-header__burger  burger">
+        <button class="burger__toggle  burger__toggle--no-js" type="button"><span class="visually-hidden">Открыть
+            меню</span></button>
+      </div>
     </div>
 
     <nav class="main-nav">
-      <ul class="main-nav__list  site-list">
-        <li class="site-list__item  site-list__item--active"><a>ГЛАВНАЯ</a></li>
-        <li class="site-list__item"><a href="photo.html">ФОТОГРАФИИ</a></li>
-        <li class="site-list__item"><a href="form.html">ФОРМА ОТЗЫВА</a></li>
-        <li class="site-list__item"><a href="https://htmlacademy.ru/">HTML ACADEMY</a></li>
+      <ul class="main-nav__list">
+        <li class="main-nav__list-item  main-nav__list-item--active"><a>ГЛАВНАЯ</a></li>
+        <li class="main-nav__list-item"><a href="photo.html">ФОТОГРАФИИ</a></li>
+        <li class="main-nav__list-item"><a href="form.html">ФОРМА ОТЗЫВА</a></li>
+        <li class="main-nav__list-item"><a href="https://htmlacademy.ru/">HTML ACADEMY</a></li>
       </ul>
     </nav>
   </header>
@@ -154,4 +159,5 @@
     </div>
   </footer>
 </body>
+
 </html>
