@@ -1,0 +1,17 @@
+.main-nav{
+  outline: 3px dotted green;
+}
+
+.main-nav__list {
+  list-style: none;
+}
+.main-nav__list-item a {
+  font-size: $font-size--larger;
+  line-height: $line-height--large;
+  font-weight: $font-weight--bold;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: $color-main;
+}
+
+

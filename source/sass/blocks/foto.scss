@@ -1,0 +1,33 @@
+.foto{
+  margin: 0;
+  outline: 3px dotted green;
+}
+
+.foto__banner{
+  font-size: $font-size--smaller;
+  font-weight: $font-weight--bold;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.foto__descr{
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: $gray;
+}
+
+.foto__author{
+  font-weight: $font-weight--bold;
+}
+
+.foto__time{
+font-size: $font-size--smaller;
+font-weight: $font-weight--light;
+text-transform: uppercase;
+}
+
+.foto__cont-title{
+  font-size: $font-size--smaller;
+  text-transform: uppercase;
+  color: $color-secondary;
+}
