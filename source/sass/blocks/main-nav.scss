@@ -1,10 +1,11 @@
-.main-nav{
+.main-nav {
   outline: 3px dotted green;
 }
 
 .main-nav__list {
   list-style: none;
 }
+
 .main-nav__list-item a {
   font-size: $font-size--larger;
   line-height: $line-height--large;
@@ -13,5 +14,3 @@
   color: #ffffff;
   background-color: $color-main;
 }
-
-

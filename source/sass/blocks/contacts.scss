@@ -5,16 +5,16 @@
 }
 
 .contacts__title,
-.contacts__item{
+.contacts__item {
   outline: 3px dotted green;
 }
 
-.contacts__subtitle{
+.contacts__subtitle {
   font-size: $font-size--larger;
   font-weight: $font-weight--bold;
 }
 
-.contacts__content{
+.contacts__content {
   font-size: $font-size--large;
   font-weight: $font-weight--light;
   color: $color-secondary;

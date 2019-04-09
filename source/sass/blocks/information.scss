@@ -1,9 +1,9 @@
-.information{
+.information {
   text-align: center;
   outline: 3px dotted red;
 }
 
-.information__title{
+.information__title {
   padding-left: 60px;
   padding-right: 60px;
   padding-top: 45px;
@@ -17,14 +17,12 @@
   font-weight: $font-weight--light;
 }
 
-.information__advantages{
+.information__advantages {
   background-color: $gray;
   outline: 3px dotted blue;
 }
 
-.information__advantages-inner{
- padding: 20px 30px;
+.information__advantages-inner {
+  padding: 20px 30px;
   outline: 3px dotted green;
 }
-
-

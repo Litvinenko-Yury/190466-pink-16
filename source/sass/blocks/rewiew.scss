@@ -1,21 +1,21 @@
-.rewiew{
+.rewiew {
   outline: 3px dotted red;
 }
 
-.reviews__wrapper{
- background-color: rgb(255,242,237);
+.reviews__wrapper {
+  background-color: rgb(255, 242, 237);
 }
 
-.rewiews__item{
+.rewiews__item {
   outline: 3px dotted green;
 }
 
 .reviews__author-name {
   font-size: $font-size--larger;
   line-height: $line-height--larger;
-  color: #000;
+  color: #000000;
 }
 
-.reviews__text{
-line-height: $line-height--larger;
+.reviews__text {
+  line-height: $line-height--larger;
 }
