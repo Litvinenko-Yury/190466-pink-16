@@ -6,10 +6,10 @@
   list-style: none;
 }
 
-.main-nav__list-item a {
+.main-nav__list{
   font-size: $font-size--larger;
   line-height: $line-height--large;
-  font-weight: $font-weight--bold;
+  font-weight: 700;
   text-transform: uppercase;
   color: #ffffff;
   background-color: $color-main;
