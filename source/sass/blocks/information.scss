@@ -1,0 +1,28 @@
+.information {
+  text-align: center;
+  outline: 3px dotted red;
+}
+
+.information__title {
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 45px;
+  padding-bottom: 30px;
+  outline: 3px dotted coral;
+}
+
+.information__title-item {
+  display: block;
+  font-size: $font-size--large;
+  font-weight: 300;
+}
+
+.information__advantages {
+  background-color: $gray;
+  outline: 3px dotted blue;
+}
+
+.information__advantages-inner {
+  padding: 20px 30px;
+  outline: 3px dotted green;
+}

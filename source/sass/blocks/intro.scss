@@ -1,0 +1,23 @@
+.intro {
+  background-color: $color-main--dark;
+  outline: 3px dotted green;
+}
+
+.intro__download {
+  font-size: $font-size--larger;
+  line-height: 1em;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.intro__content {
+  font-size: $font-size;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+.intro__title {
+  font-size: $font-size--large;
+  font-weight: 300;
+  color: #ffffff;
+}

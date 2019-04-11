@@ -1,0 +1,21 @@
+.contacts {
+  padding: 47px 30px 20px 30px;
+  text-align: center;
+  outline: 3px dotted red;
+}
+
+.contacts__title,
+.contacts__item {
+  outline: 3px dotted green;
+}
+
+.contacts__subtitle {
+  font-size: $font-size--larger;
+  font-weight: 700;
+}
+
+.contacts__content {
+  font-size: $font-size--large;
+  font-weight: 300;
+  color: $color-secondary;
+}

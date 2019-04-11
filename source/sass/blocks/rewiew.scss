@@ -1,0 +1,21 @@
+.rewiew {
+  outline: 3px dotted red;
+}
+
+.reviews__wrapper {
+  background-color: #ffffff;
+}
+
+.rewiews__item {
+  outline: 3px dotted green;
+}
+
+.reviews__author-name {
+  font-size: $font-size--larger;
+  line-height: 1.6667em;
+  color: #000000;
+}
+
+.reviews__text {
+  line-height: 2.1428em;
+}

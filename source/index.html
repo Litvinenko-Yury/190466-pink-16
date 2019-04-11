@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Пинк: Главная</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -15,11 +16,9 @@
         </svg>
       </a>
 
-      <div class="page-header__burger  burger">
-        <button class="burger__toggle  burger__toggle--no-js" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-      </div>
+      <button class="page-header-wrap__burger  page-header-wrap__burger--no-js" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
     </div>
 
     <nav class="main-nav">
@@ -39,7 +38,7 @@
         <img class="intro__img" src="http://placehold.it/320x314" width="320" height="314" alt="Рука с телефоном">
       </div>
 
-      <a class="intro__download" href="https://www.apple.com/ru/ios/app-store/">СКАЧАТЬ ПРИЛОЖЕНИЕ</a>
+      <a class="intro__download" href="https://www.apple.com/ru/ios/app-store/">Скачать приложение</a>
       <div class="intro__marketplace">
         <a class="intro__applestore" href="https://www.apple.com/ru/ios/">applestore</a>
         <a class="intro__googleplay" href="https://play.google.com/store/apps?hl=ru/">googleplay</a>
@@ -111,17 +110,17 @@
 
     <section class="contacts">
       <h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
-      <div class="contacts__phone">
+      <div class="contacts__item">
         <b class="contacts__subtitle">Звоните:</b>
         <a class="contacts__content" href="tel:+78125556666">+7 (812) 555-66-66</a>
       </div>
 
-      <div class="contacts__mail">
+      <div class="contacts__item">
         <b class="contacts__subtitle">Пишите:</b>
         <a class="contacts__content" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
       </div>
 
-      <div class="contacts__addres">
+      <div class="contacts__item">
         <b class="contacts__subtitle">Приезжайте в гости:</b>
         <span class="contacts__content">ул. Большая Конюшенная, 19/8</span>
       </div>
@@ -132,7 +131,11 @@
 
   <footer class="page-footer">
     <div class="page-footer__links">
-      <img class="page-footer__logo  logo" src="http://placehold.it/75x22" width="75" height="22" alt="Логотип PINK">
+      <a class="page-footer__logo">
+        <svg class="page-footer__logo-img" role="presentation" width="75" height="22">
+          <use xlink:href="#icon-pink"></use>
+        </svg>
+      </a>
 
       <div class="page-footer__social  social">
         <ul class="social__list">
