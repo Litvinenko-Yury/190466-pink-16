@@ -1,0 +1,41 @@
+.table {
+  outline: 3px dotted red;
+  background-color: $gray;
+}
+
+.table_wrap {
+  outline: 3px dotted coral;
+  display: table;
+  margin: 0 auto;
+}
+
+.table__header {
+  background-color: $color-main;
+  color: #ffffff;
+}
+
+.table__list {
+  outline: 3px dotted blue;
+  display: table-row;
+}
+
+.table__list-item {
+  display: table-cell;
+  line-height: 2.1428em;
+}
+
+.table__list-item-inner {
+  display: block;
+
+  &--caption {
+    font-size: $font-size--larger;
+    line-height: 1.6667;
+    font-weight: 700;
+  }
+
+  &--text {
+    font-size: $font-size--large;
+    line-height: 1.25;
+    font-weight: 300;
+  }
+}
