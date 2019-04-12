@@ -1,0 +1,11 @@
+.aside {
+  display: none;
+  position: relative;
+  width: 300px;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin-left: auto;
+    margin-right: 30px;
+  }
+}
