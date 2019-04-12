@@ -1,21 +1,36 @@
-.rewiew {
+.review {
   outline: 3px dotted red;
 }
 
-.reviews__wrapper {
+.review__wrapper {
   background-color: #ffffff;
 }
 
-.rewiews__item {
+.review__item {
+  display: flex;
   outline: 3px dotted green;
 }
 
-.reviews__author-name {
+.review__author-name {
   font-size: $font-size--larger;
   line-height: 1.6667em;
   color: #000000;
 }
 
-.reviews__text {
-  line-height: 2.1428em;
+.review__author-subtitle {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    line-height: 2.1428;
+    color: $color-main;
+  }
+}
+
+.review__text {
+  @media (min-width: $tablet-width) {
+    order: -1;
+    line-height: 2.1428em;
+    background-color: red;
+  }
 }

@@ -37,20 +37,34 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
-    flex-direction: row-reverse;
   }
 }
 
 .information__advantages {
   outline: 3px dotted blue;
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    margin-top: 300px;
+    display: flex;
+  }
 }
 
 .information__advantages-inner {
   padding: 20px 30px;
   outline: 3px dotted green;
+
+  @media (min-width: $desktop-width) {
+    width: 250px;
+  }
 }
 
 .information__img {
   display: block;
   margin: 0 auto;
+  order: -1;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
