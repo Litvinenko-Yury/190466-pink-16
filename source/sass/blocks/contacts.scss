@@ -1,7 +1,15 @@
 .contacts {
   outline: 2px dotted red;
-  padding: 47px 30px 20px 30px;
+  padding: 47px 20px 40px 20px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 55px 20px 25px 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 70px 130px 25px 130px;
+  }
 }
 
 .contacts__title,
@@ -19,12 +27,12 @@
 
 .contacts__item {
   @media (min-width: $tablet-width) {
-    width: 300px;
+    width: 310px;
   }
 }
 
-
 .contacts__subtitle {
+  display: block;
   font-size: $font-size--larger;
   font-weight: 700;
 }
