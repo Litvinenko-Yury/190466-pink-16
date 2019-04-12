@@ -1,5 +1,7 @@
 .page-header {
   outline: 3px dotted red;
+  position: relative;
+  z-index: 0;
 
   @media (min-width: $desktop-width) {
     display: flex;
