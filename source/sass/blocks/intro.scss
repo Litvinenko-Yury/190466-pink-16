@@ -1,16 +1,58 @@
 .intro {
+  overflow: auto;
   background-color: $color-main--dark;
   outline: 3px dotted green;
 }
 
+.intro__img-wrap {
+  position: relative;
+  height: 395px;
+}
+
+.intro__img {
+  position: absolute;
+  margin: auto;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
 .intro__download {
+  display: block;
+  margin: 0 auto;
   font-size: $font-size--larger;
   line-height: 1em;
   font-weight: 700;
+  text-align: center;
   color: #ffffff;
+  border: 3px solid #ffffff;
+  border-radius: 27px;
+
+  @media (max-width: $mobile-width) {
+    margin-top: 25px;
+    margin-bottom: 30px;
+    padding-top: 13px;
+    width: 281px;
+    min-height: 55px;
+  }
+}
+
+.intro__marketplace {
+  outline: 2px dotted coral;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 0 auto;
+  margin-bottom: 28px;
+  width: 205px;
+  min-height: 58px;
 }
 
 .intro__content {
+  margin: 0 auto;
+  margin-bottom: 37px;
+  width: 232px;
+
   font-size: $font-size;
   font-weight: 300;
   color: #ffffff;

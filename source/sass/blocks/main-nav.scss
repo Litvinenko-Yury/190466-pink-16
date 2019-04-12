@@ -3,6 +3,8 @@
 }
 
 .main-nav__list {
+  margin: 0;
+  padding: 0;
   list-style: none;
   font-size: $font-size--larger;
   line-height: 1.7778em;
@@ -10,4 +12,22 @@
   text-transform: uppercase;
   color: #ffffff;
   background-color: $color-main;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    background-color: transparent;
+  }
+}
+
+.main-nav__list-item {
+  min-height: 63px;
+  outline: 2px dotted pink;
+
+  @media (min-width: $desktop-width) {
+    margin-right: 79px;
+
+    &:nth-child(4n+4) {
+      margin-right: 0;
+    }
+  }
 }

@@ -1,4 +1,18 @@
 .page-header-wrap {
+  min-height: 69px;
   background-color: $color-main;
   outline: 3px dotted green;
+
+  @media (max-width: $mobile-width) {
+    min-height: 69px;
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 109px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 170px;
+    background-color: transparent;
+  }
 }
