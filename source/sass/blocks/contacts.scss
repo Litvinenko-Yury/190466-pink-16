@@ -1,13 +1,28 @@
 .contacts {
+  outline: 2px dotted red;
   padding: 47px 30px 20px 30px;
   text-align: center;
-  outline: 3px dotted red;
 }
 
 .contacts__title,
 .contacts__item {
-  outline: 3px dotted green;
+  outline: 2px dotted green;
 }
+
+.contacts__item-wrap {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.contacts__item {
+  @media (min-width: $tablet-width) {
+    width: 300px;
+  }
+}
+
 
 .contacts__subtitle {
   font-size: $font-size--larger;
