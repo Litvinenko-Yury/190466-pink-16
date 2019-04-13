@@ -214,12 +214,56 @@
       </figure>
     </div>
 
-    <!--  <div class="upload-wrap">
-        <div class="foto-caption-text">
-          <p>Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+    <div class="upload">
+      <div class="upload__caption">
+        <p>Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+      </div>
+
+      <form class="upload__editor" action="https://echo.htmlacademy.ru" method="post" enctype="multipart/form-data">
+        <div class="upload__file">
+          <input type="file" name="avatar">
+          <img class="upload__img" src="http://placehold.it/280x375" width="280" height="375" alt="Загруженное фото для редактирования.">
         </div>
-        Здесь будет редактор изображений и кнопки "запостить" - "отмена"
-      </div> -->
+
+        <label class="upload__label-crop">
+          <svg class="upload__controls" role="presentation" width="44" height="44">
+            <use xlink:href="#icon-crop">icon-crop</use>
+          </svg>
+          <input class="upload__range-crop" type="range" min="0" max="100" step="10" value="80" name="range-crop">
+        </label>
+
+        <label class="upload__label-fill">
+            <svg class="upload__controls" role="presentation" width="44" height="44">
+              <use xlink:href="#icon-fill">icon-fill</use>
+            </svg>
+            <input class="upload__range-fill" type="range" min="0" max="100" step="10" value="80" name="range-fill">
+          </label>
+
+          <label class="upload__label-contrast">
+              <svg class="upload__controls" role="presentation" width="44" height="44">
+                <use xlink:href="#icon-contrast">icon-contrast</use>
+              </svg>
+              <input class="upload__range-contrast" type="range" min="0" max="100" step="10" value="80" name="range-contrast">
+            </label>
+
+        <input class="upload__btn  upload__btn--active" type="submit" value="Запостить"></input>
+        <input class="upload__btn" type="reset" value="Сбросить"></input>
+
+      </form>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
   </main>
 
   <footer class="page-footer">
@@ -233,25 +277,26 @@
       <div class="page-footer__social  social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link  social__link--tw" href="https://twitter.com">Twitter</a>
+            <a class="social__link  social__link--tw" href="https://twitter.com">Twitter</artile>
           </li>
           <li class="social__item">
-            <a class="social__link  social__link--fb" href="https://www.facebook.com">Facebook</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link  social__link--youtube" href="https://www.youtube.com">Youtube</a>
-          </li>
-        </ul>
+            <a class="social__link  social__link--fb" href="https://www.facebook.com">Facebook
       </div>
+      </li>
+      <li class="social__item">
+        <a class="social__link  social__link--youtube" href="https://www.youtube.com">Youtube</a>
+      </li>
+      </ul>
+    </div>
 
-      <div class="page-footer__copyright  copyright">
-        <b class="copyright__text">Разработано:</b>
-        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <svg class="page-footer__logo-academy" role="presentation" width="27" height="34">
-            <use xlink:href="#icon-academy">HTML Academy</use>
-          </svg>
-        </a>
-      </div>
+    <div class="page-footer__copyright  copyright">
+      <b class="copyright__text">Разработано:</b>
+      <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <svg class="page-footer__logo-academy" role="presentation" width="27" height="34">
+          <use xlink:href="#icon-academy">HTML Academy</use>
+        </svg>
+      </a>
+    </div>
     </div>
   </footer>
 </body>
