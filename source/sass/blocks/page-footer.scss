@@ -1,8 +1,11 @@
 .page-footer {
   outline: 2px dotted red;
+  padding: 40px 20px;
 
-  @media (max-width: $mobile-width) {
-    display: none;
+  @media (max-width: $tablet-width - 1px) {
+    &--no-footer {
+      display: none;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -16,9 +19,12 @@
 
 .page-footer__links {
   outline: 2px dotted coral;
+  text-align: center;
 
-  display: flex;
-  justify-content: space-between;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .page-footer__logo,
