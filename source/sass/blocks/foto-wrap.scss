@@ -2,22 +2,6 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-  }
-}
-
-.foto-wrap__caption-text {
-  padding: 55px 35px;
-  line-height: 2.1428em;
-  text-align: center;
-  outline: 2px dotted green;
-
-  @media (min-width: $tablet-width) {
-    padding: 100px 100px 85px 100px;
-    font-size: $font-size--larger;
-    line-height: 1.6667em;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 100px 300px;
+    justify-content: center;
   }
 }
