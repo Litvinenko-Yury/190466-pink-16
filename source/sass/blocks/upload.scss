@@ -1,0 +1,29 @@
+.upload {
+  outline: 2px dotted red;
+}
+
+.upload__caption {
+  line-height: 2.1428;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.upload__editor {
+  background-color: coral;
+}
+
+.upload__label {
+  outline: 2px dotted blue;
+}
+
+.upload__controls {
+  outline: 2px dotted green;
+}
+
+.upload__range {
+  display: none;
+
+  &--active {
+    display: block;
+  }
+}
