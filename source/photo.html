@@ -215,57 +215,54 @@
         </figure>
       </div>
     </div>
+
     <div class="upload">
       <div class="upload__caption">
         <p>Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</p>
       </div>
 
       <form class="upload__editor" action="https://echo.htmlacademy.ru" method="post" enctype="multipart/form-data">
-        <div class="upload__file">
+        <fieldset class="upload__file-wrap">
           <input type="file" name="avatar">
           <img class="upload__img" src="http://placehold.it/280x375" width="280" height="375" alt="Загруженное фото для редактирования.">
+        </fieldset>
+
+        <div class="upload__admin-wrap">
+          <div class="upload__controls-wrap">
+            <fieldset class="upload__label-wrap">
+              <label class="upload__label" for="label-crop">
+                <svg class="upload__controls-icon  upload__controls-icon--active" role="presentation" width="44" height="44">
+                  <use xlink:href="#icon-crop">icon-crop</use>
+                </svg>
+              </label>
+
+              <label class="upload__label" for="label-fill">
+                <svg class="upload__controls-icon" role="presentation" width="44" height="44">
+                  <use xlink:href="#icon-fill">icon-fill</use>
+                </svg>
+              </label>
+
+              <label class="upload__label" for="label-contrast">
+                <svg class="upload__controls-icon" role="presentation" width="44" height="44">
+                  <use xlink:href="#icon-contrast">icon-contrast</use>
+                </svg>
+              </label>
+            </fieldset>
+
+            <fieldset class="upload__range-wrap">
+              <input class="upload__range  upload__range--active" id="label-crop" type="range" min="0" max="100" step="10" value="80" name="range-crop">
+              <input class="upload__range" id="label-fill" type="range" min="0" max="100" step="10" value="80" name="range-fill">
+              <input class="upload__range" id="label-contrast" type="range" min="0" max="100" step="10" value="80" name="range-contrast">
+            </fieldset>
+          </div>
+
+          <fieldset class="upload__btn-wrap">
+            <input class="upload__btn  upload__btn--active  button" type="submit" value="Запостить"></input>
+            <input class="upload__btn  button" type="reset" value="Сбросить"></input>
+          </fieldset>
         </div>
-
-        <label class="upload__label" for="label-crop">
-          <svg class="upload__controls" role="presentation" width="44" height="44">
-            <use xlink:href="#icon-crop">icon-crop</use>
-          </svg>
-        </label>
-
-        <label class="upload__label" for="label-fill">
-          <svg class="upload__controls" role="presentation" width="44" height="44">
-            <use xlink:href="#icon-fill">icon-fill</use>
-          </svg>
-        </label>
-
-        <label class="upload__label" for="label-contrast">
-          <svg class="upload__controls" role="presentation" width="44" height="44">
-            <use xlink:href="#icon-contrast">icon-contrast</use>
-          </svg>
-        </label>
-
-        <input class="upload__range  upload__range--active" id="label-crop" type="range" min="0" max="100" step="10" value="80" name="range-crop">
-        <input class="upload__range" id="label-fill" type="range" min="0" max="100" step="10" value="80" name="range-fill">
-        <input class="upload__range" id="label-contrast" type="range" min="0" max="100" step="10" value="80" name="range-contrast">
-
-        <input class="upload__btn  upload__btn--active" type="submit" value="Запостить"></input>
-        <input class="upload__btn" type="reset" value="Сбросить"></input>
-
       </form>
-
-
     </div>
-
-
-
-
-
-
-
-
-
-
-
   </main>
 
   <footer class="page-footer">
@@ -283,22 +280,23 @@
           </li>
           <li class="social__item">
             <a class="social__link  social__link--fb" href="https://www.facebook.com">Facebook</a>
-      </li>
-      <li class="social__item">
-        <a class="social__link  social__link--youtube" href="https://www.youtube.com">Youtube</a>
-      </li>
-      </ul>
-    </div>
+          </li>
+          <li class="social__item">
+            <a class="social__link  social__link--youtube" href="https://www.youtube.com">Youtube</a>
+          </li>
+        </ul>
+      </div>
 
-    <div class="page-footer__copyright  copyright">
-      <b class="copyright__text">Разработано:</b>
-      <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-        <svg class="page-footer__logo-academy" role="presentation" width="27" height="34">
-          <use xlink:href="#icon-academy">HTML Academy</use>
-        </svg>
-      </a>
-    </div>
-    </div>
+      <div class="page-footer__copyright  copyright">
+        <b class="copyright__text">Разработано:</b>
+        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <svg class="page-footer__logo-academy" role="presentation" width="27" height="34">
+            <use xlink:href="#icon-academy">HTML Academy</use>
+          </svg>
+        </a>
+        </fieldset>
+        </f>
   </footer>
 </body>
+
 </html>

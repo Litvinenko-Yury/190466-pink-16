@@ -105,20 +105,13 @@
 }
 
 .intro__download {
-  display: block;
-  width: 281px;
+  width: 280px;
   min-height: 55px;
   margin: 0 auto;
   margin-top: 25px;
   margin-bottom: 30px;
-  padding-top: 13px;
-  font-size: $font-size--larger;
-  line-height: 1em;
-  font-weight: 700;
-  text-align: center;
   color: #ffffff;
   border: 3px solid #ffffff;
-  border-radius: 27px;
 
   @media (min-width: $tablet-width) {
     width: 300;
