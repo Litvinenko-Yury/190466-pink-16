@@ -15,6 +15,11 @@
     display: flex;
     justify-content: center;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+    margin: 0 auto;
+  }
 }
 
 .upload__file-wrap {
@@ -26,15 +31,21 @@
   @media (min-width: $tablet-width) {
     width: 300px;
     margin: 0;
+    margin-right: 48px;
   }
 }
 
 .upload__admin-wrap {
   outline: 2px dotted blue;
+  position: relative;
   text-align: center;
 
   @media (min-width: $tablet-width) {
     width: 280px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 410px;
   }
 }
 
@@ -43,6 +54,10 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-between;
   }
 }
 
@@ -53,6 +68,10 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
     padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 50px;
   }
 }
 
@@ -93,6 +112,10 @@
       margin-bottom: 0;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    width: 285px;
+  }
 }
 
 .upload__btn-wrap {
@@ -103,10 +126,16 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+  }
 }
 
 .upload__btn {
-  width: 280px;
+  width: 180px;
   min-height: 55px;
   margin: 0 auto;
   margin-bottom: 12px;
@@ -121,5 +150,10 @@
 
   @media (min-width: $tablet-width) {
     width: 260px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 185px;
+    margin: 0;
   }
 }
