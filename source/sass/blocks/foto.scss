@@ -1,19 +1,78 @@
 .foto {
+  position: relative;
   margin: 0;
+  background-color: $gray;
   outline: 3px dotted green;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    margin-bottom: 20px;
+
+    &--wide {
+      width: 100%;
+      margin-bottom: 45px;
+      background-color: #ffffff;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 50px;
+  }
 }
 
 .foto__banner {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  padding: 10px 20px;
   font-size: $font-size--smaller;
   font-weight: 700;
   text-transform: uppercase;
   color: #ffffff;
+  background-color: $color-secondary;
+
+  @media (min-width: $tablet-width) {
+    top: 57px;
+  }
+}
+
+.foto__img {
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    height: 300px;
+
+    &--wide {
+      height: 510px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 400px;
+
+    &--wide {
+      height: 510px;
+    }
+  }
 }
 
 .foto__descr {
+  position: relative;
   margin-left: 20px;
   margin-right: 20px;
-  background-color: $gray;
+
+  @media (min-width: $tablet-width) {
+    &--wide {
+      background-color: $gray;
+    }
+  }
+}
+
+.foto__item {
+  @media (min-width: $tablet-width) {
+    padding-bottom: 60px;
+  }
 }
 
 .foto__author {
@@ -26,8 +85,26 @@
   text-transform: uppercase;
 }
 
+.foto__cont-wrap {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    &--wide {
+      top: 0;
+      right: 0;
+      left: auto;
+    }
+  }
+}
+
 .foto__cont-title {
   font-size: $font-size--smaller;
   text-transform: uppercase;
   color: $color-secondary;
+
+  @media (min-width: $tablet-width) {
+    order: -1;
+  }
 }

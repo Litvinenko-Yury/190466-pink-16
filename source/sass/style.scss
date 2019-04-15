@@ -3,10 +3,12 @@
 //===
 @import "blocks/global.scss";
 //===
-//@import "blocks/button.scss";
+@import "blocks/aside.scss";
+@import "blocks/button.scss";
 @import "blocks/contacts.scss";
 @import "blocks/copyright.scss";
 @import "blocks/foto-wrap.scss";
+@import "blocks/foto-caption-text.scss";
 @import "blocks/foto.scss";
 @import "blocks/information.scss";
 @import "blocks/intro.scss";
@@ -16,6 +18,8 @@
 @import "blocks/page-header-wrap.scss";
 @import "blocks/page-header.scss";
 //@import "blocks/page-main.scss";
-@import "blocks/rewiew.scss";
-//@import "blocks/slider.scss";
-//@import "blocks/social.scss";
+@import "blocks/review.scss";
+@import "blocks/slider.scss";
+@import "blocks/social.scss";
+@import "blocks/table.scss";
+@import "blocks/upload.scss";

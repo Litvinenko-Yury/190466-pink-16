@@ -1,0 +1,26 @@
+.aside {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    padding-top: 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 135px;
+    background-color: $gray;
+  }
+}
+
+.aside__wrap {
+  width: 300px;
+  min-height: 250px;
+  margin-left: auto;
+  margin-right: 30px;
+
+  @media (min-width: $desktop-width) {
+    width: 535px;
+    min-height: 450px;
+    margin-right: 170px;
+  }
+}

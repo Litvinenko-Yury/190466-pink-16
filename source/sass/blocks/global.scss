@@ -9,6 +9,7 @@ html {
 }
 
 body {
+  position: relative;
   min-width: 320px;
   margin: 0;
   font-family: $font-family;
@@ -26,6 +27,7 @@ img {
 h1,
 h2,
 h3,
+h4,
 p {
   margin: 0;
 }
@@ -37,6 +39,12 @@ h2 {
 
 h3 {
   font-size: $font-size--larger;
+  font-weight: 700;
+  color: #000000;
+}
+
+h4 {
+  font-size: $font-size--large;
   font-weight: 700;
   color: #000000;
 }

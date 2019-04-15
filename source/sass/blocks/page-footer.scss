@@ -1,15 +1,34 @@
 .page-footer {
-  padding: 35px 20px 30px 20px;
-  outline: 3px dotted red;
+  outline: 2px dotted red;
+  padding: 40px 20px;
+
+  @media (max-width: $tablet-width - 1px) {
+    &--no-footer {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 35px 20px 30px 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 70px 130px 70px 130px;
+  }
 }
 
 .page-footer__links {
-  outline: 3px dotted coral;
-}
+  outline: 2px dotted coral;
+  text-align: center;
 
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 
 .page-footer__logo,
 .page-footer__social,
 .page-footer__copyright {
-  outline: 3px dotted green;
+  outline: 2px dotted green;
 }

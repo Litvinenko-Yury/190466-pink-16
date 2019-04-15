@@ -1,0 +1,91 @@
+.review {
+  outline: 3px dotted red;
+  padding-top: 50px;
+  padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 40px;
+    padding-bottom: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 190px;
+    padding-bottom: 45px;
+  }
+}
+
+.review__wrapper {
+  position: relative;
+
+  background-color: #ffffff;
+
+  @media (min-width: $desktop-width) {
+    width: 970px;
+    margin: 0 auto;
+  }
+}
+
+.review__item {
+  text-align: center;
+  outline: 3px dotted green;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 690px;
+    margin: 0 auto;
+  }
+}
+
+.review__author-name {
+  font-size: $font-size--larger;
+  line-height: 1.6667em;
+  color: #000000;
+}
+
+.review__author-subtitle {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    line-height: 2.1428;
+    color: $color-main;
+  }
+}
+
+.review__text {
+  @media (min-width: $tablet-width) {
+    order: -1;
+    line-height: 2.1428em;
+    background-color: coral;
+  }
+}
+
+.review__btn-prev,
+.review__btn-next {
+  position: absolute;
+  top: 0;
+
+  @media (max-width: $desktop-width - 1px) {
+    display: none;
+  }
+}
+
+.review__btn-prev {
+  left: 0;
+}
+
+.review__btn-next {
+  right: 0;
+}
+
+.review__toggles {
+  display: flex;
+  justify-content: center;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}

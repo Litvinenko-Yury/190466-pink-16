@@ -4,17 +4,14 @@ $font-size--smaller: 12px;
 $font-size: 14px;
 $font-size--larger: 18px;
 $font-size--large: 24px;
+$font-size--x-large: 40px;
+$font-size--xl-large: 50px;
 
-// ================
-
-//$line-height--smaller: 18px;
-//$line-height: 24px;
-//$line-height--larger: 30px;
-//$line-height--large: 32px;
+//================
 
 $line-height: 1.7143em;
 
-// ================
+//================
 
 $color-main: #283645;
 $color-main--dark: #1d2631;
@@ -25,3 +22,8 @@ $gray: #f2f2f2;
 $gray--dark: #e9ebec;
 $gray--darken: #dddfe0;
 $gray--darkenest: #b5b9be;
+
+//================
+
+$tablet-width: 660px;
+$desktop-width: 1200px;

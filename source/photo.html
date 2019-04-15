@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Пинк: Главная</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -12,7 +13,7 @@
     <div class="page-header-wrap">
       <a class="page-header-wrap__logo" href="index.html">
         <svg class="page-header-wrap__logo-img" role="presentation" width="75" height="22">
-          <use xlink:href="#icon-pink"></use>
+          <use xlink:href="#icon-pink">PINK</use>
         </svg>
       </a>
 
@@ -33,197 +34,242 @@
 
   <main class="page-main">
     <div class="intro">
-      <h1 class="intro__title">Фотографии пользователей</h1>
+      <div class="intro__img-wrap  intro__img-wrap--no-index">
+        <h1 class="intro__title  intro__title--no-index">Фотографии<br> пользователей</h1>
+      </div>
+    </div>
+
+    <div class="foto-caption-text">
+      <p>Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
     </div>
 
     <div class="foto-wrap">
-      <div class="foto-wrap__caption-text">
-        <p>Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
-      </div>
-
-      <figure class="foto">
+      <figure class="foto  foto--wide">
         <span class="foto__banner">ПАНОРАМА ДНЯ</span>
-        <a class="foto__img-wrap  foto__img--wide" href="#">
-          <img class="foto__img" src="http://placehold.it/320x137" width="320" height="137" alt="Панорама гористой местности.">
+        <a class="foto__img-wrap" href="#">
+          <img class="foto__img  foto__img--wide" src="http://placehold.it/320x137" alt="Панорама гористой местности.">
         </a>
-        <figcaption class="foto__descr">
+        <figcaption class="foto__descr  foto__descr--wide">
           <div class="foto__item">
             <p class="foto__autor-wrap">
               <span class="foto__author">Анна</span>
               <span class="foto__time">(5 минут назад)</span>
             </p>
-            <p class="foto__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+            <p class="foto__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы! </p>
           </div>
 
-          <div class="foto__cont-wrap">
+          <div class="foto__cont-wrap  foto__cont-wrap--wide">
+            <svg class="foto__button-icon" role="presentation" width="13" height="12">
+              <use xlink:href="#icon-heart">icon-heart</use>
+            </svg>
             <button class="foto__button">
-              <svg class="foto__button-icon" role="presentation" width="13" height="12">
-                <use xlink:href="#icon-heart"></use>
-              </svg>
               <span class="foto__cont-title">Нравится: 215</span>
             </button>
           </div>
         </figcaption>
       </figure>
 
-      <figure class="foto">
-        <a class="foto__img-wrap" href="#">
-          <img class="foto__img" src="http://placehold.it/280x180" width="280" height="180" alt="Автомобиль на фоне стены">
-        </a>
-        <figcaption class="foto__descr">
-          <div class="foto__item">
-            <p class="foto__autor-wrap">
-              <span class="foto__author">Левон</span>
-              <span class="foto__time">(5 часов назад)</span>
-            </p>
-            <p class="foto__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-          </div>
+      <div class="foto-wrap__inner">
+        <figure class="foto">
+          <a class="foto__img-wrap" href="#">
+            <img class="foto__img" src="http://placehold.it/280x180" width="280" height="180" alt="Автомобиль на фоне стены">
+          </a>
+          <figcaption class="foto__descr">
+            <div class="foto__item">
+              <p class="foto__autor-wrap">
+                <span class="foto__author">Левон</span>
+                <span class="foto__time">(5 часов назад)</span>
+              </p>
+              <p class="foto__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+            </div>
+          </figcaption>
 
           <div class="foto__cont-wrap">
+            <svg class="foto__button-icon" role="presentation" width="13" height="12">
+              <use xlink:href="#icon-heart">icon-heart</use>
+            </svg>
             <button class="foto__button">
-              <svg class="foto__button-icon" role="presentation" width="13" height="12">
-                <use xlink:href="#icon-heart"></use>
-              </svg>
               <span class="foto__cont-title">Нравится: 356</span>
             </button>
           </div>
-        </figcaption>
-      </figure>
+        </figure>
 
-      <figure class="foto">
-        <a class="foto__img-wrap" href="#">
-          <img class="foto__img" src="http://placehold.it/280x180" width="280" height="180" alt="Фото ударной установки">
-        </a>
-        <figcaption class="foto__descr">
-          <div class="foto__item">
-            <p class="foto__autor-wrap">
-              <span class="foto__author-name">Антон</span>
-              <span class="foto__time">(12 часов назад)</span>
-            </p>
-            <p class="foto__text">Соседи будут рады.</p>
-          </div>
+        <figure class="foto">
+          <a class="foto__img-wrap" href="#">
+            <img class="foto__img" src="http://placehold.it/280x180" width="280" height="180" alt="Фото ударной установки">
+          </a>
+          <figcaption class="foto__descr">
+            <div class="foto__item">
+              <p class="foto__autor-wrap">
+                <span class="foto__author-name">Антон</span>
+                <span class="foto__time">(12 часов назад)</span>
+              </p>
+              <p class="foto__text">Соседи будут рады.</p>
+            </div>
+          </figcaption>
 
           <div class="foto__cont-wrap">
+            <svg class="foto__button-icon" role="presentation" width="13" height="12">
+              <use xlink:href="#icon-heart">icon-heart</use>
+            </svg>
             <button class="foto__button">
-              <svg class="foto__button-icon" role="presentation" width="13" height="12">
-                <use xlink:href="#icon-heart"></use>
-              </svg>
               <span class="foto__cont-title">Нравится: 666</span>
             </button>
           </div>
-        </figcaption>
-      </figure>
+        </figure>
 
-      <figure class="foto">
-        <a class="foto__img-wrap" href="#">
-          <img class="foto__img" src="http://placehold.it/280x180" width="280" height="180" alt="Фото фасада небоскреба">
-        </a>
-        <figcaption class="foto__descr">
-          <div class="foto__item">
-            <p class="foto__autor-wrap">
-              <span class="foto__author-name">Борис</span>
-              <span class="foto__time">(20 часов назад)</span>
-            </p>
-            <p class="foto__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-          </div>
+        <figure class="foto">
+          <a class="foto__img-wrap" href="#">
+            <img class="foto__img" src="http://placehold.it/280x180" width="280" height="180" alt="Фото фасада небоскреба">
+          </a>
+          <figcaption class="foto__descr">
+            <div class="foto__item">
+              <p class="foto__autor-wrap">
+                <span class="foto__author-name">Борис</span>
+                <span class="foto__time">(20 часов назад)</span>
+              </p>
+              <p class="foto__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+            </div>
 
+          </figcaption>
           <div class="foto__cont-wrap">
+            <svg class="foto__button-icon" role="presentation" width="13" height="12">
+              <use xlink:href="#icon-heart">icon-heart</use>
+            </svg>
             <button class="foto__button">
-              <svg class="foto__button-icon" role="presentation" width="13" height="12">
-                <use xlink:href="#icon-heart"></use>
-              </svg>
               <span class="foto__cont-title">Нравится: 215</span>
             </button>
           </div>
-        </figcaption>
-      </figure>
+        </figure>
 
-      <figure class="foto">
-        <a class="foto__img-wrap" href="#">
-          <img class="foto__img" src="http://placehold.it/280x180" width="280" height="180" alt="Фото летнего рынка на Кубани, по продаже бахчевых культур.">
-        </a>
-        <figcaption class="foto__descr">
-          <div class="foto__item">
-            <p class="foto__autor-wrap">
-              <span class="foto__author-name">Сергей</span>
-              <span class="foto__time">(25 часов назад)</span>
-            </p>
-            <p class="foto__text">Самая кубанская в мире!</p>
-          </div>
+        <figure class="foto">
+          <a class="foto__img-wrap" href="#">
+            <img class="foto__img" src="http://placehold.it/280x180" width="280" height="180" alt="Фото летнего рынка на Кубани, по продаже бахчевых культур.">
+          </a>
+          <figcaption class="foto__descr">
+            <div class="foto__item">
+              <p class="foto__autor-wrap">
+                <span class="foto__author-name">Сергей</span>
+                <span class="foto__time">(25 часов назад)</span>
+              </p>
+              <p class="foto__text">Самая кубанская в мире!</p>
+            </div>
+          </figcaption>
 
           <div class="foto__cont-wrap">
+            <svg class="foto__button-icon" role="presentation" width="13" height="12">
+              <use xlink:href="#icon-heart">icon-heart</use>
+            </svg>
             <button class="foto__button">
-              <svg class="foto__button-icon" role="presentation" width="13" height="12">
-                <use xlink:href="#icon-heart"></use>
-              </svg>
               <span class="foto__cont-title">Нравится: 4</span>
             </button>
           </div>
-        </figcaption>
-      </figure>
+        </figure>
 
-      <figure class="foto">
-        <a class="foto__img-wrap" href="#">
-          <img class="foto__img" src="http://placehold.it/280x180" width="280" height="180" alt="Мужчина сидит на краю обрыва, свесив ноги.">
-        </a>
-        <figcaption class="foto__descr">
-          <div class="foto__item">
-            <p class="foto__autor-wrap">
-              <span class="foto__author-name">Максим</span>
-              <span class="foto__time">(40 часов назад)</span>
-            </p>
-            <p class="foto__text">Где снег-то?</p>
-          </div>
+        <figure class="foto">
+          <a class="foto__img-wrap" href="#">
+            <img class="foto__img" src="http://placehold.it/280x180" width="280" height="180" alt="Мужчина сидит на краю обрыва, свесив ноги.">
+          </a>
+          <figcaption class="foto__descr">
+            <div class="foto__item">
+              <p class="foto__autor-wrap">
+                <span class="foto__author-name">Максим</span>
+                <span class="foto__time">(40 часов назад)</span>
+              </p>
+              <p class="foto__text">Где снег-то?</p>
+            </div>
+          </figcaption>
 
           <div class="foto__cont-wrap">
+            <svg class="foto__button-icon" role="presentation" width="13" height="12">
+              <use xlink:href="#icon-heart">icon-heart</use>
+            </svg>
             <button class="foto__button">
-              <svg class="foto__button-icon" role="presentation" width="13" height="12">
-                <use xlink:href="#icon-heart"></use>
-              </svg>
               <span class="foto__cont-title">Нравится: 150</span>
             </button>
           </div>
-        </figcaption>
-      </figure>
+        </figure>
 
-      <figure class="foto">
-        <a class="foto__img-wrap" href="#">
-          <img class="foto__img" src="http://placehold.it/280x180" width="280" height="180" alt="Фото крыла самолета, вид из иллюминатора.">
-        </a>
-        <figcaption class="foto__descr">
-          <div class="foto__item">
-            <p class="foto__autor-wrap">
-              <span class="foto__author-name">Надежда</span>
-              <span class="foto__time">(45часов назад)</span>
-            </p>
-            <p class="foto__text">Всем GM и взаимные лайки!</p>
-          </div>
+        <figure class="foto">
+          <a class="foto__img-wrap" href="#">
+            <img class="foto__img" src="http://placehold.it/280x180" width="280" height="180" alt="Фото крыла самолета, вид из иллюминатора.">
+          </a>
+          <figcaption class="foto__descr">
+            <div class="foto__item">
+              <p class="foto__autor-wrap">
+                <span class="foto__author-name">Надежда</span>
+                <span class="foto__time">(45часов назад)</span>
+              </p>
+              <p class="foto__text">Всем GM и взаимные лайки!</p>
+            </div>
+          </figcaption>
 
           <div class="foto__cont-wrap">
+            <svg class="foto__button-icon" role="presentation" width="13" height="12">
+              <use xlink:href="#icon-heart">icon-heart</use>
+            </svg>
             <button class="foto__button">
-              <svg class="foto__button-icon" role="presentation" width="13" height="12">
-                <use xlink:href="#icon-heart"></use>
-              </svg>
               <span class="foto__cont-title">Нравится: 2560</span>
             </button>
           </div>
-        </figcaption>
-      </figure>
+        </figure>
+      </div>
     </div>
 
-    <!--  <div class="upload-wrap">
-        <div class="foto-caption-text">
-          <p>Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+    <div class="upload">
+      <div class="upload__caption">
+        <p>Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</p>
+      </div>
+
+      <form class="upload__editor" action="https://echo.htmlacademy.ru" method="post" enctype="multipart/form-data">
+        <fieldset class="upload__file-wrap">
+          <input type="file" name="photo">
+          <img class="upload__img" src="http://placehold.it/280x375" width="280" height="375" alt="Загруженное фото для редактирования.">
+        </fieldset>
+
+        <div class="upload__admin-wrap">
+          <div class="upload__controls-wrap">
+            <fieldset class="upload__label-wrap">
+              <label class="upload__label" for="label-crop">
+                <svg class="upload__controls-icon  upload__controls-icon--active" role="presentation" width="44" height="44">
+                  <use xlink:href="#icon-crop">icon-crop</use>
+                </svg>
+              </label>
+
+              <label class="upload__label" for="label-fill">
+                <svg class="upload__controls-icon" role="presentation" width="44" height="44">
+                  <use xlink:href="#icon-fill">icon-fill</use>
+                </svg>
+              </label>
+
+              <label class="upload__label" for="label-contrast">
+                <svg class="upload__controls-icon" role="presentation" width="44" height="44">
+                  <use xlink:href="#icon-contrast">icon-contrast</use>
+                </svg>
+              </label>
+            </fieldset>
+
+            <fieldset class="upload__range-wrap">
+              <input class="upload__range  upload__range--active" id="label-crop" type="range" min="0" max="100" step="10" value="80" name="range-crop">
+              <input class="upload__range" id="label-fill" type="range" min="0" max="100" step="10" value="80" name="range-fill">
+              <input class="upload__range" id="label-contrast" type="range" min="0" max="100" step="10" value="80" name="range-contrast">
+            </fieldset>
+          </div>
+
+          <fieldset class="upload__btn-wrap">
+            <input class="upload__btn  upload__btn--active  button" type="submit" value="Запостить"></input>
+            <input class="upload__btn  button" type="reset" value="Сбросить"></input>
+          </fieldset>
         </div>
-        Здесь будет редактор изображений и кнопки "запостить" - "отмена"
-      </div> -->
+      </form>
+    </div>
   </main>
 
   <footer class="page-footer">
     <div class="page-footer__links">
       <a class="page-footer__logo" href="index.html">
         <svg class="page-footer__logo-img" role="presentation" width="75" height="22">
-          <use xlink:href="#icon-pink"></use>
+          <use xlink:href="#icon-pink">PINK</use>
         </svg>
       </a>
 
@@ -243,9 +289,13 @@
 
       <div class="page-footer__copyright  copyright">
         <b class="copyright__text">Разработано:</b>
-        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-      </div>
-    </div>
+        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <svg class="page-footer__logo-academy" role="presentation" width="27" height="34">
+            <use xlink:href="#icon-academy">HTML Academy</use>
+          </svg>
+        </a>
+        </fieldset>
+        </f>
   </footer>
 </body>
 

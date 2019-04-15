@@ -1,0 +1,70 @@
+.table {
+  outline: 3px dotted red;
+  padding-top: 90px;
+  padding-bottom: 44px;
+  background-color: $gray;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 90px;
+    padding-bottom: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 150px;
+    padding-bottom: 96px;
+  }
+}
+
+.table__wrap {
+  outline: 3px dotted coral;
+  display: table;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 616px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+  }
+}
+
+.table__header {
+  background-color: $color-main;
+  color: #ffffff;
+}
+
+.table__list {
+  outline: 3px dotted blue;
+  display: table-row;
+}
+
+.table__list-item {
+  display: table-cell;
+  line-height: 2.1428em;
+}
+
+.table__list-item-inner {
+  display: block;
+
+  &--caption {
+    font-size: $font-size--larger;
+    line-height: 1.6667;
+    font-weight: 700;
+  }
+
+  &--text {
+    font-size: $font-size--large;
+    line-height: 1.25;
+    font-weight: 300;
+  }
+}
+
+.table__toggles {
+  display: flex;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
