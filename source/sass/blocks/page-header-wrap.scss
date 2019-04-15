@@ -3,10 +3,6 @@
   background-color: $color-main;
   outline: 3px dotted green;
 
-  @media (max-width: $mobile-width) {
-    min-height: 69px;
-  }
-
   @media (min-width: $tablet-width) {
     min-height: 109px;
   }
