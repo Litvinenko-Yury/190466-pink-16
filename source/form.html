@@ -10,26 +10,28 @@
 
 <body>
   <header class="page-header">
-    <div class="page-header-wrap">
-      <a class="page-header-wrap__logo" href="index.html">
-        <svg class="page-header-wrap__logo-img" role="presentation" width="75" height="22">
-          <use xlink:href="#icon-pink">PINK</use>
-        </svg>
-      </a>
+    <div class="page-header__wrap">
+      <div class="page-header-inner">
+        <a class="page-header-inner__logo" href="index.html">
+          <svg class="page-header-inner__logo-img" role="presentation" width="75" height="22">
+            <use xlink:href="#icon-pink">PINK</use>
+          </svg>
+        </a>
 
-      <button class="page-header-wrap__burger  page-header-wrap__burger--no-js" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
+        <button class="page-header-inner__burger  page-header-inner__burger--no-js" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+      </div>
+
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__list-item"><a href="index.html">Главная</a></li>
+          <li class="main-nav__list-item"><a href="photo.html">Фотографии</a></li>
+          <li class="main-nav__list-item  main-nav__list-item--active"><a>Конкурс</a></li>
+          <li class="main-nav__list-item"><a href="https://htmlacademy.ru/">HTML Academy</a></li>
+        </ul>
+      </nav>
     </div>
-
-    <nav class="main-nav">
-      <ul class="main-nav__list">
-        <li class="main-nav__list-item"><a href="index.html">ГЛАВНАЯ</a></li>
-        <li class="main-nav__list-item"><a href="photo.html">ФОТОГРАФИИ</a></li>
-        <li class="main-nav__list-item  main-nav__list-item--active"><a>ФОРМА ОТЗЫВА</a></li>
-        <li class="main-nav__list-item"><a href="https://htmlacademy.ru/">HTML ACADEMY</a></li>
-      </ul>
-    </nav>
   </header>
 
   <main class="page-main">

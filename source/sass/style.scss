@@ -1,4 +1,4 @@
-//@import "normalize.scss";
+@import "normalize.scss";
 @import "variables.scss";
 //===
 @import "blocks/global.scss";
@@ -9,15 +9,17 @@
 @import "blocks/copyright.scss";
 @import "blocks/form-caption-text.scss";
 @import "blocks/form.scss";
-@import "blocks/foto-wrap.scss";
+//@import "blocks/foto-inner.scss";
 @import "blocks/foto-caption-text.scss";
+@import "blocks/foto-wrap.scss";
 @import "blocks/foto.scss";
 @import "blocks/information.scss";
 @import "blocks/intro.scss";
 @import "blocks/main-nav.scss";
 //@import "blocks/map.scss";
 @import "blocks/page-footer.scss";
-@import "blocks/page-header-wrap.scss";
+@import "blocks/page-header-inner.scss";
+//@import "blocks/page-header-wrap.scss";
 @import "blocks/page-header.scss";
 //@import "blocks/page-main.scss";
 @import "blocks/review.scss";
