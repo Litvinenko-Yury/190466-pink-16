@@ -1,7 +1,12 @@
 .review {
-  outline: 3px dotted red;
+  outline: 2px dotted red;
+  position: relative;
+  z-index: 2;
+  margin-top: -40px;
   padding-top: 50px;
   padding-bottom: 40px;
+  background-color: #ffffff;
+
 
   @media (min-width: $tablet-width) {
     padding-top: 40px;
@@ -16,7 +21,7 @@
 
 .review__wrapper {
   position: relative;
-
+  margin-bottom: 35px;
   background-color: #ffffff;
 
   @media (min-width: $desktop-width) {
@@ -27,7 +32,6 @@
 
 .review__item {
   text-align: center;
-  outline: 3px dotted green;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -40,8 +44,10 @@
 }
 
 .review__author-name {
+  font-style: normal;
   font-size: $font-size--larger;
   line-height: 1.6667em;
+  font-weight: 700;
   color: #000000;
 }
 
@@ -58,7 +64,7 @@
 .review__text {
   @media (min-width: $tablet-width) {
     order: -1;
-    line-height: 2.1428em;
+    line-height: 1.714em;
     background-color: coral;
   }
 }
@@ -82,8 +88,8 @@
 }
 
 .review__toggles {
-  display: flex;
-  justify-content: center;
+  width: 60px;
+  margin: 0 auto;
 
   @media (min-width: $desktop-width) {
     display: none;

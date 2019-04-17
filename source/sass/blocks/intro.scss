@@ -1,9 +1,8 @@
 .intro {
   position: relative;
   z-index: -3;
-  margin-top: -66px;
+  margin-top: -70px;
   background-color: $color-main--dark;
-  outline: 2px dotted green;
 
   @media (min-width: $tablet-width) {
     z-index: -3;
@@ -14,17 +13,22 @@
 .intro__img-wrap {
   position: relative;
   height: 462px;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-size: cover;
+  background-position: 0% 0%;
 
   @media (min-width: $tablet-width) {
     z-index: -3;
     height: 728px;
     margin-top: -110px;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
   }
 
   @media (min-width: $desktop-width) {
     z-index: -3;
     height: 853px;
     margin-top: -110px;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
   }
 
   &--no-index {
@@ -47,17 +51,15 @@
 .intro__img {
   position: absolute;
   bottom: 0;
-  //left: 0;
-  //right: 0;
   left: 50%;
   margin-left: -160px;
-  width: 320px;
+  width: 258px;
   height: 286px;
 
   @media (min-width: $tablet-width) {
     margin-left: -330px;
     width: 660px;
-    height: 545px;
+    height: 513px;
   }
 
   @media (min-width: $desktop-width) {
@@ -155,5 +157,6 @@
   width: 232px;
   font-size: $font-size;
   font-weight: 300;
+  text-align: center;
   color: #ffffff;
 }

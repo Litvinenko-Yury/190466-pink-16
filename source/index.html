@@ -38,7 +38,11 @@
     <h1 class="visually-hidden">Приложение PINK – новый взгляд на привычные серые вещи</h1>
     <div class="intro">
       <div class="intro__img-wrap">
-        <img class="intro__img" src="http://placehold.it/320x286" alt="Рука с телефоном">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/iphone-hand-desktop@1x.png">
+          <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png">
+          <img class="intro__img" src="img/iphone-hand-mobile@1x.png" alt="Рука с телефоном">
+        </picture>
       </div>
 
       <section class="intro__download-wrap">
@@ -89,7 +93,7 @@
           </section>
         </div>
 
-        <img class="information__img" src="http://placehold.it/157x280" alt="Экран телефона с приветствием приложения">
+        <img class="information__img" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Экран телефона с приветствием приложения">
       </div>
     </section>
 
@@ -130,9 +134,15 @@
       </div>
 
       <p class="review__toggles  slider__toggles">
-        <button class="slider__toggle" type="button">1</button>
-        <button class="slider__toggle" type="button">2</button>
-        <button class="slider__toggle" type="button">3</button>
+        <button class="slider__toggle  slider__toggle--active" type="button">
+          <span class="visually-hidden">1</span>
+        </button>
+        <button class="slider__toggle" type="button">
+          <span class="visually-hidden">2</span>
+        </button>
+        <button class="slider__toggle" type="button">
+          <span class="visually-hidden">3</span>
+        </button>
       </p>
     </section>
 
@@ -241,8 +251,8 @@
     </div>
   </footer>
 
-<script src="js/script.js"></script>
-<!-- <script src="js/script.min.js"></script> -->
+  <script src="js/script.js"></script>
+  <!-- <script src="js/script.min.js"></script> -->
 
 </body>
 
