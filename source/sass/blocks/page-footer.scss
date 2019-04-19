@@ -9,12 +9,13 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-top: -127px;
+    margin-top: -126px;
     padding: 38px 20px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 70px 130px 70px 130px;
+    margin-top: -195px;
+    padding: 70px 130px 75px 130px;
   }
 }
 
@@ -50,6 +51,11 @@
 .page-footer__copyright-text {
   @media (min-width: $tablet-width) {
     margin-right: 15px;
+    line-height: 1.2857em;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: $font-size--larger;
     line-height: 1.2857em;
   }
 }

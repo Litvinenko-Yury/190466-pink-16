@@ -3,12 +3,13 @@
 
   @media (min-width: $tablet-width) {
     display: block;
-    padding-top: 100px;
-    padding-bottom: 40px;
+    padding-top: 95px;
+    padding-bottom: 45px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 135px;
+    padding-top: 125px;
+    padding-bottom: 70px;
     background-color: $gray;
   }
 }
@@ -19,24 +20,37 @@
   margin-left: 50%;
 
   @media (min-width: $desktop-width) {
-    width: 535px;
-    min-height: 450px;
-    margin-right: 170px;
+    width: 940px;
+    margin: 0 auto;
+    padding-left: 365px;
   }
 }
 
 .aside__title {
   @media (min-width: $tablet-width) {
+    margin-bottom: 10px;
+    padding-right: 100px;
     font-size: $font-size--large + 6px;
     line-height: 1.2em;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 20px;
   }
 }
 
 .aside__text {
   @media (min-width: $tablet-width) {
-    margin-top: 5px;
     margin-bottom: 10px;
     letter-spacing: 0.3px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 35px;
+    padding-right: 30px;
+    font-size: $font-size--larger;
+    line-height: 1.6667em;
+    letter-spacing: 0.4px;
   }
 }
 
@@ -45,6 +59,11 @@
     text-decoration: underline;
     color: $color-secondary;
     letter-spacing: 0.3px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: $font-size--larger;
+    line-height: 1.667px;
   }
 
   &:hover {
