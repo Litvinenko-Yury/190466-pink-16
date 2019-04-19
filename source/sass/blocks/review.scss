@@ -1,16 +1,16 @@
 .review {
-  outline: 2px dotted red;
   position: relative;
   z-index: 2;
   margin-top: -40px;
-  padding-top: 50px;
-  padding-bottom: 40px;
+  padding-top: 20px;
+  padding-bottom: 45px;
   background-color: #ffffff;
 
 
   @media (min-width: $tablet-width) {
-    padding-top: 40px;
-    padding-bottom: 15px;
+    margin-top: 0;
+    padding-top: 30px;
+    padding-bottom: 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -21,8 +21,16 @@
 
 .review__wrapper {
   position: relative;
+  width: 320px;
+  margin: 0 auto;
   margin-bottom: 35px;
   background-color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    width: 620px;
+    margin: 0 auto;
+    margin-bottom: 32px;
+  }
 
   @media (min-width: $desktop-width) {
     width: 970px;
@@ -31,10 +39,12 @@
 }
 
 .review__item {
+  margin: 20px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    display: flex;
+    //display: flex;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -48,7 +58,14 @@
   font-size: $font-size--larger;
   line-height: 1.6667em;
   font-weight: 700;
+  letter-spacing: 1px;
   color: #000000;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 5px;
+    font-size: $font-size--larger + 2px;
+    line-height: 1.5em;
+  }
 }
 
 .review__author-subtitle {
@@ -62,10 +79,15 @@
 }
 
 .review__text {
+  padding-top: 15px;
+  line-height: 2.1428em;
+
   @media (min-width: $tablet-width) {
     order: -1;
-    line-height: 1.714em;
-    background-color: coral;
+    margin-bottom: 32px;
+    font-size: $font-size--larger;
+    line-height: 1.667em;
+    letter-spacing: 0.3px;
   }
 }
 

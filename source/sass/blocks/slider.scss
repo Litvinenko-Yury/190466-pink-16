@@ -3,6 +3,11 @@
 
   &--active {
     display: block;
+
+    @media (min-width: $tablet-width) {
+      display: flex;
+      flex-direction: column;
+    }
   }
 }
 

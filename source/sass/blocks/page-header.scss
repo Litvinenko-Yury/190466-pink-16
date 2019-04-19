@@ -1,12 +1,6 @@
-.page-header {
-  @media (min-width: $desktop-width) {
-    background-color: rgba(255, 255, 255, 0.03);
-  }
-}
-
 .page-header__wrap {
   position: relative;
-  z-index: 0;
+  z-index: 1;
 
   @media (min-width: $desktop-width) {
     display: flex;
@@ -15,5 +9,6 @@
     min-height: 110px;
     padding-left: 130px;
     padding-right: 130px;
+    background-color: rgba(0, 0, 0, 0.3);
   }
 }

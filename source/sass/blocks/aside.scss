@@ -4,6 +4,7 @@
   @media (min-width: $tablet-width) {
     display: block;
     padding-top: 100px;
+    padding-bottom: 40px;
   }
 
   @media (min-width: $desktop-width) {
@@ -15,12 +16,42 @@
 .aside__wrap {
   width: 300px;
   min-height: 250px;
-  margin-left: auto;
-  margin-right: 30px;
+  margin-left: 50%;
 
   @media (min-width: $desktop-width) {
     width: 535px;
     min-height: 450px;
     margin-right: 170px;
+  }
+}
+
+.aside__title {
+  @media (min-width: $tablet-width) {
+    font-size: $font-size--large + 6px;
+    line-height: 1.2em;
+  }
+}
+
+.aside__text {
+  @media (min-width: $tablet-width) {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    letter-spacing: 0.3px;
+  }
+}
+
+.aside__link {
+  @media (min-width: $tablet-width) {
+    text-decoration: underline;
+    color: $color-secondary;
+    letter-spacing: 0.3px;
+  }
+
+  &:hover {
+    color: $color-main;
+  }
+
+  &:active {
+    color: $color-main--down;
   }
 }

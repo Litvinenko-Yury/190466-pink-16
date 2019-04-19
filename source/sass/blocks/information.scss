@@ -1,17 +1,24 @@
 .information {
   text-align: center;
-  outline: 2px dotted red;
+  outline: 1px dotted red;
 }
 
 .information__title {
+  width: 320px;
+  margin: 0 auto;
   padding: 45px 20px;
+  padding-bottom: 0;
   font-size: $font-size--large;
   font-weight: 300;
-  outline: 3px dotted coral;
+  outline: 1px dotted coral;
 
   @media (min-width: $tablet-width) {
+    width: 620px;
+    padding: 0;
+    padding-top: 50px;
+    padding-bottom: 10px;
     font-size: $font-size--x-large;
-    line-height: 1em;
+    line-height: 1.2em;
   }
 }
 
@@ -25,20 +32,33 @@
   }
 
   &:last-child {
+    padding-bottom: 35px;
+
     @media (min-width: $tablet-width) {
       width: 400px;
     }
   }
 }
 
+.information__advantages-wrapper {
+  @media (min-width: $tablet-width) {
+    background-color: $gray;
+  }
+}
+
 .information__advantages-wrap {
   position: relative;
+  padding-top: 65px;
   background-color: $gray;
 
   @media (min-width: $tablet-width) {
     display: flex;
+    justify-content: center;
     width: 620px;
+    height: 486px;
     margin: 0 auto;
+    padding-top: 0;
+    text-align: left;
   }
 
   @media (min-width: $desktop-width) {
@@ -47,9 +67,18 @@
 }
 
 .information__advantages {
-  outline: 3px dotted blue;
+  outline: 1px dotted blue;
   width: 320px;
   margin: 0 auto;
+  padding-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+    margin: 0;
+    margin-left: 28px;
+    padding-top: 55px;
+    padding-bottom: 0;
+  }
 
   @media (min-width: $desktop-width) {
     display: flex;
@@ -60,22 +89,37 @@
 }
 
 .information__advantages-inner {
-  padding: 20px 30px;
-  outline: 3px dotted green;
+  padding: 18px 20px;
+  padding-bottom: 10px;
+  outline: 1px dotted green;
+
+  @media (min-width: $tablet-width) {
+    width: 320px;
+    padding: 20px 0 13px 10px;
+  }
 
   @media (min-width: $desktop-width) {
     width: 250px;
   }
 }
 
+.information__advantages-title {
+  letter-spacing: 1.2px;
+}
+
+.information__advantages-text {
+  margin-top: 13px;
+  letter-spacing: 0.2px;
+}
+
 .information__img {
   display: block;
   margin: 0 auto;
+  margin-top: 6px;
   width: 157px;
   height: 320px;
 
   @media (min-width: $tablet-width) {
-    order: -1;
     width: 268px;
     height: 480px;
   }

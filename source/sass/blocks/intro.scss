@@ -1,31 +1,29 @@
 .intro {
   position: relative;
-  z-index: -3;
   margin-top: -70px;
   background-color: $color-main--dark;
 
   @media (min-width: $tablet-width) {
-    z-index: -3;
+    display: flex;
+    justify-content: center;
     margin-top: -110px;
+    background-size: cover;
+    background-position: 50% 0%;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
   }
 }
 
 .intro__img-wrap {
-  position: relative;
-  height: 462px;
+  height: 465px;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-size: cover;
-  background-position: 0% 0%;
+  background-position: 50% 0%;
 
   @media (min-width: $tablet-width) {
-    z-index: -3;
-    height: 728px;
-    margin-top: -110px;
-    background-image: url("../img/bg-back-tablet@1x.jpg");
+    min-height: 730px;
   }
 
   @media (min-width: $desktop-width) {
-    z-index: -3;
     height: 853px;
     margin-top: -110px;
     background-image: url("../img/bg-back-desktop@1x.jpg");
@@ -50,16 +48,20 @@
 
 .intro__img {
   position: absolute;
-  bottom: 0;
   left: 50%;
-  margin-left: -160px;
-  width: 258px;
-  height: 286px;
+
+  @media (max-width: $tablet-width - 1px) {
+    top: 179px;
+    margin-left: -160px;
+    width: 258px;
+    height: 286px;
+  }
 
   @media (min-width: $tablet-width) {
-    margin-left: -330px;
+    bottom: 0;
     width: 660px;
     height: 513px;
+    margin-left: -330px;
   }
 
   @media (min-width: $desktop-width) {
@@ -70,14 +72,18 @@
 }
 
 .intro__download-wrap {
-  padding-bottom: 37px;
+  padding-top: 3px;
+  padding-bottom: 27px;
 
   @media (min-width: $tablet-width) {
-    position: absolute;
-    top: 210px;
-    right: 50%;
-    margin-right: 10px;
-    z-index: -2;
+    //position: absolute;
+    position: relative;
+    //top: 200px;
+    //right: 50%;
+    //margin-right: 10px;
+    margin-top: 200px;
+    margin-right: 320px;
+    z-insex: 2;
   }
 
   @media (min-width: $desktop-width) {
@@ -85,7 +91,6 @@
     top: 230px;
     right: 50%;
     margin-right: 170px;
-    z-index: -2;
   }
 }
 
@@ -134,22 +139,38 @@
   margin-top: 25px;
   margin-bottom: 30px;
   color: #ffffff;
+  letter-spacing: 1px;
   border: 3px solid #ffffff;
 
+  &:hover {
+    color: $color-secondary;
+    background-color: #ffffff;
+  }
+
+  &:active {
+    color: $color-secondary--down;
+  }
+
   @media (min-width: $tablet-width) {
-    width: 300;
+    width: 300px;
+    margin-top: 30px;
+    margin-bottom: 45px;
   }
 }
 
 .intro__marketplace {
-  outline: 2px dotted coral;
+  outline: 1px dotted coral;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   margin: 0 auto;
-  margin-bottom: 28px;
+  margin-bottom: 20px;
   width: 205px;
   min-height: 58px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+  }
 }
 
 .intro__content {
@@ -159,4 +180,9 @@
   font-weight: 300;
   text-align: center;
   color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    font-size: $font-size--larger;
+  }
 }

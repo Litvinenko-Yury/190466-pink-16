@@ -47,7 +47,9 @@
 
       <section class="intro__download-wrap">
         <h2 class="intro__title">Взгляните на жизнь иначе!</h2>
+
         <a class="intro__download  button" href="https://www.apple.com/ru/ios/app-store/">Скачать приложение</a>
+
         <div class="intro__marketplace">
           <a class="intro__applestore" href="https://www.apple.com/ru/ios/">
             <svg class="intro__applestore-logo" role="presentation" width="47" height="56">
@@ -75,25 +77,32 @@
         <span class="information__title-item">Нам есть, что вам предложить!</span>
       </h2>
 
-      <div class="information__advantages-wrap">
-        <div class="information__advantages">
-          <section class="information__advantages-inner">
-            <h3 class="information__advantages-title">Поднимает настроение</h3>
-            <p class="information__advantages-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-          </section>
+      <div class="information__advantages-wrapper">
+        <div class="information__advantages-wrap">
+          <div class="information__advantages">
+            <section class="information__advantages-inner">
+              <h3 class="information__advantages-title">Поднимает настроение</h3>
+              <p class="information__advantages-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            </section>
 
-          <section class="information__advantages-inner">
-            <h3 class="information__advantages-title">Меняет мир вокруг</h3>
-            <p class="information__advantages-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект!</p>
-          </section>
+            <section class="information__advantages-inner">
+              <h3 class="information__advantages-title">Меняет мир вокруг</h3>
+              <p class="information__advantages-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект!</p>
+            </section>
 
-          <section class="information__advantages-inner">
-            <h3 class="information__advantages-title">Заводит новых друзей</h3>
-            <p class="information__advantages-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-          </section>
+            <section class="information__advantages-inner">
+              <h3 class="information__advantages-title">Заводит новых друзей</h3>
+              <p class="information__advantages-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            </section>
+          </div>
+
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/iphone-screen-3-desktop@1x.png">
+            <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png">
+            <img class="information__img" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Экран телефона с приветствием приложения">
+          </picture>
+
         </div>
-
-        <img class="information__img" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Экран телефона с приветствием приложения">
       </div>
     </section>
 
@@ -194,26 +203,27 @@
       </p>
     </section>
 
-    <section class="contacts">
-      <h2 class="contacts__title">Остались вопросы?<br> Свяжитесь с нами!</h2>
+    <div class="contacts">
+      <section class="contacts__wrap">
+        <h2 class="contacts__title">Остались вопросы?<br> Свяжитесь с нами!</h2>
+        <div class="contacts__item-wrap">
+          <div class="contacts__item">
+            <b class="contacts__subtitle">Звоните:</b>
+            <a class="contacts__content" href="tel:+78125556666">+7 (812) 555-66-66</a>
+          </div>
 
-      <div class="contacts__item-wrap">
-        <div class="contacts__item">
-          <b class="contacts__subtitle">Звоните:</b>
-          <a class="contacts__content" href="tel:+78125556666">+7 (812) 555-66-66</a>
-        </div>
+          <div class="contacts__item  contacts__item--second">
+            <b class="contacts__subtitle">Пишите:</b>
+            <a class="contacts__content" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </div>
 
-        <div class="contacts__item">
-          <b class="contacts__subtitle">Пишите:</b>
-          <a class="contacts__content" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          <div class="contacts__item  contacts__item--third">
+            <b class="contacts__subtitle">Приезжайте в гости:</b>
+            <span class="contacts__content">ул. Большая<br> Конюшенная, 19/8</span>
+          </div>
         </div>
-
-        <div class="contacts__item">
-          <b class="contacts__subtitle">Приезжайте в гости:</b>
-          <span class="contacts__content">ул. Большая Конюшенная, 19/8</span>
-        </div>
-      </div>
-    </section>
+      </section>
+    </div>
 
     <div class="map"></div>
   </main>
@@ -240,9 +250,9 @@
         </ul>
       </div>
 
-      <div class="page-footer__copyright  copyright">
-        <b class="copyright__text">Разработано:</b>
-        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+      <div class="page-footer__copyright">
+        <span class="page-footer__copyright-text">Разработано:</span>
+        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
           <svg class="page-footer__logo-academy" role="presentation" width="27" height="34">
             <use xlink:href="#icon-academy">HTML Academy</use>
           </svg>
