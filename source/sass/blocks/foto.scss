@@ -1,22 +1,26 @@
 .foto {
   position: relative;
-  margin: 0;
-  background-color: $gray;
-  outline: 3px dotted green;
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     width: 300px;
+    margin: 0;
     margin-bottom: 20px;
-
-    &--wide {
-      width: 100%;
-      margin-bottom: 45px;
-      background-color: #ffffff;
-    }
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 50px;
+  }
+
+  &--wide {
+    width: 100%;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 49px;
+      background-color: #ffffff;
+    }
   }
 }
 
@@ -24,7 +28,7 @@
   position: absolute;
   top: 0;
   right: 20px;
-  padding: 10px 20px;
+  padding: 5px 20px;
   font-size: $font-size--smaller;
   font-weight: 700;
   text-transform: uppercase;
@@ -34,45 +38,78 @@
   @media (min-width: $tablet-width) {
     top: 57px;
   }
+
+  @media (min-width: $desktop-width) {
+    top: 54px;
+    right: 130px;
+  }
 }
 
 .foto__img {
   cursor: pointer;
+  width: 100%;
+  height: 181px;
 
   @media (min-width: $tablet-width) {
-    width: 100%;
     height: 300px;
-
-    &--wide {
-      height: 510px;
-    }
   }
 
   @media (min-width: $desktop-width) {
     height: 400px;
+  }
 
-    &--wide {
-      height: 510px;
+  &--wide {
+    height: 137px;
+
+    @media (min-width: $tablet-width) {
+      height: 509px;
+    }
+
+    @media (min-width: $desktop-width) {
+      height: 505px;
     }
   }
 }
 
 .foto__descr {
   position: relative;
-  margin-left: 20px;
-  margin-right: 20px;
+  width: 280px;
+  margin-top: -7px;
+  padding: 18px 15px 53px 15px;
+  background-color: $gray;
 
   @media (min-width: $tablet-width) {
+    width: 100%;
+    min-height: 155px;
+    padding: 24px 25px 57px 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+
     &--wide {
-      background-color: $gray;
+      width: 940px;
+      min-height: 10px;
+      padding-bottom: 25px;
     }
   }
-}
 
-.foto__item {
-  @media (min-width: $tablet-width) {
-    padding-bottom: 60px;
+  &--wide {
+    margin: 0 auto;
+    margin-top: -7px;
+
+    @media (min-width: $tablet-width) {
+      width: 620px;
+      min-height: 10px;
+      padding-bottom: 25px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 940px;
+      min-height: 10px;
+      padding-bottom: 25px;
+    }
   }
+
 }
 
 .foto__author {
@@ -85,26 +122,58 @@
   text-transform: uppercase;
 }
 
-.foto__cont-wrap {
+.foto__text {
+  letter-spacing: 0.3px;
+}
+
+.foto__button {
+  position: absolute;
+  bottom: 17px;
+  left: 18px;
+  padding: 0;
+  line-height: 2em;
+  border: none;
+  cursor: pointer;
+  background-color: yellow;
+
+  &--wide {
+    left: 40px;
+  }
+
   @media (min-width: $tablet-width) {
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    left: 27px;
+    bottom: 20px;
+    min-width: 242px;
 
     &--wide {
-      top: 0;
-      right: 0;
       left: auto;
+      bottom: auto;
+      right: 30px;
+      top: 23px;
+      min-width: 120px;
     }
   }
 }
 
-.foto__cont-title {
+.foto__button-icon {
+  outline: 1px dotted coral;
+  margin-right: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 0;
+  }
+}
+
+.foto__button-title {
   font-size: $font-size--smaller;
   text-transform: uppercase;
   color: $color-secondary;
 
   @media (min-width: $tablet-width) {
     order: -1;
+    //margin-right: 100px;
   }
 }

@@ -1,10 +1,8 @@
-.foto-wrap {
-  outline: 2px dotted red;
-}
-
 .foto-wrap__inner {
+  width: 320px;
+  margin: 0 auto;
+
   @media (min-width: $tablet-width) {
-    margin: 0 auto;
     width: 620px;
     display: flex;
     flex-wrap: wrap;
