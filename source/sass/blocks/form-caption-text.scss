@@ -1,15 +1,17 @@
 .form-caption-text {
+  outline: 2px dotted green;
   width: 280px;
   margin: 0 auto;
-  padding-top: 55px;
-  padding-bottom: 55px;
+  padding-top: 45px;
+  padding-bottom: 25px;
   line-height: 2.1428em;
   text-align: center;
-  outline: 2px dotted green;
+  letter-spacing: 0.3px;
+
 
   @media (min-width: $tablet-width) {
     width: 500px;
-    padding-top: 100px;
+    padding-top: 95px;
     padding-bottom: 50px;
     font-size: $font-size--larger;
     line-height: 1.6667em;
