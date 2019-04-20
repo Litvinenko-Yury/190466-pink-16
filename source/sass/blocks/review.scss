@@ -1,23 +1,36 @@
 .review {
-  outline: 3px dotted red;
-  padding-top: 50px;
-  padding-bottom: 40px;
+  position: relative;
+  z-index: 2;
+  margin-top: -40px;
+  padding-top: 20px;
+  padding-bottom: 45px;
+  background-color: #ffffff;
+
 
   @media (min-width: $tablet-width) {
-    padding-top: 40px;
-    padding-bottom: 15px;
+    margin-top: 0;
+    padding-top: 30px;
+    padding-bottom: 20px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 190px;
-    padding-bottom: 45px;
+    padding-top: 170px;
+    padding-bottom: 40px;
   }
 }
 
 .review__wrapper {
   position: relative;
-
+  width: 320px;
+  margin: 0 auto;
+  margin-bottom: 35px;
   background-color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    width: 620px;
+    margin: 0 auto;
+    margin-bottom: 32px;
+  }
 
   @media (min-width: $desktop-width) {
     width: 970px;
@@ -26,11 +39,11 @@
 }
 
 .review__item {
+  margin: 20px;
   text-align: center;
-  outline: 3px dotted green;
 
   @media (min-width: $tablet-width) {
-    display: flex;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -40,9 +53,22 @@
 }
 
 .review__author-name {
+  font-style: normal;
   font-size: $font-size--larger;
   line-height: 1.6667em;
+  font-weight: 700;
   color: #000000;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 5px;
+    font-size: $font-size--larger + 2px;
+    line-height: 1.5em;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: $font-size--large;
+    line-height: 1.25em;
+  }
 }
 
 .review__author-subtitle {
@@ -51,15 +77,28 @@
   @media (min-width: $tablet-width) {
     display: block;
     line-height: 2.1428;
-    color: $color-main;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: $font-size--larger;
+    line-height: 1.6667em;
   }
 }
 
 .review__text {
+  padding-top: 15px;
+  line-height: 2.1428em;
+
   @media (min-width: $tablet-width) {
     order: -1;
-    line-height: 2.1428em;
-    background-color: coral;
+    margin-bottom: 32px;
+    font-size: $font-size--larger;
+    line-height: 1.667em;
+    letter-spacing: 0.3px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 35px;
   }
 }
 
@@ -82,8 +121,8 @@
 }
 
 .review__toggles {
-  display: flex;
-  justify-content: center;
+  width: 60px;
+  margin: 0 auto;
 
   @media (min-width: $desktop-width) {
     display: none;

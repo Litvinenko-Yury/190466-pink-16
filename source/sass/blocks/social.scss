@@ -1,4 +1,32 @@
+.social {
+  width: 175px;
+  //margin-left: -25px;
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+}
+
 .social__list {
   display: flex;
   justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.social__item {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  border: 3px solid $gray--dark;
+  background-color: #ffffff;
+
+  &:hover {
+    border-color: $color-main;
+  }
+
+  &:active {
+    border-color: $gray--dark;
+  }
 }

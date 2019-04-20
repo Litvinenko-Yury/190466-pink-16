@@ -1,33 +1,99 @@
 .contacts {
-  outline: 2px dotted red;
-  padding: 47px 20px 40px 20px;
+  height: 612px;
   text-align: center;
+  background-image: url("../img/bg-map-mobile@1x.png");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+
 
   @media (min-width: $tablet-width) {
-    padding: 55px 20px 25px 20px;
+    height: 908px;
+    padding: 0;
+    background-image: url("../img/bg-map-tablet@1x.jpg");
+    background-position: center 20px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 70px 130px 25px 130px;
+    height: 1064px;
+    background-image: url("../img/bg-map-desktop@1x.jpg");
+    background-position: center 40px;
   }
 }
 
-.contacts__title,
-.contacts__item {
-  outline: 2px dotted green;
+.contacts__wrap {
+  padding: 47px 20px 10px 20px;
+  background-color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    padding: 55px 20px 30px 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    padding: 70px 20px 20px 20px;
+  }
+}
+
+.contacts__title {
+  outline: 1px dotted green;
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 35px;
+  line-height: 1.1em;
+
+  @media (min-width: $tablet-width) {
+    width: 620px;
+    margin-bottom: 0;
+    font-size: $font-size--x-large;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 620px;
+    margin-bottom: 0;
+    font-size: $font-size--xl-large;
+  }
 }
 
 .contacts__item-wrap {
+  width: 280px;
+  margin: 0 auto;
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    width: 620px;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-between;
+    width: 940px;
+    padding-top: 15px;
   }
 }
 
 .contacts__item {
+  outline: 1px dotted green;
+  margin-bottom: 25px;
+
   @media (min-width: $tablet-width) {
     width: 310px;
+    margin-top: 45px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 300px;
+
+    &--second {
+      order: 2;
+    }
+
+    &--third {
+      order: 1;
+    }
   }
 }
 
@@ -35,10 +101,32 @@
   display: block;
   font-size: $font-size--larger;
   font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 25px;
+  }
 }
 
 .contacts__content {
   font-size: $font-size--large;
   font-weight: 300;
   color: $color-secondary;
+  line-height: 1.2em;
+
+  &--link:hover {
+    color: $color-main;
+    text-decoration: underline;
+  }
+
+  &--link:active {
+    color: $color-main--down;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }

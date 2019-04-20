@@ -1,17 +1,21 @@
 .table {
-  outline: 3px dotted red;
+  outline: 1px dotted red;
+  min-height: 472px;
   padding-top: 90px;
   padding-bottom: 44px;
-  background-color: $gray;
+  //background-color: $gray;
+  background-color: coral;
 
   @media (min-width: $tablet-width) {
+    min-height: 376px;
     padding-top: 90px;
     padding-bottom: 70px;
   }
 
   @media (min-width: $desktop-width) {
+    min-height: 280px;
     padding-top: 150px;
-    padding-bottom: 96px;
+    padding-bottom: 350px;
   }
 }
 

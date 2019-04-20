@@ -10,38 +10,46 @@
 
 <body>
   <header class="page-header">
-    <div class="page-header-wrap">
-      <a class="page-header-wrap__logo">
-        <svg class="page-header-wrap__logo-img" role="presentation" width="75" height="22">
-          <use xlink:href="#icon-pink">PINK</use>
-        </svg>
-      </a>
+    <div class="page-header__wrap">
+      <nav class="main-nav  main-nav--closed  main-nav--nojs">
+        <div class="main-nav__inner">
+          <a class="main-nav__inner-logo">
+            <svg class="main-nav__inner-logo-img" role="presentation" width="75" height="22">
+              <use xlink:href="#icon-pink">PINK</use>
+            </svg>
+          </a>
 
-      <button class="page-header-wrap__burger  page-header-wrap__burger--no-js" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
+          <button class="main-nav__inner-toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+        </div>
+
+        <ul class="main-nav__list">
+          <li class="main-nav__list-item  main-nav__list-item--active"><a>Главная</a></li>
+          <li class="main-nav__list-item"><a href="photo.html">Фотографии</a></li>
+          <li class="main-nav__list-item"><a href="form.html">Конкурс</a></li>
+          <li class="main-nav__list-item"><a href="https://htmlacademy.ru/">HTML Academy</a></li>
+        </ul>
+      </nav>
     </div>
-
-    <nav class="main-nav">
-      <ul class="main-nav__list">
-        <li class="main-nav__list-item  main-nav__list-item--active"><a>ГЛАВНАЯ</a></li>
-        <li class="main-nav__list-item"><a href="photo.html">ФОТОГРАФИИ</a></li>
-        <li class="main-nav__list-item"><a href="form.html">ФОРМА ОТЗЫВА</a></li>
-        <li class="main-nav__list-item"><a href="https://htmlacademy.ru/">HTML ACADEMY</a></li>
-      </ul>
-    </nav>
   </header>
 
   <main class="page-main">
     <h1 class="visually-hidden">Приложение PINK – новый взгляд на привычные серые вещи</h1>
     <div class="intro">
       <div class="intro__img-wrap">
-        <img class="intro__img" src="http://placehold.it/320x286" width="320" height="286" alt="Рука с телефоном">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/iphone-hand-desktop@1x.png">
+          <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png">
+          <img class="intro__img" src="img/iphone-hand-mobile@1x.png" alt="Рука с телефоном">
+        </picture>
       </div>
 
       <section class="intro__download-wrap">
         <h2 class="intro__title">Взгляните на жизнь иначе!</h2>
+
         <a class="intro__download  button" href="https://www.apple.com/ru/ios/app-store/">Скачать приложение</a>
+
         <div class="intro__marketplace">
           <a class="intro__applestore" href="https://www.apple.com/ru/ios/">
             <svg class="intro__applestore-logo" role="presentation" width="47" height="56">
@@ -69,31 +77,39 @@
         <span class="information__title-item">Нам есть, что вам предложить!</span>
       </h2>
 
-      <div class="information__advantages-wrap">
-        <div class="information__advantages">
-          <section class="information__advantages-inner">
-            <h3 class="information__advantages-title">Поднимает настроение</h3>
-            <p class="information__advantages-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-          </section>
+      <div class="information__advantages-wrapper">
+        <div class="information__advantages-wrap">
+          <div class="information__advantages">
+            <section class="information__advantages-inner">
+              <img class="information__advantages-inner-img" src="img/iphone-screen-1-desktop@1x.png" width="292" height="302" alt="Мусорный бак">
 
-          <section class="information__advantages-inner">
-            <h3 class="information__advantages-title">Меняет мир вокруг</h3>
-            <p class="information__advantages-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект!</p>
-          </section>
+              <h3 class="information__advantages-title">Поднимает настроение</h3>
+              <p class="information__advantages-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            </section>
+            <section class="information__advantages-inner">
+              <img class="information__advantages-inner-img" src="img/iphone-screen-2-desktop@1x.png" width="292" height="302" alt="Мусорный бак">
 
-          <section class="information__advantages-inner">
-            <h3 class="information__advantages-title">Заводит новых друзей</h3>
-            <p class="information__advantages-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-          </section>
+              <h3 class="information__advantages-title">Меняет мир вокруг</h3>
+              <p class="information__advantages-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект!</p>
+            </section>
+            <section class="information__advantages-inner">
+              <img class="information__advantages-inner-img" src="img/iphone-screen-3-desktop@1x.png" width="292" height="302" alt="Мусорный бак">
+              <h3 class="information__advantages-title">Заводит новых друзей</h3>
+              <p class="information__advantages-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            </section>
+          </div>
+
+          <picture>
+            <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png">
+            <img class="information__img" src="img/iphone-screen-mobile@1x.png" alt="Телефон с приветствием на экране">
+          </picture>
         </div>
-
-        <img class="information__img" src="http://placehold.it/157x280" alt="Экран телефона с приветствием приложения">
       </div>
     </section>
 
     <div class="aside">
       <section class="aside__wrap">
-        <h4 class="aside__title">Эффект<br> на 24 часа!</h4>
+        <h4 class="aside__title">Эффект на 24 часа!</h4>
         <p class="aside__text">Британские ученые провели исследования и доказали, что положительный эффект
           от использования приложения длится целые сутки!</p>
         <a class="aside__link" href="https://google.com">Узнать больше об исследовании</a>
@@ -128,9 +144,15 @@
       </div>
 
       <p class="review__toggles  slider__toggles">
-        <button class="slider__toggle" type="button">1</button>
-        <button class="slider__toggle" type="button">2</button>
-        <button class="slider__toggle" type="button">3</button>
+        <button class="slider__toggle  slider__toggle--active" type="button">
+          <span class="visually-hidden">1</span>
+        </button>
+        <button class="slider__toggle" type="button">
+          <span class="visually-hidden">2</span>
+        </button>
+        <button class="slider__toggle" type="button">
+          <span class="visually-hidden">3</span>
+        </button>
       </p>
     </section>
 
@@ -182,26 +204,27 @@
       </p>
     </section>
 
-    <section class="contacts">
-      <h2 class="contacts__title">Остались вопросы?<br> Свяжитесь с нами!</h2>
+    <div class="contacts">
+      <section class="contacts__wrap">
+        <h2 class="contacts__title">Остались вопросы?<br> Свяжитесь с нами!</h2>
+        <div class="contacts__item-wrap">
+          <div class="contacts__item">
+            <b class="contacts__subtitle">Звоните:</b>
+            <a class="contacts__content" href="tel:+78125556666">+7 (812) 555-66-66</a>
+          </div>
 
-      <div class="contacts__item-wrap">
-        <div class="contacts__item">
-          <b class="contacts__subtitle">Звоните:</b>
-          <a class="contacts__content" href="tel:+78125556666">+7 (812) 555-66-66</a>
-        </div>
+          <div class="contacts__item  contacts__item--second">
+            <b class="contacts__subtitle">Пишите:</b>
+            <a class="contacts__content  contacts__content--link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </div>
 
-        <div class="contacts__item">
-          <b class="contacts__subtitle">Пишите:</b>
-          <a class="contacts__content" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          <div class="contacts__item  contacts__item--third">
+            <b class="contacts__subtitle">Приезжайте в гости:</b>
+            <span class="contacts__content">ул. Большая<br> Конюшенная, 19/8</span>
+          </div>
         </div>
-
-        <div class="contacts__item">
-          <b class="contacts__subtitle">Приезжайте в гости:</b>
-          <span class="contacts__content">ул. Большая Конюшенная, 19/8</span>
-        </div>
-      </div>
-    </section>
+      </section>
+    </div>
 
     <div class="map"></div>
   </main>
@@ -209,7 +232,7 @@
   <footer class="page-footer  page-footer--no-footer">
     <div class="page-footer__links">
       <a class="page-footer__logo">
-        <svg class="page-footer__logo-img" role="presentation" width="75" height="22">
+        <svg class="page-footer__logo-img" role="presentation" width="150" height="41">
           <use xlink:href="#icon-pink">PINK</use>
         </svg>
       </a>
@@ -228,9 +251,9 @@
         </ul>
       </div>
 
-      <div class="page-footer__copyright  copyright">
-        <b class="copyright__text">Разработано:</b>
-        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+      <div class="page-footer__copyright">
+        <span class="page-footer__copyright-text">Разработано</span>
+        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
           <svg class="page-footer__logo-academy" role="presentation" width="27" height="34">
             <use xlink:href="#icon-academy">HTML Academy</use>
           </svg>
@@ -238,5 +261,10 @@
       </div>
     </div>
   </footer>
+
+  <script src="js/script.js"></script>
+  <!-- <script src="js/script.min.js"></script> -->
+
 </body>
+
 </html>

@@ -1,11 +1,23 @@
 .upload {
-  outline: 2px dotted red;
+  outline: 1px dotted red;
 }
 
 .upload__caption {
-  line-height: 2.1428;
-  padding: 50px 20px;
+  padding: 20px 20px 40px 20px;
+  line-height: 2.1428em;
+
   text-align: center;
+  letter-spacing: 0.4px;
+
+  @media (min-width: $desktop-width) {
+    padding: 45px 20px 70px 20px;
+    font-size: $font-size--larger;
+    line-height: 1.6667em;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 10px;
+  }
 }
 
 .upload__editor {
@@ -14,10 +26,12 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: center;
+    min-height: 509px;
   }
 
   @media (min-width: $desktop-width) {
     width: 940px;
+    min-height: 515px;
     margin: 0 auto;
   }
 }

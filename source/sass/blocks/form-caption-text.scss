@@ -1,0 +1,32 @@
+.form-caption-text {
+  outline: 2px dotted green;
+  width: 280px;
+  margin: 0 auto;
+  padding-top: 45px;
+  padding-bottom: 25px;
+  line-height: 2.1428em;
+  text-align: center;
+  letter-spacing: 0.3px;
+
+  @media (min-width: $tablet-width) {
+    width: 500px;
+    padding-top: 95px;
+    padding-bottom: 50px;
+    font-size: $font-size--larger;
+    line-height: 1.6667em;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 800px;
+  }
+}
+
+.form-caption-text__inner {
+  &--no-mob {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: inline;
+    }
+  }
+}
