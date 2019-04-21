@@ -22,4 +22,10 @@
   &:active {
     opacity: 0.7;
   }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 58px;
+    padding-right: 58px;
+    border-radius: 2px;
+  }
 }

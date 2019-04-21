@@ -69,9 +69,9 @@
       </fieldset>
 
       <!--checkbox-->
-      <div class="form-checkbox-wrap">
-        <fieldset class="form-checkbox">
-          <legend class="form-checkbox__caption">Ваши безбашенные достижения в путешествии</legend>
+      <div class="form-checkbox">
+        <fieldset class="form-checkbox__fieldset">
+          <legend class="form-checkbox__legend">Ваши безбашенные достижения в путешествии</legend>
 
           <div class="form-checkbox__label-wrap">
 
@@ -105,15 +105,15 @@
 
       <!-- контакты-->
       <fieldset class="form-contact">
-        <legend class="form-contact__caption">Контактная информация</legend>
+        <legend class="form-contact__legend">Контактная информация</legend>
 
-        <div class="form-contact__label-wrap">
+        <div class="form-contact__label-wrap  form-contact__wrap--phone">
           <label class="form-contact__wrap">
             <span class="form-contact__text">Номер телефона</span>
             <input class="form-contact__input" type="tel" name="tel" pattern="^[ 0-9]+$" placeholder="Номер, пожалуйста">
           </label>
 
-          <label class="form-contact__wrap">
+          <label class="form-contact__wrap  form-contact__wrap--mail">
             <span class="form-contact__text">Адрес почты</span>
             <input class="form-contact__input" type="email" name="email" placeholder="Введите почту *">
           </label>
@@ -121,9 +121,9 @@
       </fieldset>
 
       <!--radio-->
-      <div class="form-radio-wrap">
-        <fieldset class="form-radio">
-          <legend class="form-radio__caption">С каким приложением путешествовали?</legend>
+      <div class="form-radio">
+        <fieldset class="form-radio__fieldset">
+          <legend class="form-radio__legend">С каким приложением путешествовали?</legend>
 
           <input id="radio1" class="form-radio__input" type="radio" name="radio-field" value="radio1" checked>
           <label for="radio1" class="form-radio__label">Pink для iOS</label>
@@ -138,7 +138,7 @@
 
       <!--textarea-->
       <fieldset class="form-textarea">
-        <legend class="form-textarea__caption">Опишите свои эмоции</legend>
+        <legend class="form-textarea__legend">Опишите свои эмоции</legend>
 
         <textarea class="form-textarea__input" name="message" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
       </fieldset>

@@ -1,5 +1,6 @@
 .form-textarea {
   width: 100%;
+  margin-bottom: 70px;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 43px;
@@ -7,12 +8,15 @@
 
   @media (min-width: $tablet-width) {
     order: 5;
+    padding-top: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
     border: 2px solid $gray-229;
     border-radius: 2px;
   }
 }
 
-.form-textarea__caption {
+.form-textarea__legend {
   width: 240px;
   padding-top: 40px;
   padding-bottom: 15px;
@@ -23,6 +27,8 @@
   color: $color-secondary;
 
   @media (min-width: $tablet-width) {
+    padding-top: 0;
+    padding-bottom: 0;
     line-height: 2.1428em;
     color: $color-secondary;
     text-transform: uppercase;
@@ -52,5 +58,11 @@
     line-height: 1.6667em;
     color: $color-main;
     letter-spacing: 0.4px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
   }
 }

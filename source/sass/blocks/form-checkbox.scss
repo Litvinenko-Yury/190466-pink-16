@@ -1,13 +1,15 @@
-.form-checkbox-wrap {
+.form-checkbox {
   background-color: $gray;
 
   @media (min-width: $tablet-width) {
+    order: 4;
     width: 100%;
+    margin-bottom: 50px;
     background-color: transparent;
   }
 }
 
-.form-checkbox {
+.form-checkbox__fieldset {
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 0;
@@ -22,7 +24,7 @@
   }
 }
 
-.form-checkbox__caption {
+.form-checkbox__legend {
   width: 240px;
   padding-top: 40px;
   padding-bottom: 33px;
