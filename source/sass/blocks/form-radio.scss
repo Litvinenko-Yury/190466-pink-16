@@ -1,0 +1,96 @@
+.form-radio-wrap {
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: $gray;
+}
+
+.form-radio {
+  width: 100%;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+    border: 2px solid $gray-229;
+    border-radius: 2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 435px;
+  }
+}
+
+.form-radio__caption {
+  width: 240px;
+  padding-top: 40px;
+  padding-bottom: 33px;
+  line-height: 1.2857em;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  color: $color-secondary;
+
+  @media (min-width: $tablet-width) {
+    line-height: 2.1428em;
+    color: $color-secondary;
+    text-transform: uppercase;
+  }
+}
+
+/*===стилизация чек-бокс===*/
+.form-radio__input {
+  /*скрытие стандартного чек-бокса*/
+  display: none;
+}
+
+.form-radio__label {
+  /*подготовка места для кастом-чек-бокса = стилизация label*/
+  position: relative;
+  display: block;
+  margin: 10px 0 45px 0;
+  padding-left: 70px;
+  cursor: pointer;
+
+  font-size: $font-size--larger;
+  line-height: 1.6667em;
+  letter-spacing: 0.4px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 60px;
+  }
+}
+
+.form-radio__label::before {
+  /*стилизация фона checkbox*/
+  content: "";
+  width: 38px;
+  height: 38px;
+  border: 1px solid $gray-229;
+  border-radius: 19px;
+  background: #ffffff;
+
+  position: absolute;
+  top: -3px;
+  left: 0;
+}
+
+.form-radio__label:hover::before {
+  border-color: $color-main;
+}
+
+.form-radio__label:active::before {
+  border-color: $color-secondary;
+}
+
+/*переключение состояния чек-бокса*/
+.form-radio__input:checked + .form-radio__label::after {
+  /*стилизация активного чек-бокса*/
+  content: "";
+  width: 14px;
+  height: 14px;
+  border-radius: 7px;
+  background-color: $color-secondary;
+
+  position: absolute;
+  top: 9px;
+  left: 12px;
+}

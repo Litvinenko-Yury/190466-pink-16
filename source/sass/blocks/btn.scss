@@ -1,0 +1,25 @@
+.btn {
+  display: block;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 22px;
+  font-size: $font-size--larger;
+  font-weight: 700;
+  line-height: 1.1667em;
+  text-align: center;
+  text-transform: uppercase;
+  user-select: none;
+  outline: none;
+
+  color: #ffffff;
+  background-color: $color-success;
+  border: none;
+
+  &:hover {
+    background-color: $color-success--hover;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}

@@ -1,0 +1,111 @@
+.form-checkbox-wrap {
+  background-color: $gray;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    background-color: transparent;
+  }
+}
+
+.form-checkbox {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 0;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+    padding-right: 0;
+    order: 4;
+    border: 2px solid $gray-229;
+    border-radius: 2px;
+  }
+}
+
+.form-checkbox__caption {
+  width: 240px;
+  padding-top: 40px;
+  padding-bottom: 33px;
+  line-height: 1.2857em;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  color: $color-secondary;
+
+  @media (min-width: $tablet-width) {
+    width: 438px;
+    line-height: 2.1428em;
+  }
+}
+
+.form-checkbox__label-wrap {
+  @media (min-width: $tablet-width) {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 10px;
+  }
+}
+
+/*===стилизация чек-бокс===*/
+.form-checkbox__input {
+  /*скрытие стандартного чек-бокса*/
+  display: none;
+}
+
+.form-checkbox__label {
+  /*подготовка места для кастом-чек-бокса = стилизация label*/
+  position: relative;
+  display: block;
+  margin: 10px 0 52px 0;
+  padding-left: 70px;
+  cursor: pointer;
+
+  font-size: $font-size--larger;
+  line-height: 1.6667em;
+  letter-spacing: 0.4px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 60px;
+  }
+}
+
+.form-checkbox__label::before {
+  /*стилизация фона checkbox*/
+  content: "";
+  width: 38px;
+  height: 38px;
+  border: 1px solid $gray-229;
+  border-radius: 2px;
+  background: #ffffff;
+
+  position: absolute;
+  top: -3px;
+  left: 0;
+}
+
+.form-checkbox__label:hover::before {
+  border-color: $color-main;
+}
+
+.form-checkbox__label:active::before {
+  border-color: $color-secondary;
+}
+
+/*переключение состояния чек-бокса*/
+.form-checkbox__input:checked + .form-checkbox__label::after {
+  /*стилизация активного чек-бокса*/
+  content: "";
+  width: 21px;
+  height: 16px;
+  background-image: url("../img/icon-yes.svg");
+
+  position: absolute;
+  top: 7px;
+  left: 10px;
+}

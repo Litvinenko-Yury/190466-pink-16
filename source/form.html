@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Пинк: Rjyrehc</title>
+  <title>Пинк: Конкурс</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -51,105 +51,101 @@
     <form class="form" action="https://echo.htmlacademy.ru" method="post">
 
       <!--ФИО-->
-      <fieldset class="form__name">
-        <label class="form__name-wrap">
-          <span class="form__name-text">Фамилия:</span>
-          <input class="form__name-input" type="text" name="surname" placeholder="Укажите фамилию *">
+      <fieldset class="form-name">
+        <label class="form-name__wrap">
+          <span class="form-name__text">Фамилия:</span>
+          <input class="form-name__input" type="text" name="surname" placeholder="Укажите фамилию *">
         </label>
 
-        <label class="form__name-wrap">
-          <span class="form__name-text">Имя:</span>
-          <input class="form__name-input" type="text" name="surname" placeholder="Введите ваше имя *">
+        <label class="form-name__wrap">
+          <span class="form-name__text">Имя:</span>
+          <input class="form-name__input" type="text" name="surname" placeholder="Введите ваше имя *">
         </label>
 
-        <label class="form__name-wrap">
-          <span class="form__name-text">Отчество:</span>
-          <input class="form__name-input" type="text" name="surname" placeholder="Ну и отчество тоже *">
+        <label class="form-name__wrap">
+          <span class="form-name__text">Отчество:</span>
+          <input class="form-name__input" type="text" name="surname" placeholder="Ну и отчество тоже">
         </label>
       </fieldset>
 
       <!--checkbox-->
-      <fieldset class="form__checkbox">
-        <legend class="form__checkbox-caption">Ваши безбашенные достижения в путешествии</legend>
+      <div class="form-checkbox-wrap">
+        <fieldset class="form-checkbox">
+          <legend class="form-checkbox__caption">Ваши безбашенные достижения в путешествии</legend>
 
-        <div class="form__checkbox-label-wrap">
-          <label class="form__checkbox-input">
-            <input type="checkbox" name="checkbox-field1" value="+" checked="checked">
-            <span class="form__checkbox-name">Сделал селфи с акулой</span>
-          </label>
+          <div class="form-checkbox__label-wrap">
 
-          <label class="form__checkbox-input">
-            <input type="checkbox" name="checkbox-field2" value="+" checked="checked">
-            <span class="form__checkbox-name">Обгорел на пляже</span>
-          </label>
+            <div class="form-checkbox__label-wrap-desk">
+              <input id="checkbox1" class="form-checkbox__input" type="checkbox" name="checkbox-field1" value="+" checked>
+              <label for="checkbox1" class="form-checkbox__label">Сделал селфи с акулой</label>
 
-          <label class="form__checkbox-input">
-            <input type="checkbox" name="checkbox-field3" value="+" checked="">
-            <span class="form__checkbox-name">Видел Чака Норриса</span>
-          </label>
+              <input id="checkbox2" class="form-checkbox__input" type="checkbox" name="checkbox-field2" value="+" checked>
+              <label for="checkbox2" class="form-checkbox__label">Обгорел на пляже</label>
+            </div>
 
-          <label class="form__checkbox-input">
-            <input type="checkbox" name="checkbox-field4" value="+" checked="">
-            <span class="form__checkbox-name">Накупил сувениров</span>
-          </label>
+            <div class="form-checkbox__label-wrap-desk">
+              <input id="checkbox3" class="form-checkbox__input" type="checkbox" name="checkbox-field3" value="+">
+              <label for="checkbox3" class="form-checkbox__label">Видел Чака Норриса</label>
 
-          <label class="form__checkbox-input">
-            <input type="checkbox" name="checkbox-field5" value="+" checked="checked">
-            <span class="form__checkbox-name">Удержал башню</span>
-          </label>
+              <input id="checkbox4" class="form-checkbox__input" type="checkbox" name="checkbox-field4" value="+">
+              <label for="checkbox4" class="form-checkbox__label">Накупил сувениров</label>
+            </div>
 
-          <label class="form__checkbox-input">
-            <input type="checkbox" name="checkbox-field6" value="+" checked="">
-            <span class="form__checkbox-name">Разгромил отель</span>
-          </label>
-        </div>
-      </fieldset>
+            <div class="form-checkbox__label-wrap-desk">
+              <input id="checkbox5" class="form-checkbox__input" type="checkbox" name="checkbox-field5" value="+" checked>
+              <label for="checkbox5" class="form-checkbox__label">Удержал башню</label>
+
+              <input id="checkbox6" class="form-checkbox__input" type="checkbox" name="checkbox-field6" value="+">
+              <label for="checkbox6" class="form-checkbox__label">Разгромил отель</label>
+            </div>
+
+          </div>
+        </fieldset>
+      </div>
 
       <!-- контакты-->
-      <fieldset class="form__contact">
-        <legend class="form__contact-caption">Контактная информация</legend>
+      <fieldset class="form-contact">
+        <legend class="form-contact__caption">Контактная информация</legend>
 
-        <div class="form__contact-label-wrap">
-          <label class="form__contact-wrap">
-            <span class="form__contact-text">Номер телефона</span>
-            <input class="form__contact-input" type="tel" name="tel" pattern="^[ 0-9]+$" placeholder="Номер, пожалуйста">
+        <div class="form-contact__label-wrap">
+          <label class="form-contact__wrap">
+            <span class="form-contact__text">Номер телефона</span>
+            <input class="form-contact__input" type="tel" name="tel" pattern="^[ 0-9]+$" placeholder="Номер, пожалуйста">
           </label>
 
-          <label class="form__contact-wrap">
-            <span class="form__contact-text">Адрес почты</span>
-            <input class="form__contact-input" type="email" name="email" placeholder="Введите почту *">
+          <label class="form-contact__wrap">
+            <span class="form-contact__text">Адрес почты</span>
+            <input class="form-contact__input" type="email" name="email" placeholder="Введите почту *">
           </label>
         </div>
       </fieldset>
 
       <!--radio-->
-      <fieldset class="form__radio">
-        <legend class="form__radio-caption">С каким приложением путешествовали?</legend>
+      <div class="form-radio-wrap">
+        <fieldset class="form-radio">
+          <legend class="form-radio__caption">С каким приложением путешествовали?</legend>
 
-        <label class="form__radio-input">
-          <input type="radio" name="radio-field1" value="+" checked="checked">
-          <span class="form__radio-name">Pink для iOS</label>
-        </label>
+          <input id="radio1" class="form-radio__input" type="radio" name="radio-field" value="radio1" checked>
+          <label for="radio1" class="form-radio__label">Pink для iOS</label>
 
-        <label class="form__radio-input">
-          <input type="radio" name="radio-field2" value="+" checked="">
-          <span class="form__radio-name">Pink на Android</label>
-        </label>
+          <input id="radio2" class="form-radio__input" type="radio" name="radio-field" value="radio2">
+          <label for="radio2" class="form-radio__label">Pink на Android</label>
 
-        <label class="form__radio-input">
-          <input type="radio" name="radio-field3" value="+" checked="">
-          <span class="form__radio-name">Windows Phone</label>
-        </label>
-      </fieldset>
+          <input id="radio3" class="form-radio__input" type="radio" name="radio-field" value="radio3">
+          <label for="radio3" class="form-radio__label">Windows Phone</label>
+        </fieldset>
+      </div>
 
       <!--textarea-->
-      <fieldset class="form__textarea">
-        <legend class="form__textarea-caption">Опишите свои эмоции</legend>
+      <fieldset class="form-textarea">
+        <legend class="form-textarea__caption">Опишите свои эмоции</legend>
 
-        <textarea class="form__textarea-input" name="message" rows="5" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+        <textarea class="form-textarea__input" name="message" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
       </fieldset>
 
-      <input class="form__submit" type="submit" value="Отправить форму"></input>
+      <div class="form-submit">
+          <input class="btn" type="submit" value="Отправить форму"></input>
+        </div>
 
       <div class="form__remark">
         <span class="form__remark--symbol">*</span>
@@ -181,7 +177,7 @@
       </div>
 
       <div class="page-footer__copyright">
-          <span class="page-footer__copyright-text">Разработано</span>
+        <span class="page-footer__copyright-text">Разработано</span>
         <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
           <svg class="page-footer__logo-academy" role="presentation" width="27" height="34">
             <use xlink:href="#icon-academy">HTML Academy</use>
