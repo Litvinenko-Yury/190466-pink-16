@@ -1,21 +1,28 @@
 .form-checkbox {
+  padding-top: 40px;
   background-color: $gray;
 
   @media (min-width: $tablet-width) {
     order: 4;
     width: 100%;
-    margin-bottom: 50px;
+    padding-top: 0;
+    margin-bottom: 55px;
     background-color: transparent;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 50px;
   }
 }
 
 .form-checkbox__fieldset {
+  padding-top: 33px;
   padding-left: 20px;
   padding-right: 20px;
-  padding-bottom: 0;
   border: none;
 
   @media (min-width: $tablet-width) {
+    padding-top: 0;
     padding-left: 0;
     padding-right: 0;
     order: 4;
@@ -26,8 +33,6 @@
 
 .form-checkbox__legend {
   width: 240px;
-  padding-top: 40px;
-  padding-bottom: 33px;
   line-height: 1.2857em;
   text-align: center;
   text-transform: uppercase;
@@ -36,12 +41,20 @@
 
   @media (min-width: $tablet-width) {
     width: 438px;
+    padding-top: 0;
+    padding-bottom: 0;
     line-height: 2.1428em;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 
 .form-checkbox__label-wrap {
   @media (min-width: $tablet-width) {
+    padding-top: 30px;
     padding-left: 60px;
     padding-right: 60px;
   }
@@ -50,6 +63,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-top: 35px;
     padding-bottom: 10px;
   }
 }

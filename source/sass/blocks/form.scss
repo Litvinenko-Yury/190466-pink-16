@@ -16,6 +16,7 @@
 
   @media (min-width: $desktop-width) {
     width: 940px;
+    margin-bottom: 0;
   }
 }
 
@@ -29,11 +30,29 @@
     color: $color-secondary;
   }
 
+  &--mob {
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+
+  &--desk {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      display: inline;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     order: 51;
-    width: 300px;
+    width: 310px;
     margin-top: 18px;
     text-align: right;
-    letter-spacing: 0.2px;
+    letter-spacing: 0.3px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 600px;
   }
 }

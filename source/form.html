@@ -52,17 +52,17 @@
 
       <!--ФИО-->
       <fieldset class="form-name">
-        <label class="form-name__wrap">
+        <label class="form-name__label">
           <span class="form-name__text">Фамилия:</span>
           <input class="form-name__input" type="text" name="surname" placeholder="Укажите фамилию *">
         </label>
 
-        <label class="form-name__wrap">
+        <label class="form-name__label">
           <span class="form-name__text">Имя:</span>
           <input class="form-name__input" type="text" name="surname" placeholder="Введите ваше имя *">
         </label>
 
-        <label class="form-name__wrap">
+        <label class="form-name__label">
           <span class="form-name__text">Отчество:</span>
           <input class="form-name__input" type="text" name="surname" placeholder="Ну и отчество тоже">
         </label>
@@ -107,13 +107,13 @@
       <fieldset class="form-contact">
         <legend class="form-contact__legend">Контактная информация</legend>
 
-        <div class="form-contact__label-wrap  form-contact__wrap--phone">
-          <label class="form-contact__wrap">
+        <div class="form-contact__wrap">
+          <label class="form-contact__label  form-contact__label--phone">
             <span class="form-contact__text">Номер телефона</span>
             <input class="form-contact__input" type="tel" name="tel" pattern="^[ 0-9]+$" placeholder="Номер, пожалуйста">
           </label>
 
-          <label class="form-contact__wrap  form-contact__wrap--mail">
+          <label class="form-contact__label  form-contact__label--mail">
             <span class="form-contact__text">Адрес почты</span>
             <input class="form-contact__input" type="email" name="email" placeholder="Введите почту *">
           </label>
@@ -144,12 +144,13 @@
       </fieldset>
 
       <div class="form-submit">
-          <input class="btn" type="submit" value="Отправить форму"></input>
-        </div>
+        <input class="btn" type="submit" value="Отправить форму" />
+      </div>
 
       <div class="form__remark">
         <span class="form__remark--symbol">*</span>
-        <span> — обязательные поля</span>
+        <span class="form__remark--mob"> — обязательные поля</span>
+        <span class="form__remark--desk"> — обязательные для заполнения поля</span>
       </div>
     </form>
   </main>
