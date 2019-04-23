@@ -56,14 +56,14 @@
   }
 }
 
-/*===стилизация чек-бокс===*/
+/*===стилизация радио===*/
 .form-radio__input {
-  /*скрытие стандартного чек-бокса*/
+  /*скрытие стандартного радио*/
   display: none;
 }
 
 .form-radio__label {
-  /*подготовка места для кастом-чек-бокса = стилизация label*/
+  /*подготовка места для кастом-радио = стилизация label*/
   position: relative;
   display: block;
   margin-top: 45px;
@@ -84,7 +84,7 @@
 }
 
 .form-radio__label::before {
-  /*стилизация фона checkbox*/
+  /*стилизация фона радио*/
   content: "";
   width: 38px;
   height: 38px;
@@ -105,9 +105,9 @@
   border-color: $color-secondary;
 }
 
-/*переключение состояния чек-бокса*/
+/*переключение состояния радио*/
 .form-radio__input:checked + .form-radio__label::after {
-  /*стилизация активного чек-бокса*/
+  /*стилизация активного радио*/
   content: "";
   width: 14px;
   height: 14px;
