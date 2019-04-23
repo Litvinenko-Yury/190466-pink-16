@@ -1,11 +1,11 @@
-.popup-ok {
+.popup {
   display: none;
   position: absolute;
   width: 320px;
   top: 700px;
   left: 50%;
   margin-left: -160px;
-  padding: 45px 20px 50px 20px;
+  padding-top: 45px;
   text-align: center;
   background-color: #ffffff;
   box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
@@ -15,6 +15,12 @@
     margin-left: -230px;
     padding: 0;
     padding-top: 38px;
+
+    &--error {
+      padding: 45px 20px 50px 20px;
+      padding-left: 80px;
+      padding-right: 80px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -26,7 +32,7 @@
   }
 }
 
-.popup-ok__title {
+.popup__title {
   margin-bottom: 27px;
 
   @media (min-width: $tablet-width) {
@@ -35,28 +41,63 @@
     padding-right: 80px;
     font-size: $font-size--large + 6px;
     line-height: 1.3333em;
+
+    &--error {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--error {
+      padding-left: 200px;
+      padding-right: 200px;
+    }
   }
 }
 
-.popup-ok__text {
+.popup__text {
   margin-bottom: 37px;
+  margin-left: 20px;
+  margin-right: 20px;
   letter-spacing: 0.01667em;
 
   @media (min-width: $tablet-width) {
     padding-left: 80px;
     padding-right: 80px;
     font-size: $font-size--larger;
+
+    &--error {
+      margin-left: 0;
+      margin-right: 0;
+      padding: 0;
+      font-size: $font-size--larger;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--error {
+      margin-bottom: 60px;
+      padding-left: 200px;
+      padding-right: 200px;
+    }
   }
 }
 
-.popup-ok__bg {
+.popup__bg {
+  padding: 45px 20px 51px 20px;
+  background-color: $gray-242;
+
   @media (min-width: $tablet-width) {
     padding: 46px 80px 53px 80px;
-    background-color: $gray;
   }
 
   @media (min-width: $desktop-width) {
     padding: 46px 160px 53px 160px;
-    background-color: $gray;
+
+    &--error {
+      padding: 46px 240px 53px 240px;
+      background-color: $gray-242;
+    }
   }
 }
