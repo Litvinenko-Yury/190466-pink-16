@@ -221,19 +221,17 @@
     color: #ffffff;
   }
 
-  &[href] {
-    &:hover {
-      color: $color-secondary;
-    }
+  &:hover {
+    color: $color-secondary;
+  }
 
+  &:active {
+    color: $color-secondary--down;
+  }
+
+  @media (min-width: $desktop-width) {
     &:active {
-      color: $color-secondary--down;
-    }
-
-    @media (min-width: $desktop-width) {
-      &:active {
-        color: rgba(255, 255, 255, 0.3);
-      }
+      color: rgba(255, 255, 255, 0.3);
     }
   }
 }
