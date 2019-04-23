@@ -1,5 +1,5 @@
 .contacts {
-  height: 612px;
+  min-height: 612px;
   text-align: center;
   background-image: url("../img/bg-map-mobile@1x.png");
   background-position: center bottom;
@@ -8,14 +8,14 @@
 
 
   @media (min-width: $tablet-width) {
-    height: 908px;
+    min-height: 908px;
     padding: 0;
     background-image: url("../img/bg-map-tablet@1x.jpg");
     background-position: center 20px;
   }
 
   @media (min-width: $desktop-width) {
-    height: 1064px;
+    min-height: 1064px;
     background-image: url("../img/bg-map-desktop@1x.jpg");
     background-position: center 40px;
   }
@@ -50,8 +50,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 620px;
-    margin-bottom: 0;
     font-size: $font-size--xl-large;
   }
 }

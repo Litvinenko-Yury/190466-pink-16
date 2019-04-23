@@ -9,16 +9,18 @@
 
 /*сoкрытие меню*/
 .main-nav--closed .main-nav__list {
-  @media (max-width: $desktop-width - 1) {
+  @media (max-width: $desktop-width - 1px) {
     display: none;
   }
 }
 
+/*стилизация .main-nav__inner при открытом меню*/
 .main-nav__inner {
   position: relative;
   min-height: 69px;
   margin-bottom: 1px;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: $color-main;
+  box-shadow: (0 1px 0 0 #000000);
 
   @media (min-width: $tablet-width) {
     min-height: 109px;
@@ -33,8 +35,14 @@
   }
 }
 
-/*изменение стилизации  .main-nav__inner при открытом меню*/
-.main-nav--opened .main-nav__inner {
+/*изменение стилизации  .main-nav__inner закрытом меню*/
+.main-nav--closed .main-nav__inner {
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: none;
+}
+
+/*изменение стилизации  .main-nav__inner  при "нет JS"*/
+.main-nav--nojs .main-nav__inner {
   background-color: $color-main;
   box-shadow: (0 1px 0 0 #000000);
 }
@@ -94,7 +102,6 @@
 /*меню закрыто, на кнопке - "бургер"*/
 .main-nav--closed .main-nav__inner-toggle::before {
   content: "";
-
   position: absolute;
   top: 12px;
   left: 0;
@@ -109,14 +116,11 @@
   &::before,
   &::after {
     content: "";
-
     position: absolute;
     top: 21px;
     right: -4px;
-
     width: 30px;
     height: 4px;
-
     background-color: #ffffff;
   }
 
@@ -147,8 +151,10 @@
 
 /*нет JS, меню д.б.открыто*/
 .main-nav--nojs .main-nav__list {
-  @media (max-width: $desktop-width - 1) {
-    display: block;
+  display: block;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
   }
 }
 
@@ -184,7 +190,7 @@
     margin-left: 80px;
     box-shadow: none;
     margin-bottom: 0;
-    letter-spacing: 0.4px;
+    letter-spacing: 0.02222em;
   }
 
   &--active a {

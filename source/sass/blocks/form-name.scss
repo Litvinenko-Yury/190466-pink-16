@@ -36,7 +36,7 @@
   color: $color-secondary;
   text-transform: uppercase;
   line-height: 2.1428em;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.02857em;
 
   @media (min-width: $tablet-width) {
     display: inline;
@@ -66,6 +66,6 @@
     font-size: $font-size--larger;
     line-height: 1.6667em;
     color: $color-main;
-    letter-spacing: 0.4px;
+    letter-spacing: 0.02857em;
   }
 }

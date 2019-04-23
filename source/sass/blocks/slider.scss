@@ -25,7 +25,6 @@
   width: 6px;
   height: 6px;
   padding: 0;
-
   background: $slider-bullet;
   border: 3px solid $slider-bullet;
   border-radius: 3px;
@@ -35,7 +34,6 @@
   &--active {
     width: 12px;
     height: 12px;
-
     background: #ffffff;
     border-color: $color-main;
     border-radius: 6px;

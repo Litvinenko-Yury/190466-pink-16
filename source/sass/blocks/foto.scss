@@ -121,7 +121,7 @@
 }
 
 .foto__text {
-  letter-spacing: 0.3px;
+  letter-spacing: 0.02143em;
 }
 
 .foto__button {
@@ -172,6 +172,5 @@
 
   @media (min-width: $tablet-width) {
     order: -1;
-    //margin-right: 100px;
   }
 }

@@ -1,0 +1,36 @@
+.form-remark {
+  width: 100%;
+  line-height: 2.1428em;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    order: 51;
+    width: 310px;
+    margin-top: 18px;
+    text-align: right;
+    letter-spacing: 0.02143em;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 600px;
+  }
+}
+
+.form-remark__symbol {
+  color: $color-secondary;
+}
+
+.form-remark__mob {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.form-remark__desk {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: inline;
+  }
+}

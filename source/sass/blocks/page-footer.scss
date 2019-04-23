@@ -9,9 +9,11 @@
   padding: 40px 20px;
   background-color: #ffffff;
 
-  @media (max-width: $tablet-width - 1px) {
-    &--no-footer {
-      display: none;
+  &--no-footer {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
     }
   }
 

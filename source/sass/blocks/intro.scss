@@ -18,15 +18,15 @@
 
 .intro__img-wrap {
   height: 465px;
-
-  @media (max-width: $tablet-width - 1px) {
-    background-image: url("../img/bg-back-mobile@1x.jpg");
-    background-size: cover;
-    background-position: center top;
-  }
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-size: cover;
+  background-position: center top;
 
   @media (min-width: $tablet-width) {
     min-height: 728px;
+    background-image: none;
+    background-size: auto;
+    background-position: 0% 0%;
   }
 
   @media (min-width: $desktop-width) {
@@ -53,15 +53,14 @@
 .intro__img {
   position: absolute;
   left: 50%;
+  top: 179px;
+  margin-left: -160px;
+  width: 258px;
+  height: 286px;
 
-  @media (max-width: $tablet-width - 1px) {
-    top: 179px;
-    margin-left: -160px;
-    width: 258px;
-    height: 286px;
-  }
 
   @media (min-width: $tablet-width) {
+    top: auto;
     bottom: 0;
     width: 660px;
     height: 513px;
@@ -136,17 +135,6 @@
   margin-top: 25px;
   margin-bottom: 30px;
   color: #ffffff;
-  border: 3px solid #ffffff;
-  border-radius: 27px;
-
-  &:hover {
-    color: $color-secondary;
-    background-color: #ffffff;
-  }
-
-  &:active {
-    color: $color-secondary--down;
-  }
 
   @media (min-width: $tablet-width) {
     width: 300px;

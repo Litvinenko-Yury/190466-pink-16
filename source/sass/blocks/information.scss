@@ -55,10 +55,6 @@
 
 .information__advantages-wrapper {
   background-color: $gray;
-
-  /* @media (min-width: $tablet-width) {
-    background-color: $gray;
-  } */
 }
 
 .information__advantages-wrap {
@@ -141,7 +137,7 @@
 
 .information__advantages-text {
   margin-top: 13px;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.02857em;
 
   @media (min-width: $desktop-width) {
     margin-top: 25px;
