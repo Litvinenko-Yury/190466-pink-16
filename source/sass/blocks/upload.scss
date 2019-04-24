@@ -29,13 +29,31 @@
     display: flex;
     justify-content: center;
     min-height: 509px;
-    padding-top: 57px;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
+    display: block;
     width: 940px;
     min-height: 515px;
     margin: 0 auto;
+    padding-left: 80px;
+    padding-right: 60px;
+  }
+}
+
+.upload__editor-inner-wrap {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 57px 20px 53px 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
   }
 }
 
@@ -52,12 +70,14 @@
 
   @media (min-width: $tablet-width) {
     width: 300px;
+    height: 400px;
     margin: 0;
-    margin-right: 40px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 90px;
+    width: 300px;
+    height: 400px;
+    margin: 0;
   }
 }
 
@@ -68,10 +88,13 @@
 
   @media (min-width: $tablet-width) {
     width: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
-    width: 380px;
+    width: 410px;
   }
 }
 
@@ -110,7 +133,6 @@
 
 .upload__range-wrap {
   margin: 0;
-  margin-bottom: 60px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -146,10 +168,6 @@
   margin: 0 auto;
   width: 280px;
   border: none;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 0;
-  }
 
   @media (min-width: $desktop-width) {
     position: absolute;

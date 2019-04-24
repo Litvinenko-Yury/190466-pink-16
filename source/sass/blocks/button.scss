@@ -11,15 +11,19 @@
   outline: none;
   border: 3px solid #ffffff;
   border-radius: 27px;
+  cursor: pointer;
 
-  &:hover {
-    color: $color-secondary;
-    background-color: #ffffff;
+  &--intro-download {
+    &:hover {
+      color: $color-secondary;
+      background-color: #ffffff;
+    }
+
+    &:active {
+      color: $color-secondary--down;
+    }
   }
 
-  &:active {
-    color: $color-secondary--down;
-  }
 
   &--form {
     padding-top: 20px;
@@ -49,15 +53,39 @@
   &--upload {
     padding-top: 14px;
     padding-bottom: 15px;
-    color: $gray-221;
-    border-color: $gray-221;
-    background-color: transparent;
-  }
-
-  &--active {
-    margin-bottom: 13px;
     color: $color-secondary;
     border-color: $color-secondary;
     background-color: transparent;
+
+    &:hover {
+      color: #ffffff;
+      background-color: $color-secondary;
+      border-color: $color-secondary;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
+
+    @media (min-width: $tablet-width) {
+      margin-top: 28px;
+    }
+  }
+
+  &--cancel {
+    margin-bottom: 12px;
+    color: $gray-221;
+    border-color: $gray-221;
+    background-color: transparent;
+
+    &:hover {
+      color: $color-main--cancel-buttom-hover;
+      border-color: $gray-181;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+      background-color: $gray-181;
+    }
   }
 }

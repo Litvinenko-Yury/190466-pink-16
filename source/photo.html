@@ -212,48 +212,53 @@
 
       <form class="upload__editor" action="https://echo.htmlacademy.ru" method="post" enctype="multipart/form-data">
 
-        <div class="upload__file">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.jpg">
-            <source media="(min-width: 660px)" srcset="img/photo-window-desktop@1x.jpg">
-            <img class="upload__img" src="/img/photo-road-mobile@1x.jpg" alt="Загруженное фото для редактирования.">
-          </picture>
-        </div>
-        
-        <div class="upload__admin-wrap">
-          <div class="upload__controls-wrap">
-            <fieldset class="upload__label-wrap">
-              <label class="upload__label" for="label-crop">
-                <svg class="upload__controls-icon  upload__controls-icon--active" role="presentation" width="44" height="44">
-                  <use xlink:href="#icon-crop">
-                </svg>
-              </label>
+        <div class="upload__editor-inner-wrap">
 
-              <label class="upload__label" for="label-fill">
-                <svg class="upload__controls-icon" role="presentation" width="44" height="44">
-                  <use xlink:href="#icon-fill">
-                </svg>
-              </label>
-
-              <label class="upload__label" for="label-contrast">
-                <svg class="upload__controls-icon" role="presentation" width="44" height="44">
-                  <use xlink:href="#icon-contrast">
-                </svg>
-              </label>
-            </fieldset>
-
-            <fieldset class="upload__range-wrap">
-              <input class="upload__range  upload__range--active" id="label-crop" type="range" min="0" max="100" step="10" value="80" name="range-crop">
-              <input class="upload__range" id="label-fill" type="range" min="0" max="100" step="10" value="80" name="range-fill">
-              <input class="upload__range" id="label-contrast" type="range" min="0" max="100" step="10" value="80" name="range-contrast">
-            </fieldset>
+          <div class="upload__file">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.jpg">
+              <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg">
+              <img class="upload__img" src="/img/photo-road-mobile@1x.jpg" alt="Загруженное фото для редактирования.">
+            </picture>
           </div>
 
-          <fieldset class="upload__btn-wrap">
-            <input class="button  button--upload button--active " type="submit" value="Запостить"></input>
-            <input class="button button--upload" type="reset" value="Сбросить"></input>
-          </fieldset>
+          <div class="upload__admin-wrap">
+            <div class="upload__controls-wrap">
+              <fieldset class="upload__label-wrap">
+                <label class="upload__label" for="label-crop">
+                  <svg class="upload__controls-icon  upload__controls-icon--active" role="presentation" width="44" height="44">
+                    <use xlink:href="#icon-crop">
+                  </svg>
+                </label>
+
+                <label class="upload__label" for="label-fill">
+                  <svg class="upload__controls-icon" role="presentation" width="44" height="44">
+                    <use xlink:href="#icon-fill">
+                  </svg>
+                </label>
+
+                <label class="upload__label" for="label-contrast">
+                  <svg class="upload__controls-icon" role="presentation" width="44" height="44">
+                    <use xlink:href="#icon-contrast">
+                  </svg>
+                </label>
+              </fieldset>
+
+              <fieldset class="upload__range-wrap">
+                <input class="upload__range  upload__range--active" id="label-crop" type="range" min="0" max="100" step="10" value="80" name="range-crop">
+                <input class="upload__range" id="label-fill" type="range" min="0" max="100" step="10" value="80" name="range-fill">
+                <input class="upload__range" id="label-contrast" type="range" min="0" max="100" step="10" value="80" name="range-contrast">
+              </fieldset>
+            </div>
+
+            <fieldset class="upload__btn-wrap">
+              <!-- <input class="button  button--upload" type="submit" value="Запостить"></input> -->
+              <input class="button  button--upload" type="reset" value="Запостить"></input>
+              <input class="button  button--cancel" type="reset" value="Сбросить"></input>
+            </fieldset>
+          </div>
         </div>
+
       </form>
     </div>
   </main>
