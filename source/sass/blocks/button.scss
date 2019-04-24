@@ -45,4 +45,19 @@
       border-radius: 2px;
     }
   }
+
+  &--upload {
+    padding-top: 14px;
+    padding-bottom: 15px;
+    color: $gray-221;
+    border-color: $gray-221;
+    background-color: transparent;
+  }
+
+  &--active {
+    margin-bottom: 13px;
+    color: $color-secondary;
+    border-color: $color-secondary;
+    background-color: transparent;
+  }
 }
