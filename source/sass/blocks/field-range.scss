@@ -1,4 +1,4 @@
-.field-range {
+/* .field-range {
   position: relative;
   width: 100%;
   margin-bottom: 65px;
@@ -16,9 +16,9 @@
   @media (min-width: $desktop-width) {
     margin-right: 40px;
   }
-}
+} */
 
-.field-range__icon {
+/* .field-range__icon {
   outline: 1px dotted green;
   display: block;
   width: 48px;
@@ -47,7 +47,7 @@
       display: block;
     }
   }
-}
+} */
 
 .field-range__input {
   width: 100%;
@@ -112,7 +112,7 @@
     cursor: pointer;
     background: coral;
     border-color: transparent;
-    border-width: 12px 0;
+    border-width: 4px 0;
     color: transparent;
   }
 

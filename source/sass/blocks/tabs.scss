@@ -1,0 +1,87 @@
+.tabs {
+  width: 240px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    width: 275px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    width: 100%;
+  }
+}
+
+.tabs__links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: 48px;
+    top: 0;
+    left: 0;
+    margin-bottom: 0;
+  }
+}
+
+.tabs__links-wrap {
+  outline: 1px dotted blue;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 17px;
+  }
+}
+
+.tabs__link {
+  display: block;
+  padding: 10px;
+}
+
+/*это контейнер всех закладок*/
+.tabs__content-wrapper {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    width: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 290px;
+    right: 30px;
+  }
+}
+
+/*это контейнер содержимогоотдельной закладки*/
+.tabs__content-item {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 3px;
+    padding-bottom: 45px;
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
+
+  &--active {
+    display: block;
+  }
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
