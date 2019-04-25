@@ -24,7 +24,6 @@
     }
   }
 
-
   &--form {
     padding-top: 20px;
     padding-bottom: 22px;
@@ -51,7 +50,7 @@
   }
 
   &--upload {
-    padding-top: 14px;
+    padding-top: 15px;
     padding-bottom: 15px;
     color: $color-secondary;
     border-color: $color-secondary;
@@ -73,7 +72,8 @@
   }
 
   &--cancel {
-    margin-bottom: 12px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     color: $gray-221;
     border-color: $gray-221;
     background-color: transparent;

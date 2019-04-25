@@ -224,40 +224,40 @@
 
           <div class="upload__admin-wrap">
             <div class="upload__controls-wrap">
-              <fieldset class="upload__label-wrap">
-                <label class="upload__label" for="label-crop">
-                  <svg class="upload__controls-icon  upload__controls-icon--active" role="presentation" width="44" height="44">
-                    <use xlink:href="#icon-crop">
-                  </svg>
-                </label>
+              <label class="field-range">
+                <svg class="field-range__icon  field-range__icon__icon--active" role="presentation" width="48" height="48">
+                  <use xlink:href="#icon-crop">
+                </svg>
+                <div class="field-range__input-wrap">
+                  <input class="field-range__input" type="range" min="0" max="100" step="1" value="85" name="range-crop">
+                </div>
+              </label>
 
-                <label class="upload__label" for="label-fill">
-                  <svg class="upload__controls-icon" role="presentation" width="44" height="44">
-                    <use xlink:href="#icon-fill">
-                  </svg>
-                </label>
+              <label class="field-range">
+                <svg class="field-range__icon  field-range__icon__icon--active" role="presentation" width="48" height="48">
+                  <use xlink:href="#icon-fill">
+                </svg>
+                <div class="field-range__input-wrap">
+                  <input class="field-range__input" type="range" min="0" max="100" step="1" value="85" name="range-fill">
+                </div>
+              </label>
 
-                <label class="upload__label" for="label-contrast">
-                  <svg class="upload__controls-icon" role="presentation" width="44" height="44">
-                    <use xlink:href="#icon-contrast">
-                  </svg>
-                </label>
-              </fieldset>
-
-              <fieldset class="upload__range-wrap">
-                <input class="upload__range  upload__range--active" id="label-crop" type="range" min="0" max="100" step="10" value="80" name="range-crop">
-                <input class="upload__range" id="label-fill" type="range" min="0" max="100" step="10" value="80" name="range-fill">
-                <input class="upload__range" id="label-contrast" type="range" min="0" max="100" step="10" value="80" name="range-contrast">
-              </fieldset>
+              <label class="field-range">
+                <svg class="field-range__icon  field-range__icon__icon--active" role="presentation" width="48" height="48">
+                  <use xlink:href="#icon-contrast">
+                </svg>
+                <div class="field-range__input-wrap">
+                  <input class="field-range__input" type="range" min="0" max="100" step="1" value="85" name="range-contrast">
+                </div>
+              </label>
             </div>
 
             <fieldset class="upload__btn-wrap">
-              <!-- <input class="button  button--upload" type="submit" value="Запостить"></input> -->
-              <input class="button  button--upload" type="reset" value="Запостить"></input>
-              <input class="button  button--cancel" type="reset" value="Сбросить"></input>
+              <input class="upload__btn  button  button--upload" type="submit" value="Запостить"></input>
+              <input class="upload__btn  button  button--cancel" type="reset" value="Отмена"></input>
             </fieldset>
+
           </div>
-        </div>
 
       </form>
     </div>
