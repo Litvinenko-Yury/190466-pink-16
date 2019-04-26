@@ -20,3 +20,567 @@
     margin-bottom: 0;
   }
 }
+
+//==============
+
+.form__text-fieldset {
+  display: flex;
+  width: 100%;
+  margin-bottom: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    order: 1;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 434px;
+    padding-top: 20px;
+  }
+}
+
+.form__text-label {
+  margin-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+.form__text-text {
+  display: block;
+  margin-left: 22px;
+  margin-bottom: 6px;
+  color: $color-secondary;
+  text-transform: uppercase;
+  line-height: 2.1428em;
+  letter-spacing: 0.02857em;
+
+  @media (min-width: $tablet-width) {
+    display: inline;
+    margin-left: 0;
+    margin-right: 20px;
+    margin-bottom: 52px;
+  }
+}
+
+.form__text-input {
+  width: 100%;
+  padding: 22px;
+  padding-bottom: 21px;
+  border: 2px solid $gray-229;
+  border-radius: 2px;
+  outline: none;
+
+  &:hover {
+    border-color: $color-main;
+  }
+
+  &:focus {
+    border-color: $color-secondary;
+  }
+
+  &::placeholder {
+    font-size: $font-size--larger;
+    line-height: 1.6667em;
+    color: $color-main;
+    letter-spacing: 0.02857em;
+  }
+}
+
+//==============
+
+.form__checkbox {
+  padding-top: 40px;
+  background-color: $gray-242;
+
+  @media (min-width: $tablet-width) {
+    order: 4;
+    width: 100%;
+    padding-top: 0;
+    margin-bottom: 55px;
+    background-color: transparent;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 50px;
+  }
+}
+
+.form__checkbox-fieldset {
+  padding-top: 33px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    order: 4;
+    border: 2px solid $gray-229;
+    border-radius: 2px;
+  }
+}
+
+.form__checkbox-legend {
+  width: 240px;
+  line-height: 1.2857em;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.02857em;
+  color: $color-secondary;
+
+  @media (min-width: $tablet-width) {
+    width: 438px;
+    padding-top: 0;
+    padding-bottom: 0;
+    line-height: 2.1428em;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+.form__сheckbox-label-wrap {
+  @media (min-width: $tablet-width) {
+    padding-top: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 35px;
+    padding-bottom: 10px;
+  }
+}
+
+/*===стилизация чек-бокс===*/
+.form__checkbox-input {
+  /*скрытие стандартного чек-бокса*/
+  display: none;
+}
+
+.form__checkbox-label {
+  /*подготовка места для кастом-чек-бокса = стилизация label*/
+  position: relative;
+  display: block;
+  margin: 10px 0 52px 0;
+  padding-left: 70px;
+  cursor: pointer;
+
+  font-size: $font-size--larger;
+  line-height: 1.6667em;
+  letter-spacing: 0.02222em;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 60px;
+  }
+}
+
+.form__checkbox-label::before {
+  /*стилизация фона checkbox*/
+  content: "";
+  width: 38px;
+  height: 38px;
+  border: 1px solid $gray-229;
+  border-radius: 2px;
+  background: #ffffff;
+
+  position: absolute;
+  top: -3px;
+  left: 0;
+}
+
+.form__checkbox-label:hover::before {
+  border-color: $color-main;
+}
+
+.form__checkbox-label:active::before {
+  border-color: $color-secondary;
+}
+
+/*переключение состояния чек-бокса*/
+.form__checkbox-input:checked + .form__checkbox-label::after {
+  /*стилизация активного чек-бокса*/
+  content: "";
+  width: 21px;
+  height: 16px;
+  background-image: url("../img/icon-yes.svg");
+
+  position: absolute;
+  top: 7px;
+  left: 10px;
+}
+
+//==============
+
+.form__contact-fieldset {
+  width: 100%;
+  padding-top: 28px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 25px;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    order: 3;
+    margin-bottom: 50px;
+    padding-top: 31px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 0;
+    border: 2px solid $gray-229;
+    border-radius: 2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 50px;
+    padding-top: 29px;
+    padding-bottom: 13px;
+  }
+}
+
+.form__contact-legend {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: 260px;
+    line-height: 2.1428em;
+    text-align: center;
+    color: $color-secondary;
+    text-transform: uppercase;
+  }
+}
+
+.form__contact-wrap {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.form__contact-label {
+  @media (min-width: $tablet-width) {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 2px;
+      right: 2px;
+      width: 59px;
+      height: 59px;
+      background-color: $gray-229;
+    }
+
+    &--phone {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 20px;
+        right: 22px;
+        width: 19px;
+        height: 19px;
+        background-image: url("../img/icon-phone.svg");
+      }
+    }
+
+    &--mail {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 24px;
+        right: 21px;
+        width: 18px;
+        height: 14px;
+        background-image: url("../img/icon-mail.svg");
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 374px;
+  }
+}
+
+.form__contact-text {
+  display: block;
+  margin-left: 22px;
+  margin-bottom: 6px;
+  color: $color-secondary;
+  text-transform: uppercase;
+  line-height: 2.1428em;
+  letter-spacing: 0.02857em;
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+    margin-left: 15px;
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    order: 2;
+    margin-bottom: 0;
+  }
+}
+
+.form__contact-input {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 22px;
+  padding-bottom: 21px;
+  border: 2px solid $gray-229;
+  border-radius: 2px;
+  outline: none;
+
+  &:hover {
+    border-color: $color-main;
+  }
+
+  &:focus {
+    border-color: $color-secondary;
+  }
+
+  &::placeholder {
+    font-size: $font-size--larger;
+    line-height: 1.6667em;
+    color: $color-main;
+    letter-spacing: 0.02857em;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 15px;
+    padding-right: 75px;
+    margin-bottom: 10px;
+  }
+}
+
+//==============
+
+.form__radio {
+  width: 100%;
+  padding-top: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 43px;
+  background-color: $gray-242;
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+    margin-bottom: 55px;
+    padding: 0;
+    background-color: transparent;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 435px;
+  }
+}
+
+.form__radio-fieldset {
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 55px;
+    border: 2px solid $gray-229;
+    border-radius: 2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.form__radio-legend {
+  width: 240px;
+  line-height: 1.2857em;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.02857em;
+  color: $color-secondary;
+
+  @media (min-width: $tablet-width) {
+    width: 370px;
+    padding-top: 0;
+    padding-bottom: 0;
+    line-height: 2.1428em;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 370px;
+  }
+}
+
+/*===стилизация радио===*/
+.form__radio-input {
+  /*скрытие стандартного радио*/
+  display: none;
+}
+
+.form__radio-label {
+  /*подготовка места для кастом-радио = стилизация label*/
+  position: relative;
+  display: block;
+  margin-top: 45px;
+  padding-left: 70px;
+  cursor: pointer;
+
+  font-size: $font-size--larger;
+  line-height: 1.6667em;
+  letter-spacing: 0.02222em;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 75px;
+  }
+}
+
+.form__radio-label::before {
+  /*стилизация фона радио*/
+  content: "";
+  width: 38px;
+  height: 38px;
+  border: 1px solid $gray-229;
+  border-radius: 19px;
+  background: #ffffff;
+
+  position: absolute;
+  top: -3px;
+  left: 0;
+}
+
+.form__radio-label:hover::before {
+  border-color: $color-main;
+}
+
+.form__radio-label:active::before {
+  border-color: $color-secondary;
+}
+
+/*переключение состояния радио*/
+.form__radio-input:checked + .form__radio-label::after {
+  /*стилизация активного радио*/
+  content: "";
+  width: 14px;
+  height: 14px;
+  border-radius: 7px;
+  background-color: $color-secondary;
+
+  position: absolute;
+  top: 9px;
+  left: 12px;
+}
+
+//==============
+
+.form__textarea-fieldset {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 43px;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    order: 5;
+    margin-bottom: 67px;
+    padding-top: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
+    border: 2px solid $gray-229;
+    border-radius: 2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 70px;
+    padding-top: 27px;
+    padding-bottom: 35px;
+  }
+}
+
+.form__textarea-legend {
+  width: 240px;
+  padding-top: 40px;
+  padding-bottom: 15px;
+  line-height: 1.2857em;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.02857em;
+  color: $color-secondary;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    padding-bottom: 0;
+    line-height: 2.1428em;
+    color: $color-secondary;
+    text-transform: uppercase;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 260px;
+  }
+}
+
+.form__textarea-input {
+  width: 100%;
+  padding: 22px;
+  padding-top: 15px;
+  padding-bottom: 21px;
+  border: 2px solid $gray-229;
+  border-radius: 2px;
+  outline: none;
+  transition: border-color 0.2s;
+
+  &:hover {
+    border-color: $color-main;
+  }
+
+  &:focus {
+    border-color: $color-secondary;
+  }
+
+  &::placeholder {
+    font-size: $font-size--larger;
+    line-height: 1.6667em;
+    color: $color-main;
+    letter-spacing: 0.02857em;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 9em;
+    padding-bottom: 29px;
+  }
+}

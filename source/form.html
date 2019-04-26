@@ -15,7 +15,7 @@
         <div class="main-nav__inner">
           <a class="main-nav__inner-logo" href="index.html" title="Переход на главную страницу">
             <svg class="main-nav__inner-logo-img" role="presentation" width="75" height="22">
-              <use xlink:href="#icon-pink"/>
+              <use xlink:href="#icon-pink" />
             </svg>
           </a>
 
@@ -50,92 +50,106 @@
 
     <form class="form" action="https://echo.htmlacademy.ru" method="post">
 
-      <fieldset class="form-name">
-        <label class="form-name__label">
-          <span class="form-name__text">Фамилия:</span>
-          <input class="form-name__input" type="text" name="surname" placeholder="Укажите фамилию *">
+      <fieldset class="form__text-fieldset">
+        <label class="form__text-label">
+          <span class="form__text-text">Фамилия:</span>
+          <input class="form__text-input" type="text" name="surname" placeholder="Укажите фамилию *">
         </label>
 
-        <label class="form-name__label">
-          <span class="form-name__text">Имя:</span>
-          <input class="form-name__input" type="text" name="surname" placeholder="Введите ваше имя *">
+        <label class="form__text-label">
+          <span class="form__text-text">Имя:</span>
+          <input class="form__text-input" type="text" name="surname" placeholder="Введите ваше имя *">
         </label>
 
-        <label class="form-name__label">
-          <span class="form-name__text">Отчество:</span>
-          <input class="form-name__input" type="text" name="surname" placeholder="Ну и отчество тоже">
+        <label class="form__text-label">
+          <span class="form__text-text">Отчество:</span>
+          <input class="form__text-input" type="text" name="surname" placeholder="Ну и отчество тоже">
         </label>
       </fieldset>
 
-      <div class="form-checkbox">
-        <fieldset class="form-checkbox__fieldset">
-          <legend class="form-checkbox__legend">Ваши безбашенные достижения в путешествии</legend>
+      <div class="form__checkbox">
+        <fieldset class="form__checkbox-fieldset">
+          <legend class="form__checkbox-legend">Ваши безбашенные достижения в путешествии</legend>
 
-          <div class="form-checkbox__label-wrap">
+          <div class="form__сheckbox-label-wrap">
+            <div class="form__checkbox-label-wrap-desk">
+              <input id="checkbox1" class="form__checkbox-input" type="checkbox" name="checkbox-field1" value="+" checked>
+              <label for="checkbox1" class="form__checkbox-label">Сделал селфи с акулой</label>
 
-            <div class="form-checkbox__label-wrap-desk">
-              <input id="checkbox1" class="form-checkbox__input" type="checkbox" name="checkbox-field1" value="+" checked>
-              <label for="checkbox1" class="form-checkbox__label">Сделал селфи с акулой</label>
-
-              <input id="checkbox2" class="form-checkbox__input" type="checkbox" name="checkbox-field2" value="+" checked>
-              <label for="checkbox2" class="form-checkbox__label">Обгорел на пляже</label>
+              <input id="checkbox2" class="form__checkbox-input" type="checkbox" name="checkbox-field2" value="+" checked>
+              <label for="checkbox2" class="form__checkbox-label">Обгорел на пляже</label>
             </div>
 
-            <div class="form-checkbox__label-wrap-desk">
-              <input id="checkbox3" class="form-checkbox__input" type="checkbox" name="checkbox-field3" value="+">
-              <label for="checkbox3" class="form-checkbox__label">Видел Чака Норриса</label>
+            <div class="form__checkbox-label-wrap-desk">
+              <input id="checkbox3" class="form__checkbox-input" type="checkbox" name="checkbox-field3" value="+">
+              <label for="checkbox3" class="form__checkbox-label">Видел Чака Норриса</label>
 
-              <input id="checkbox4" class="form-checkbox__input" type="checkbox" name="checkbox-field4" value="+">
-              <label for="checkbox4" class="form-checkbox__label">Накупил сувениров</label>
+              <input id="checkbox4" class="form__checkbox-input" type="checkbox" name="checkbox-field4" value="+">
+              <label for="checkbox4" class="form__checkbox-label">Накупил сувениров</label>
             </div>
 
-            <div class="form-checkbox__label-wrap-desk">
-              <input id="checkbox5" class="form-checkbox__input" type="checkbox" name="checkbox-field5" value="+" checked>
-              <label for="checkbox5" class="form-checkbox__label">Удержал башню</label>
+            <div class="form__checkbox-label-wrap-desk">
+              <input id="checkbox5" class="form__checkbox-input" type="checkbox" name="checkbox-field5" value="+" checked>
+              <label for="checkbox5" class="form__checkbox-label">Удержал башню</label>
 
-              <input id="checkbox6" class="form-checkbox__input" type="checkbox" name="checkbox-field6" value="+">
-              <label for="checkbox6" class="form-checkbox__label">Разгромил отель</label>
+              <input id="checkbox6" class="form__checkbox-input" type="checkbox" name="checkbox-field6" value="+">
+              <label for="checkbox6" class="form__checkbox-label">Разгромил отель</label>
             </div>
 
           </div>
         </fieldset>
       </div>
 
-      <fieldset class="form-contact">
-        <legend class="form-contact__legend">Контактная информация</legend>
+      <fieldset class="form__contact-fieldset">
+        <legend class="form__contact-legend">Контактная информация</legend>
 
-        <div class="form-contact__wrap">
-          <label class="form-contact__label  form-contact__label--phone">
-            <span class="form-contact__text">Номер телефона</span>
-            <input class="form-contact__input" type="tel" name="tel" placeholder="Номер, пожалуйста">
+        <div class="form__contact-wrap">
+          <label class="form__contact-label  form__contact-label--phone">
+            <span class="form__contact-text">Номер телефона</span>
+            <input class="form__contact-input" type="tel" name="tel" placeholder="Номер, пожалуйста">
           </label>
 
-          <label class="form-contact__label  form-contact__label--mail">
-            <span class="form-contact__text">Адрес почты</span>
-            <input class="form-contact__input" type="email" name="email" placeholder="Введите почту *">
+          <label class="form__contact-label  form__contact-label--mail">
+            <span class="form__contact-text">Адрес почты</span>
+            <input class="form__contact-input" type="email" name="email" placeholder="Введите почту *">
           </label>
         </div>
       </fieldset>
 
-      <div class="form-radio">
-        <fieldset class="form-radio__fieldset">
-          <legend class="form-radio__legend">С каким приложением путешествовали?</legend>
+      <div class="form__radio">
+        <fieldset class="form__radio-fieldset">
+          <legend class="form__radio-legend">С каким приложением путешествовали?</legend>
 
-          <input id="radio1" class="form-radio__input" type="radio" name="radio-field" value="radio1" checked>
-          <label for="radio1" class="form-radio__label">Pink для iOS</label>
+          <input id="radio1" class="form__radio-input" type="radio" name="radio-field" value="radio1" checked>
+          <label for="radio1" class="form__radio-label">Pink для iOS</label>
 
-          <input id="radio2" class="form-radio__input" type="radio" name="radio-field" value="radio2">
-          <label for="radio2" class="form-radio__label">Pink на Android</label>
+          <input id="radio2" class="form__radio-input" type="radio" name="radio-field" value="radio2">
+          <label for="radio2" class="form__radio-label">Pink на Android</label>
 
-          <input id="radio3" class="form-radio__input" type="radio" name="radio-field" value="radio3">
-          <label for="radio3" class="form-radio__label">Windows Phone</label>
+          <input id="radio3" class="form__radio-input" type="radio" name="radio-field" value="radio3">
+          <label for="radio3" class="form__radio-label">Windows Phone</label>
         </fieldset>
       </div>
 
-      <fieldset class="form-textarea">
-        <legend class="form-textarea__legend">Опишите свои эмоции</legend>
+      <div class="form__radio">
+        <fieldset class="form__radio-fieldset">
+          <legend class="form__radio-legend">С каким приложением путешествовали?</legend>
 
-        <textarea class="form-textarea__input" name="message" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          <input id="radio1" class="form__radio-input" type="radio" name="radio-field" value="radio1" checked>
+          <label for="radio1" class="form__radio-label">Pink для iOS</label>
+
+          <input id="radio2" class="form__radio-input" type="radio" name="radio-field" value="radio2">
+          <label for="radio2" class="form__radio-label">Pink на Android</label>
+
+          <input id="radio3" class="form__radio-input" type="radio" name="radio-field" value="radio3">
+          <label for="radio3" class="form__radio-label">Windows Phone</label>
+        </fieldset>
+      </div>
+
+      <fieldset class="form__textarea-fieldset">
+        <legend class="form__textarea-legend">Опишите свои эмоции</legend>
+
+        <textarea class="form__textarea-input" name="message" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
       </fieldset>
 
       <div class="form-submit">
@@ -170,7 +184,7 @@
     <div class="page-footer__links">
       <a class="page-footer__logo" href="index.html">
         <svg class="page-footer__logo-img" role="presentation" width="75" height="22">
-          <use xlink:href="#icon-pink"/>
+          <use xlink:href="#icon-pink" />
         </svg>
       </a>
 
@@ -192,7 +206,7 @@
         <span class="page-footer__copyright-text">Разработано</span>
         <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
           <svg class="page-footer__logo-academy" role="presentation" width="27" height="34">
-            <use xlink:href="#icon-academy"/>
+            <use xlink:href="#icon-academy" />
           </svg>
         </a>
       </div>
