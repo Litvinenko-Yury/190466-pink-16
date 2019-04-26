@@ -1,3 +1,4 @@
+/*это кадр слайдера*/
 .slider__list-item {
   display: none;
 
@@ -11,6 +12,17 @@
   }
 }
 
+/*кнопки туда-сюда*/
+.slider__prev,
+.slider__next {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  outline: 1px dotted red;
+  cursor: pointer;
+}
+
+/*обертка трех круглых кнопок*/
 .slider__toggles {
   display: flex;
   justify-content: space-between;
@@ -21,6 +33,7 @@
   }
 }
 
+/*это три круглых кнопки*/
 .slider__toggle {
   width: 6px;
   height: 6px;
