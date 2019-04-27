@@ -142,14 +142,14 @@
         <button class="review__btn-prev  slider__prev" type="button">
           <span class="visually-hidden">Предыдущий отзыв</span>
           <svg class="review__btn-prev-img" role="presentation" width="21" height="41">
-              <use xlink:href="#icon-pink" />
-            </svg>
+            <use xlink:href="#icon-pink" />
+          </svg>
         </button>
         <button class="review__btn-next  slider__next" type="button">
           <span class="visually-hidden"> Следующий отзыв</span>
           <svg class="review__btn-next-img" role="presentation" width="21" height="41">
-              <use xlink:href="#icon-pink" />
-            </svg>
+            <use xlink:href="#icon-pink" />
+          </svg>
         </button>
       </div>
 
@@ -157,7 +157,7 @@
         <button class="slider__toggle  slider__toggle--active" type="button">
           <span class="visually-hidden">1</span>
         </button>
-        <button class="slider__toggle" type="button">
+        <button class="slider__toggle  " type="button">
           <span class="visually-hidden">2</span>
         </button>
         <button class="slider__toggle" type="button">
@@ -166,52 +166,57 @@
       </p>
     </section>
 
-    <section class="table">
-      <h3>здесь будет таблица</h3>
-      здесь будет таблица
-      <!-- <div class="table__wrap">
-        <header class="table__header">
-          <ul class="table__list">
-            <li class="table__list-item">Пустая ячейка</li>
-            <li class="table__list-item">
-              <span class="table__list-item-inner  table__list-item-inner--caption">БАЗА</span>
-              <span class="table__list-item-inner  table__list-item-inner--text">1,99 USD</span>
-            </li>
-            <li class="table__list-item">
-              <span class="table__list-item-inner  table__list-item-inner--banner">ХИТ</span>
-              <span class="table__list-item-inner  table__list-item-inner--caption">СТАНДАРТ</span>
-              <span class="table__list-item-inner  table__list-item-inner--text">3,99 USD</span>
-            </li>
-            <li class="table__list-item">
-              <span class="table__list-item-inner  table__list-item-inner--caption">АНЛИМ</span>
-              <span class="table__list-item-inner  table__list-item-inner--text">9,99 USD</span>
-            </li>
-          </ul>
-        </header>
-        <ul class="table__list">
-          <li class="table__list-item">Розовый фильтр</li>
-          <li class="table__list-item">Ok</li>
-          <li class="table__list-item">Ok</li>
-          <li class="table__list-item">Ok</li>
-        </ul>
-        <ul class="table__list">
-          <li class="table__list-item">Смайлики</li>
-          <li class="table__list-item">No</li>
-          <li class="table__list-item">Ok</li>
-          <li class="table__list-item">Ok</li>
-        </ul>
-        <ul class="table__list">
-          <li class="table__list-item">Комментарии</li>
-          <li class="table__list-item">No</li>
-          <li class="table__list-item">No</li>
-          <li class="table__list-item">Ok</li>
-        </ul>
-      </div> -->
+    <section class="table-wrap">
+      <table class="table  table--slide2">
+        <tbody>
+          <tr class="table__caption">
+            <th class="table__data  table__data--transparent  table__data--mob  table__data--padding-caption">пусто1</th>
+            <th class="table__data  table__data--border  table__data--padding-caption">База</th>
+            <th class="table__data  table__data--border  table__data--banner  table__data--padding-caption">Стандарт</th>
+            <th class="table__data  table__data--border  table__data--padding-caption">Анлим</th>
+          </tr>
+        </tbody>
+        <tbody>
+          <tr class="table__subcaption">
+            <td class="table__data  table__data--transparent  table__data--mob  table__data--padding-subcaption">пусто1</td>
+            <td class="table__data  table__data--padding-subcaption">1.99 usd</td>
+            <td class="table__data  table__data--padding-subcaption">3.99 usd</td>
+            <td class="table__data  table__data--padding-subcaption">9.99 usd</td>
+          </tr>
+        </tbody>
+        <tbody class="table__row">
+          <tr>
+            <td class="table__data  table__data--mob">Розовый фильтр</td>
+            <td class="table__data  table__data--tab">Розовый фильтр</td>
+            <td class="table__data  table__data--tab">Розовый фильтр</td>
+            <td class="table__data  table__data--tab">Розовый фильтр</td>
+          </tr>
+          <tr class="table__row">
+            <td class="table__data  table__data--mob">Смайлики</td>
+            <td class="table__data  table__data--tab">Смайлики</td>
+            <td class="table__data  table__data--tab">Смайлики</td>
+            <td class="table__data  table__data--tab">Смайлики</td>
 
-      <p class="table__toggles  slider-table__toggles">
-        <button class="table__toggle" type="button">1</button>
-        <button class="table__toggle" type="button">2</button>
-        <button class="table__toggle" type="button">3</button>
+          </tr>
+          <tr class="table__row">
+            <td class="table__data  table__data--mob">Комментарии</td>
+            <td class="table__data  table__data--tab">Комментарии</td>
+            <td class="table__data  table__data--tab">Комментарии</td>
+            <td class="table__data  table__data--tab">Комментарии</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p class="table__toggles  slider__toggles">
+        <button class="slider__toggle" type="button">
+          <span class="visually-hidden">1</span>
+        </button>
+        <button class="slider__toggle  slider__toggle--active" type="button">
+          <span class="visually-hidden">2</span>
+        </button>
+        <button class="slider__toggle" type="button">
+          <span class="visually-hidden">3</span>
+        </button>
       </p>
     </section>
 
@@ -230,7 +235,7 @@
           </div>
 
           <div class="contacts__item  contacts__item--third">
-            <b class="contacts__subtitle">Приезжайте в гости:</b>
+            <b class="contacts__subtitle  contacts__subtitle--last-child">Приезжайте в гости:</b>
             <span class="contacts__content">ул. Большая<br> Конюшенная, 19/8</span>
           </div>
         </div>
