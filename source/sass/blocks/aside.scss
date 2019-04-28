@@ -42,7 +42,6 @@
 .aside__text {
   @media (min-width: $tablet-width) {
     margin-bottom: 10px;
-    letter-spacing: 0.02143em;
   }
 
   @media (min-width: $desktop-width) {
@@ -50,7 +49,6 @@
     padding-right: 30px;
     font-size: $font-size--larger;
     line-height: 1.6667em;
-    letter-spacing: 0.02222em;
   }
 }
 
@@ -58,7 +56,6 @@
   @media (min-width: $tablet-width) {
     text-decoration: underline;
     color: $color-secondary;
-    letter-spacing: 0.02143em;
   }
 
   @media (min-width: $desktop-width) {

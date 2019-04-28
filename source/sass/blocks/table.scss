@@ -2,12 +2,15 @@
   outline: 1px dotted red;
   padding-top: 91px;
   padding-bottom: 44px;
-  background-color: $gray-242;
   overflow: hidden;
+  background-color: $gray-242;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-position: right top;
+  background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
     padding-top: 88px;
-    padding-bottom: 15px;
+    padding-bottom: 25px;
     overflow: visible;
   }
 
@@ -179,16 +182,21 @@
   }
 
   &--banner::after {
-    content: "хит";
+    content: "ХИТ";
     position: absolute;
-    top: 7px;
-    left: 2px;
+    top: 11px;
+    left: 8px;
     width: 30px;
     height: 30px;
     transform: rotate(-45deg);
     font-size: $font-size;
     line-height: 2.1428em;
     font-weight: 300;
+
+    @media (min-width: $tablet-width) {
+      top: 4px;
+      left: 5px;
+    }
   }
 }
 
@@ -199,5 +207,11 @@
 
   @media (min-width: $desktop-width) {
     display: none;
+  }
+
+  &--tab {
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 }

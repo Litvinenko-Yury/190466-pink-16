@@ -1,0 +1,14 @@
+.map {
+  outline: 2px dotted red;
+  width: 100%;
+  height: 200px;
+  background-color: $color-map;
+  background-image: url("../img/bg-triangle-white-footer.svg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @media (min-height: $tablet-width) {
+    height: 373px;
+  }
+}
