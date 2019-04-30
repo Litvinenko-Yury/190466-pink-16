@@ -51,19 +51,19 @@
     <form class="form" action="https://echo.htmlacademy.ru" method="post">
 
       <fieldset class="form__text-fieldset">
-        <label class="form__text-label">
-          <span class="form__text-text">Фамилия:</span>
-          <input class="form__text-input" type="text" name="surname" placeholder="Укажите фамилию *">
+        <label class="field-text">
+          <span class="field-text__help-text">Фамилия:</span>
+          <input class="field-text__input" type="text" name="surname" placeholder="Укажите фамилию *">
         </label>
 
-        <label class="form__text-label">
-          <span class="form__text-text">Имя:</span>
-          <input class="form__text-input" type="text" name="surname" placeholder="Введите ваше имя *">
+        <label class="field-text">
+          <span class="field-text__help-text">Имя:</span>
+          <input class="field-text__input" type="text" name="surname" placeholder="Введите ваше имя *">
         </label>
 
-        <label class="form__text-label">
-          <span class="form__text-text">Отчество:</span>
-          <input class="form__text-input" type="text" name="surname" placeholder="Ну и отчество тоже">
+        <label class="field-text">
+          <span class="field-text__help-text">Отчество:</span>
+          <input class="field-text__input" type="text" name="surname" placeholder="Ну и отчество тоже">
         </label>
       </fieldset>
 
@@ -71,32 +71,32 @@
         <fieldset class="form__checkbox-fieldset">
           <legend class="form__checkbox-legend">Ваши безбашенные достижения в путешествии</legend>
 
-          <div class="form__сheckbox-label-wrap">
-            <div class="form__checkbox-label-wrap-desk">
-              <input id="checkbox1" class="form__checkbox-input" type="checkbox" name="checkbox-field1" value="+" checked>
-              <label for="checkbox1" class="form__checkbox-label">Сделал селфи с акулой</label>
+          <div class="field-сheckbox">
+              <div class="field-сheckbox-wrap-desk">
+                <input id="checkbox1" class="field-сheckbox__input" type="checkbox" name="checkbox-field1" value="+" checked>
+                <label for="checkbox1" class="field-сheckbox__label">Сделал селфи с акулой</label>
 
-              <input id="checkbox2" class="form__checkbox-input" type="checkbox" name="checkbox-field2" value="+" checked>
-              <label for="checkbox2" class="form__checkbox-label">Обгорел на пляже</label>
+                <input id="checkbox2" class="field-сheckbox__input" type="checkbox" name="checkbox-field2" value="+" checked>
+                <label for="checkbox2" class="field-сheckbox__label">Обгорел на пляже</label>
+              </div>
+
+              <div class="field-сheckbox-wrap-desk">
+                <input id="checkbox3" class="field-сheckbox__input" type="checkbox" name="checkbox-field3" value="+">
+                <label for="checkbox3" class="field-сheckbox__label">Видел Чака Норриса</label>
+
+                <input id="checkbox4" class="field-сheckbox__input" type="checkbox" name="checkbox-field4" value="+">
+                <label for="checkbox4" class="field-сheckbox__label">Накупил сувениров</label>
+              </div>
+
+              <div class="field-сheckbox-wrap-desk">
+                <input id="checkbox5" class="field-сheckbox__input" type="checkbox" name="checkbox-field5" value="+" checked>
+                <label for="checkbox5" class="field-сheckbox__label">Удержал башню</label>
+
+                <input id="checkbox6" class="field-сheckbox__input" type="checkbox" name="checkbox-field6" value="+">
+                <label for="checkbox6" class="field-сheckbox__label">Разгромил отель</label>
+              </div>
+
             </div>
-
-            <div class="form__checkbox-label-wrap-desk">
-              <input id="checkbox3" class="form__checkbox-input" type="checkbox" name="checkbox-field3" value="+">
-              <label for="checkbox3" class="form__checkbox-label">Видел Чака Норриса</label>
-
-              <input id="checkbox4" class="form__checkbox-input" type="checkbox" name="checkbox-field4" value="+">
-              <label for="checkbox4" class="form__checkbox-label">Накупил сувениров</label>
-            </div>
-
-            <div class="form__checkbox-label-wrap-desk">
-              <input id="checkbox5" class="form__checkbox-input" type="checkbox" name="checkbox-field5" value="+" checked>
-              <label for="checkbox5" class="form__checkbox-label">Удержал башню</label>
-
-              <input id="checkbox6" class="form__checkbox-input" type="checkbox" name="checkbox-field6" value="+">
-              <label for="checkbox6" class="form__checkbox-label">Разгромил отель</label>
-            </div>
-
-          </div>
         </fieldset>
       </div>
 
@@ -104,46 +104,51 @@
         <legend class="form__contact-legend">Контактная информация</legend>
 
         <div class="form__contact-wrap">
-          <label class="form__contact-label  form__contact-label--phone">
-            <span class="form__contact-text">Номер телефона</span>
-            <input class="form__contact-input" type="tel" name="tel" placeholder="Номер, пожалуйста">
+          <label class="field-contact  field-contact--phone">
+            <span class="field-contact__text">Номер телефона</span>
+            <input class="field-contact__input" type="tel" name="tel" placeholder="Номер, пожалуйста">
           </label>
 
-          <label class="form__contact-label  form__contact-label--mail">
-            <span class="form__contact-text">Адрес почты</span>
-            <input class="form__contact-input" type="email" name="email" placeholder="Введите почту *">
+          <label class="field-contact  field-contact--mail">
+            <span class="field-contact__text">Адрес почты</span>
+            <input class="field-contact__input" type="email" name="email" placeholder="Введите почту *">
           </label>
         </div>
       </fieldset>
 
-      <div class="form__radio">
+      <div class="form__radio-wrap">
         <fieldset class="form__radio-fieldset">
           <legend class="form__radio-legend">С каким приложением путешествовали?</legend>
 
-          <input id="radio1" class="form__radio-input" type="radio" name="radio-field" value="radio1" checked>
-          <label for="radio1" class="form__radio-label">Pink для iOS</label>
+          <div class="field-radio">
+            <input id="radio1" class="field-radio__input" type="radio" name="radio-field" value="radio1" checked>
+            <label for="radio1" class="field-radio__name">Pink для iOS</label>
 
-          <input id="radio2" class="form__radio-input" type="radio" name="radio-field" value="radio2">
-          <label for="radio2" class="form__radio-label">Pink на Android</label>
+            <input id="radio2" class="field-radio__input" type="radio" name="radio-field" value="radio2">
+            <label for="radio2" class="field-radio__name">Pink на Android</label>
 
-          <input id="radio3" class="form__radio-input" type="radio" name="radio-field" value="radio3">
-          <label for="radio3" class="form__radio-label">Windows Phone</label>
+            <input id="radio3" class="field-radio__input" type="radio" name="radio-field" value="radio3">
+            <label for="radio3" class="field-radio__name">Windows Phone</label>
+          </div>
+
         </fieldset>
       </div>
 
       <fieldset class="form__textarea-fieldset">
         <legend class="form__textarea-legend">Опишите свои эмоции</legend>
-
-        <textarea class="form__textarea-input" name="message" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+        <label class="field-textarea">
+          <span class="field-textarea__input-wrap">
+            <textarea class="field-textarea__input" name="message" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          </span>
+        </label>
       </fieldset>
 
-      <div class="form-submit">
+      <div class="field-actions">
         <input class="button button--form" type="submit" value="Отправить форму" />
-      </div>
-
-      <div class="form-remark">
-        <span class="form-remark__symbol">*</span>
-        <span class="form-remark__text"> — обязательные поля</span>
+        <div class="field-actions__remark">
+          <span class="field-actions__symbol">*</span>
+          <span class="field-actions__text"> — обязательные поля</span>
+        </div>
       </div>
 
       <div class="popup  popup--error">

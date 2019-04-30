@@ -1,23 +1,5 @@
 .contacts {
-  min-height: 612px;
   text-align: center;
-  background-image: url("../img/bg-map-mobile@1x.png");
-  background-position: center bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  @media (min-width: $tablet-width) {
-    min-height: 908px;
-    padding: 0;
-    background-image: url("../img/bg-map-tablet@1x.jpg");
-    background-position: center 20px;
-  }
-
-  @media (min-width: $desktop-width) {
-    min-height: 1064px;
-    background-image: url("../img/bg-map-desktop@1x.jpg");
-    background-position: center 40px;
-  }
 }
 
 .contacts__wrap {
@@ -40,13 +22,13 @@
   width: 280px;
   margin: 0 auto;
   margin-bottom: 35px;
-  line-height: 1.1em;
+  line-height: 1.25em;
 
   @media (min-width: $tablet-width) {
     width: 620px;
     margin-bottom: 0;
     font-size: $font-size--x-large;
-    line-height: 1.2em;
+    line-height: 1.25em;
   }
 
   @media (min-width: $desktop-width) {
@@ -74,11 +56,11 @@
 
 .contacts__item {
   outline: 1px dotted green;
-  margin-bottom: 25px;
+  margin-bottom: 23px;
 
   @media (min-width: $tablet-width) {
     width: 310px;
-    margin-top: 43px;
+    margin-top: 40px;
     margin-bottom: 0;
 
     &:last-child {

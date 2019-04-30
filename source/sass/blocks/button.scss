@@ -25,6 +25,7 @@
   }
 
   &--form {
+    margin-bottom: 35px;
     padding-top: 20px;
     padding-bottom: 22px;
     line-height: 1.1667em;
@@ -32,6 +33,14 @@
     background-color: $color-success;
     border: none;
     border-radius: 3px;
+    text-transform: uppercase;
+
+    @media (min-width: $tablet-width) {
+      margin: 0;
+      width: 300px;
+      padding-left: 58px;
+      padding-right: 58px;
+    }
 
     &:hover {
       color: #ffffff;
@@ -40,12 +49,6 @@
 
     &:active {
       color: rgba(255, 255, 255, 0.7);
-    }
-
-    @media (min-width: $tablet-width) {
-      padding-left: 58px;
-      padding-right: 58px;
-      border-radius: 2px;
     }
   }
 
@@ -56,6 +59,10 @@
     border-color: $color-secondary;
     background-color: transparent;
 
+    @media (min-width: $tablet-width) {
+      margin-top: 28px;
+    }
+
     &:hover {
       color: #ffffff;
       background-color: $color-secondary;
@@ -64,10 +71,6 @@
 
     &:active {
       color: rgba(255, 255, 255, 0.3);
-    }
-
-    @media (min-width: $tablet-width) {
-      margin-top: 28px;
     }
   }
 
