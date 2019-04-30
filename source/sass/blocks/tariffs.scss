@@ -1,5 +1,4 @@
-.table-wrap {
-  outline: 1px dotted red;
+.tariffs {
   padding-top: 91px;
   padding-bottom: 44px;
   overflow: hidden;
@@ -20,7 +19,7 @@
   }
 }
 
-.table {
+.tariffs__table {
   width: 840px;
   margin-bottom: 40px;
   border-collapse: collapse;
@@ -43,7 +42,7 @@
   }
 }
 
-.table__caption {
+.tariffs__caption {
   font-size: $font-size--larger;
   line-height: 1.6667em;
   font-weight: 700;
@@ -62,7 +61,7 @@
   }
 }
 
-.table__subcaption {
+.tariffs__subcaption {
   font-size: $font-size--large;
   line-height: 1.25em;
   font-weight: 300;
@@ -82,7 +81,7 @@
   }
 }
 
-.table__row {
+.tariffs__row {
   line-height: 2.1428em;
   color: $color-main;
   text-transform: uppercase;
@@ -98,7 +97,7 @@
   }
 }
 
-.table__data {
+.tariffs__data {
   position: relative;
   width: 25%;
   padding: 15px 25px;
@@ -201,7 +200,7 @@
 }
 
 /*положение трех круглых кнопок слайдера*/
-.table__toggles {
+.tariffs__toggles {
   width: 60px;
   margin: 0 auto;
 

@@ -37,7 +37,7 @@
   <main class="page-main">
     <div class="intro">
       <div class="intro__img-wrap  intro__img-wrap--no-index">
-        <h1 class="intro__title  intro__title--no-index">Фотографии пользователей</h1>
+        <h1 class="intro__title  intro__title--no-index">Фотографии<br> пользователей</h1>
       </div>
     </div>
 
@@ -223,25 +223,25 @@
 
           <div class="upload__admin-wrap">
             <div class="upload__controls-wrap">
-              <div class="tabs">
+              <div class="range">
 
-                <ul class="tabs__links">
-                  <li class="tabs__links-wrap  tabs__links-wrap--active" role="tablist">
-                    <a class="tabs__link  tabs__link--active" href="#tab0" data-toggle="tab" role="tab">
+                <ul class="range__links">
+                  <li class="range__links-wrap  range__links-wrap--active" role="tablist">
+                    <a class="range__link" href="#tab0" data-toggle="tab" role="tab">
                       <svg role="presentation" width="25" height="25">
                         <use xlink:href="#icon-crop" />
                       </svg>
                     </a>
                   </li>
-                  <li class="tabs__links-wrap" role="tablist">
-                    <a class="tabs__link" href="#tab1" data-toggle="tab" role="tab">
+                  <li class="range__links-wrap" role="tablist">
+                    <a class="range__link" href="#tab1" data-toggle="tab" role="tab">
                       <svg role="presentation" width="25" height="25">
                         <use xlink:href="#icon-crop" />
                       </svg>
                     </a>
                   </li>
-                  <li class="tabs__links-wrap" role="tablist">
-                    <a class="tabs__link" href="#tab2" data-toggle="tab" role="tab">
+                  <li class="range__links-wrap" role="tablist">
+                    <a class="range__link" href="#tab2" data-toggle="tab" role="tab">
                       <svg role="presentation" width="25" height="25">
                         <use xlink:href="#icon-crop" />
                       </svg>
@@ -249,15 +249,15 @@
                   </li>
                 </ul>
 
-                <div class="tabs__content-wrapper">
-                  <div id="tab0" class="tabs__content-item" role="tabpanel">
-                    <input class="tab__range-input" type="range" min="0" max="100" step="1" value="85" name="range-crop">
+                <div class="range__content-wrapper">
+                  <div id="tab0" class="range__content-item" role="tabpanel">
+                    <input class="range__range-input" type="range" min="0" max="100" step="1" value="85" name="range-crop">
                   </div>
-                  <div id="tab1" class="tabs__content-item  tabs__content-item--mob" role="tabpanel">
-                    <input class="tab__range-input" type="range" min="0" max="100" step="1" value="85" name="range-fill">
+                  <div id="tab1" class="range__content-item  range__content-item--visible" role="tabpanel">
+                    <input class="range__range-input" type="range" min="0" max="100" step="1" value="85" name="range-fill">
                   </div>
-                  <div id="tab2" class="tabs__content-item  tabs__content-item--mob" role="tabpanel">
-                    <input class="tab__range-input" type="range" min="0" max="100" step="1" value="85" name="range-contrast">
+                  <div id="tab2" class="range__content-item  range__content-item--visible" role="tabpanel">
+                    <input class="range__range-input" type="range" min="0" max="100" step="1" value="85" name="range-contrast">
                   </div>
                 </div>
 
