@@ -130,10 +130,6 @@
   cursor: pointer;
   background-color: yellow;
 
-  &--wide {
-    left: 40px;
-  }
-
   @media (min-width: $tablet-width) {
     display: flex;
     align-items: center;
@@ -149,6 +145,10 @@
       top: 23px;
       min-width: 120px;
     }
+  }
+
+  &--wide {
+    left: 40px;
   }
 }
 

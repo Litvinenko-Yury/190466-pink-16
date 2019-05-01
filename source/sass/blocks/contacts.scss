@@ -109,6 +109,10 @@
   color: $color-secondary;
   line-height: 1.2em;
 
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
   &--link:hover {
     color: $color-main;
     text-decoration: underline;
@@ -116,9 +120,5 @@
 
   &--link:active {
     color: $color-main--down;
-  }
-
-  @media (min-width: $tablet-width) {
-    display: block;
   }
 }

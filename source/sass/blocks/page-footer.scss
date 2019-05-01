@@ -9,21 +9,20 @@
   padding: 40px 20px;
   background-color: #ffffff;
 
+  @media (min-width: $tablet-width) {
+    padding: 37px 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 70px 130px 75px 130px;
+  }
+
   &--no-footer {
     display: none;
 
     @media (min-width: $tablet-width) {
       display: block;
     }
-  }
-
-  @media (min-width: $tablet-width) {
-    padding: 37px 20px;
-  }
-
-  @media (min-width: $desktop-width) {
-    //margin-top: -195px;
-    padding: 70px 130px 75px 130px;
   }
 
   &--no-index {

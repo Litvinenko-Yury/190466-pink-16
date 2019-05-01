@@ -216,6 +216,12 @@
   display: block;
   line-height: 63px;
 
+  @media (min-width: $desktop-width) {
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
+
   &:visited {
     color: #ffffff;
   }
@@ -226,11 +232,5 @@
 
   &:active {
     color: $color-secondary--down;
-  }
-
-  @media (min-width: $desktop-width) {
-    &:active {
-      color: rgba(255, 255, 255, 0.3);
-    }
   }
 }
