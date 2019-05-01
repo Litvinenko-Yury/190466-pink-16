@@ -5,11 +5,23 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Пинк: Главная</title>
+  <link rel="preload" href="fonts/opensans.woff2" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+  <link rel="preload" href="fonts/opensanslight.woff2" as="font">
   <link rel="stylesheet" href="css/style.css">
   <script src="https://api-maps.yandex.ru/2.1/?apikey=<ваш API-ключ>&lang=ru_RU" type="text/javascript"></script>
+  <script>
+      document.createElement("picture");
+    </script>
+    <script src="picturefill.min.js" async>
+    </script>
 </head>
 
 <body>
+    <!-- <div style="display: none;">
+        <include src="build/img/svg_sprite.svg"></include>
+      </div> -->
+
   <header class="page-header">
     <div class="page-header__wrap">
       <nav class="main-nav  main-nav--closed  main-nav--nojs">
@@ -275,7 +287,6 @@
   </footer>
 
   <script src="js/script.js"></script>
-
   <script src="js/script-map.js"></script>
 
 </body>
