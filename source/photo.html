@@ -10,13 +10,17 @@
   <link rel="preload" href="fonts/opensanslight.woff2" as="font">
   <link rel="stylesheet" href="css/style.css">
   <script>
-      document.createElement("picture");
-    </script>
-    <script src="picturefill.min.js" async>
-    </script>
+    document.createElement("picture");
+  </script>
+  <script src="picturefill.min.js" async>
+  </script>
 </head>
 
 <body>
+  <!-- <div style="display: none;">
+        <include src="build/img/svg_sprite.svg"></include>
+      </div> -->
+
   <header class="page-header">
     <div class="page-header__wrap">
       <nav class="main-nav  main-nav--closed  main-nav--nojs">
@@ -58,9 +62,13 @@
         <span class="foto__banner">ПАНОРАМА ДНЯ</span>
         <a class="foto__img-wrap" href="#">
           <picture>
-            <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg">
-            <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg">
-            <img class="foto__img  foto__img--wide" src="img/panorama-mobile@1x.jpg" alt="Панорама гористой местности.">
+            <!-- <source type="image/webp" media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.webp 1x, img/panorama-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 660px)" srcset="img/panorama-tablet@1x.webp 1x, img/panorama-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/panorama-mobile@1x.webp 1x, img/panorama-mobile@2x.webp 2x"> -->
+
+            <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+            <img class="foto__img  foto__img--wide" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Панорама гористой местности.">
           </picture>
         </a>
 
@@ -82,9 +90,13 @@
         <figure class="foto">
           <a class="foto__img-wrap" href="#">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg">
-              <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg">
-              <img class="foto__img" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Автомобиль на фоне стены.">
+              <!-- <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.webp 1x, img/photo-car-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.webp 1x, img/photo-car-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-car-mobile@1x.webp 1x, img/photo-car-mobile@2x.webp 2x"> -->
+
+              <source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+              <img class="foto__img" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" width="280" height="180" alt="Автомобиль на фоне стены.">
             </picture>
           </a>
           <figcaption class="foto__descr">
@@ -104,9 +116,13 @@
         <figure class="foto">
           <a class="foto__img-wrap" href="#">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.jpg">
-              <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg">
-              <img class="foto__img" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Фото ударной установки.">
+              <!-- <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.webp 1x, img/photo-drumset-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.webp 1x, img/photo-drumset-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-drumset-mobile@1x.webp 1x, img/photo-drumset-mobile@2x.webp 2x"> -->
+
+              <source media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
+              <img class="foto__img" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" width="280" height="180" alt="Фото ударной установки.">
             </picture>
           </a>
           <figcaption class="foto__descr">
@@ -126,9 +142,13 @@
         <figure class="foto">
           <a class="foto__img-wrap" href="#">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.jpg">
-              <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg">
-              <img class="foto__img" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Фасада небоскреба.">
+              <!--  <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.webp 1x, img/photo-window-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.webp 1x, img/photo-window-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-window-mobile@1x.webp 1x, img/photo-window-mobile@2x.webp 2x"> -->
+
+              <source media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
+              <img class="foto__img" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" width="280" height="180" alt="Фасада небоскреба.">
             </picture>
           </a>
           <figcaption class="foto__descr">
@@ -148,9 +168,13 @@
         <figure class="foto">
           <a class="foto__img-wrap" href="#">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg">
-              <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg">
-              <img class="foto__img" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Летнего бахчевой рынок.">
+              <!-- <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.webp 1x, img/photo-fair-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.webp 1x, img/photo-fair-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-fair-mobile@1x.webp 1x, img/photo-fair-mobile@2x.webp 2x"> -->
+
+              <source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
+              <img class="foto__img" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" width="280" height="180" alt="Летнего бахчевой рынок.">
             </picture>
           </a>
           <figcaption class="foto__descr">
@@ -170,9 +194,13 @@
         <figure class="foto">
           <a class="foto__img-wrap" href="#">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg">
-              <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg">
-              <img class="foto__img" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Мужчина сидит на краю обрыва, свесив ноги.">
+              <!--  <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.webp 1x, img/photo-pov-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.webp 1x, img/photo-pov-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-pov-mobile@1x.webp 1x, img/photo-pov-mobile@2x.webp 2x"> -->
+
+              <source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
+              <img class="foto__img" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" width="280" height="180" alt="Мужчина сидит на краю обрыва, свесив ноги.">
             </picture>
           </a>
           <figcaption class="foto__descr">
@@ -192,9 +220,13 @@
         <figure class="foto">
           <a class="foto__img-wrap" href="#">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg">
-              <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg">
-              <img class="foto__img" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Крыло самолета">
+              <!--  <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.webp 1x, img/photo-wing-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.webp 1x, img/photo-wing-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-wing-mobile@1x.webp 1x, img/photo-wing-mobile@2x.webp 2x"> -->
+
+              <source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
+              <img class="foto__img" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobilee@2x.jpg 2x" width="280" height="180" alt="Крыло самолета">
             </picture>
           </a>
           <figcaption class="foto__descr">
@@ -223,9 +255,13 @@
         <div class="upload__editor-inner-wrap">
           <div class="upload__file">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.jpg">
-              <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg">
-              <img class="upload__img" src="/img/photo-road-mobile@1x.jpg" alt="Загруженное фото для редактирования.">
+              <!--  <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.webp 1x, img/photo-road-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.webp 1x, img/photo-road-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-wing-mobile@1x.webp 1x, img/photo-wing-mobile@2x.webp 2x"> -->
+
+              <source media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
+              <img class="upload__img" src="/img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="Загруженное фото для редактирования.">
             </picture>
           </div>
 

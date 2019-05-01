@@ -11,14 +11,14 @@
   <link rel="stylesheet" href="css/style.css">
   <script src="https://api-maps.yandex.ru/2.1/?apikey=<ваш API-ключ>&lang=ru_RU" type="text/javascript"></script>
   <script>
-      document.createElement("picture");
-    </script>
-    <script src="picturefill.min.js" async>
-    </script>
+    document.createElement("picture");
+  </script>
+  <script src="picturefill.min.js" async>
+  </script>
 </head>
 
 <body>
-    <!-- <div style="display: none;">
+  <!-- <div style="display: none;">
         <include src="build/img/svg_sprite.svg"></include>
       </div> -->
 
@@ -52,9 +52,13 @@
     <div class="intro">
       <div class="intro__img-wrap">
         <picture>
-          <source media="(min-width: 1200px)" srcset="img/iphone-hand-desktop@1x.png">
-          <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png">
-          <img class="intro__img" src="img/iphone-hand-mobile@1x.png" alt="Рука с телефоном">
+         <!--  <source type="image/webp" media="(min-width: 1200px)" srcset="img/iphone-hand-desktop@1x.webp 1x,  img/iphone-hand-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.webp 1x,  img/iphone-hand-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/iphone-hand-mobile@1x.webp 1x, img/iphone-hand-mobile@2x.webp 2x"> -->
+
+          <source media="(min-width: 1200px)" srcset="img/iphone-hand-desktop@1x.png 1x, img/iphone-hand-desktop@2x.png 2x">
+          <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png 1x, img/iphone-hand-tablet@2x.png 2x">
+          <img class="intro__img" src="img/iphone-hand-mobile@1x.png" srcset="img/iphone-hand-mobile@2x.png 2x" alt="Рука с телефоном">
         </picture>
       </div>
 
@@ -94,27 +98,40 @@
         <div class="information__advantages-wrap">
           <div class="information__advantages">
             <section class="information__advantages-inner">
-              <img class="information__advantages-inner-img" src="img/iphone-screen-1-desktop@1x.png" width="292" height="302" alt="Мусорный бак">
-
+              <picture>
+               <!--  <source type="image/webp" srcset="img/iphone-screen-1-desktop@1x.webp 1x, img/imgiphone-screen-1-desktop@2x.webp 2x"> -->
+                <img class="information__advantages-inner-img" src="img/iphone-screen-1-desktop@1x.png" srcset="img/iphone-screen-1-desktop@2x.png 2x" width="292" height="302" alt="Мусорный бак">
+              </picture>
               <h3 class="information__advantages-title">Поднимает настроение</h3>
               <p class="information__advantages-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
             </section>
-            <section class="information__advantages-inner">
-              <img class="information__advantages-inner-img" src="img/iphone-screen-2-desktop@1x.png" width="292" height="302" alt="Мусорный бак">
 
+            <section class="information__advantages-inner">
+              <picture>
+                <!-- <source type="image/webp" srcset="img/iphone-screen-2-desktop@1x.webp 1x, img/imgiphone-screen-2-desktop@2x.webp 2x"> -->
+                <img class="information__advantages-inner-img" src="img/iphone-screen-2-desktop@1x.png" srcset="img/iphone-screen-2-desktop@2x.png 2x" width="292" height="302" alt="Мусорный бак">
+              </picture>
               <h3 class="information__advantages-title">Меняет мир вокруг</h3>
               <p class="information__advantages-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект!</p>
             </section>
+
             <section class="information__advantages-inner">
-              <img class="information__advantages-inner-img" src="img/iphone-screen-3-desktop@1x.png" width="292" height="302" alt="Мусорный бак">
+              <picture>
+                <!-- <source type="image/webp" srcset="img/iphone-screen-3-desktop@1x.webp 1x, img/imgiphone-screen-3-desktop@2x.webp 2x"> -->
+                <img class="information__advantages-inner-img" src="img/iphone-screen-3-desktop@1x.png" srcset="img/iphone-screen-3-desktop@2x.png 2x" width="292" height="302" alt="Мусорный бак">
+              </picture>
               <h3 class="information__advantages-title">Заводит новых друзей</h3>
               <p class="information__advantages-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
             </section>
+
           </div>
 
           <picture>
-            <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png">
-            <img class="information__img" src="img/iphone-screen-mobile@1x.png" alt="Телефон с приветствием на экране">
+           <!--  <source type="image/webp" media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.webp 1x,  img/iphone-screen-3-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/iphone-screen-mobile@1x.webp 1x, img/img/iphone-screen-mobile@2x.webp 2x"> -->
+
+            <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png 1x, img/iphone-screen-3-tablet@2x.png 2x">
+            <img class="information__img" src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" alt="Телефон с приветствием на экране">
           </picture>
         </div>
       </div>
