@@ -77,17 +77,17 @@
   &--cancel {
     padding-top: 15px;
     padding-bottom: 15px;
-    color: $gray-221;
+    color: $color-main--lightest;
     border-color: $gray-221;
     background-color: transparent;
 
     &:hover {
-      color: $color-main--cancel-buttom-hover;
+      color: $color-main--lighten;
       border-color: $gray-181;
     }
 
     &:active {
-      color: rgba(255, 255, 255, 0.3);
+      color: $color-main--lighten;
       background-color: $gray-181;
     }
   }

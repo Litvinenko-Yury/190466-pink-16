@@ -14,9 +14,10 @@ $line-height: 1.7143em;
 //================
 
 $color-main: #283645;
+$color-main--lightest: rgba(40, 54, 69, 0.1);
+$color-main--lighten: rgba(40, 54, 69, 0.3);
 
 $color-main--down: rgba(40, 54, 69, 0.3);
-$color-main--cancel-buttom-hover: rgba(40, 54, 69, 0.3);
 $color-main--dark: #1d2631;
 
 $color-secondary: #d22856;
@@ -43,7 +44,3 @@ $color-map: #f3f1ea;
 
 $tablet-width: 660px;
 $desktop-width: 1200px;
-
-//================
-$retina-dpi: 144dpi;
-$retina-dppx: 1.5dppx;

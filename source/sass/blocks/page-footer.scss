@@ -1,11 +1,4 @@
-.page-footer__logo,
-.page-footer__social,
-.page-footer__copyright {
-  outline: 1px dotted green;
-}
-
 .page-footer {
-  outline: 2px dotted blue;
   padding: 40px 20px;
   background-color: #ffffff;
 
@@ -38,7 +31,6 @@
 }
 
 .page-footer__links {
-  outline: 1px dotted coral;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -94,7 +86,6 @@
 }
 
 .page-footer__copyright-link {
-  outline: 1px dotted green;
   width: 27px;
   height: 34px;
 }

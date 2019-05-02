@@ -1,6 +1,5 @@
 .information {
   text-align: center;
-  outline: 1px dotted red;
 }
 
 .information__title {
@@ -10,7 +9,6 @@
   padding-bottom: 0;
   font-size: $font-size--large;
   font-weight: 300;
-  outline: 1px dotted coral;
 
   @media (min-width: $tablet-width) {
     width: 620px;
@@ -58,6 +56,7 @@
   background-image: url("../img/bg-triangle-white.svg");
   background-position: right top;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .information__advantages-wrap {
@@ -79,7 +78,6 @@
 }
 
 .information__advantages {
-  outline: 1px dotted blue;
   width: 320px;
   margin: 0 auto;
   padding-bottom: 25px;
@@ -104,7 +102,6 @@
 .information__advantages-inner {
   padding: 18px 20px;
   padding-bottom: 10px;
-  outline: 1px dotted green;
 
   @media (min-width: $tablet-width) {
     width: 100%;

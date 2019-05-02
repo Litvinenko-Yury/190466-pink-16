@@ -3,6 +3,7 @@
   width: 280px;
   margin: 0 auto;
   margin-bottom: 20px;
+  background-color: $gray-242;
 
   @media (min-width: $tablet-width) {
     width: 300px;
@@ -46,9 +47,10 @@
 }
 
 .foto__img {
-  cursor: pointer;
   width: 100%;
   height: 181px;
+  cursor: pointer;
+  object-fit: cover;
 
   @media (min-width: $tablet-width) {
     height: 300px;
@@ -76,7 +78,7 @@
   width: 280px;
   margin-top: -7px;
   padding: 18px 15px 53px 15px;
-  background-color: $gray-242;
+  //background-color: $gray-242;
 
   @media (min-width: $tablet-width) {
     width: 100%;
@@ -148,12 +150,11 @@
   }
 
   &--wide {
-    left: 40px;
+    right: 32px;
   }
 }
 
 .foto__button-icon {
-  outline: 1px dotted coral;
   margin-right: 15px;
 
   @media (min-width: $tablet-width) {

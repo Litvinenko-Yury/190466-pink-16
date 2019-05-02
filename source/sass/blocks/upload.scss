@@ -1,7 +1,3 @@
-.upload {
-  outline: 1px dotted red;
-}
-
 .upload__caption {
   padding: 20px 20px 42px 20px;
   line-height: 2.1428em;
@@ -92,7 +88,6 @@
 }
 
 .upload__controls-wrap {
-  outline: 1px dotted red;
   padding-bottom: 30px;
   border-bottom: 1px solid red;
 
@@ -122,10 +117,15 @@
     margin: 0;
     width: 100%;
     display: flex;
+    justify-content: space-between;
   }
 }
 
 .upload__btn {
+  &:last-child {
+    margin-top: 15px;
+  }
+
   @media (min-width: $tablet-width) {
     width: 260px;
 
@@ -141,9 +141,5 @@
     &:last-child {
       margin: 0;
     }
-  }
-
-  &:last-child {
-    margin-top: 15px;
   }
 }
