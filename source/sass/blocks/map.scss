@@ -8,6 +8,10 @@
   background-repeat: no-repeat;
   background-color: $color-map;
 
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/bg-triangle-white-footer.svg"), url("../img/bg-map-mobile@2x.png");
+  }
+
   @media (min-width: $tablet-width) {
     height: 373px;
     background-image: url("../img/bg-triangle-white-footer.svg"), url("../img/bg-map-tablet@1x.jpg");
@@ -15,6 +19,10 @@
     background-size: contain, cover;
     background-repeat: no-repeat;
     background-color: $color-map;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/bg-triangle-white-footer.svg"), url("../img/bg-map-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -24,6 +32,10 @@
     background-size: contain, cover;
     background-repeat: no-repeat;
     background-color: $color-map;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/bg-triangle-white-footer.svg"), url("../img/bg-map-desktop@2x.jpg");
+    }
   }
 
   &::after {
