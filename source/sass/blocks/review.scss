@@ -94,7 +94,6 @@
     margin-bottom: 32px;
     font-size: $font-size--larger;
     line-height: 1.667em;
-    letter-spacing: 0.3px;
   }
 
   @media (min-width: $desktop-width) {
@@ -102,24 +101,27 @@
   }
 }
 
+/*расположение кнопок слайдера туда-сюда*/
 .review__btn-prev,
 .review__btn-next {
+  display: none;
   position: absolute;
-  top: 0;
+  top: 40px;
 
-  @media (max-width: $desktop-width - 1px) {
-    display: none;
+  @media (min-width: $desktop-width) {
+    display: block;
   }
 }
 
 .review__btn-prev {
-  left: 0;
+  left: 15px;
 }
 
 .review__btn-next {
-  right: 0;
+  right: 15px;
 }
 
+/*положение трех круглых кнопок слайдера*/
 .review__toggles {
   width: 60px;
   margin: 0 auto;

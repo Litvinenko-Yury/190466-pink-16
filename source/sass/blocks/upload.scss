@@ -1,61 +1,85 @@
-.upload {
-  outline: 1px dotted red;
-}
-
 .upload__caption {
-  padding: 20px 20px 40px 20px;
+  padding: 20px 20px 42px 20px;
   line-height: 2.1428em;
-
   text-align: center;
-  letter-spacing: 0.4px;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     padding: 45px 20px 70px 20px;
     font-size: $font-size--larger;
     line-height: 1.6667em;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 10px;
+    padding-top: 5px;
+    padding-bottom: 65px;
   }
 }
 
 .upload__editor {
-  background-color: coral;
+  background-color: $gray-242;
+  padding-top: 22px;
+  padding-bottom: 42px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: center;
     min-height: 509px;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
+    display: block;
     width: 940px;
     min-height: 515px;
     margin: 0 auto;
+    padding-left: 80px;
+    padding-right: 60px;
   }
 }
 
-.upload__file-wrap {
+.upload__editor-inner-wrap {
+  @media (min-width: $tablet-width) {
+    width: 620px;
+    padding: 0;
+    padding-top: 57px;
+    padding-bottom: 53px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
+.upload__file {
+  display: block;
   width: 280px;
+  height: 374px;
   margin: 0 auto;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
   padding: 0;
+  border: none;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
-    width: 300px;
     margin: 0;
-    margin-right: 48px;
+    width: 300px;
+    height: 400px;
   }
 }
 
 .upload__admin-wrap {
-  outline: 2px dotted blue;
   position: relative;
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    width: 280px;
+    width: 275px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
@@ -64,10 +88,14 @@
 }
 
 .upload__controls-wrap {
-  background-color: cadetblue;
+  padding-bottom: 30px;
+  border-bottom: 1px solid red;
 
   @media (min-width: $tablet-width) {
     display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 0;
+    border-bottom: none;
   }
 
   @media (min-width: $desktop-width) {
@@ -75,100 +103,43 @@
   }
 }
 
-.upload__label-wrap {
-  margin: 0;
-  margin-bottom: 30px;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 0;
-    padding: 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 50px;
-  }
-}
-
-.upload__label {
-  outline: 2px dotted blue;
-}
-
-.upload__controls-icon {
-  outline: 2px dotted green;
-}
-
-.upload__range-wrap {
-  margin: 0;
-  margin-bottom: 65px;
-
-  @media (min-width: $tablet-width) {
-    margin: 0;
-    padding: 0;
-  }
-}
-
-.upload__range {
-  outline: 2px dotted cyan;
-  display: none;
-  margin: 0 auto;
-  width: 240px;
-
-  &--active {
-    display: block;
-  }
-
-  @media (min-width: $tablet-width) {
-    display: block;
-    width: 200px;
-    margin-bottom: 30px;
-
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 285px;
-  }
-}
-
 .upload__btn-wrap {
-  background-color: yellowgreen;
-  margin: 0;
-  margin-bottom: 40px;
+  margin: 0 auto;
+  width: 280px;
+  padding-top: 35px;
+  border: none;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 0;
+    padding-top: 0;
   }
 
   @media (min-width: $desktop-width) {
-    position: absolute;
-    bottom: 0;
-    display: flex;
+    margin: 0;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
   }
 }
 
 .upload__btn {
-  width: 180px;
-  min-height: 55px;
-  margin: 0 auto;
-  margin-bottom: 12px;
-  color: $gray;
-  background-color: transparent;
-  border: 3px solid $gray--darken;
-
-  &--active {
-    color: $color-secondary;
-    border-color: $color-secondary;
+  &:last-child {
+    margin-top: 15px;
   }
 
   @media (min-width: $tablet-width) {
     width: 260px;
+
+    &:last-child {
+      margin-top: 27px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     width: 185px;
     margin: 0;
+
+    &:last-child {
+      margin: 0;
+    }
   }
 }

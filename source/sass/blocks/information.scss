@@ -1,6 +1,5 @@
 .information {
   text-align: center;
-  outline: 1px dotted red;
 }
 
 .information__title {
@@ -10,7 +9,6 @@
   padding-bottom: 0;
   font-size: $font-size--large;
   font-weight: 300;
-  outline: 1px dotted coral;
 
   @media (min-width: $tablet-width) {
     width: 620px;
@@ -54,11 +52,11 @@
 }
 
 .information__advantages-wrapper {
-  background-color: $gray;
-
-  /* @media (min-width: $tablet-width) {
-    background-color: $gray;
-  } */
+  background-color: $gray-242;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .information__advantages-wrap {
@@ -80,7 +78,6 @@
 }
 
 .information__advantages {
-  outline: 1px dotted blue;
   width: 320px;
   margin: 0 auto;
   padding-bottom: 25px;
@@ -105,7 +102,6 @@
 .information__advantages-inner {
   padding: 18px 20px;
   padding-bottom: 10px;
-  outline: 1px dotted green;
 
   @media (min-width: $tablet-width) {
     width: 100%;
@@ -141,7 +137,6 @@
 
 .information__advantages-text {
   margin-top: 13px;
-  letter-spacing: 0.4px;
 
   @media (min-width: $desktop-width) {
     margin-top: 25px;

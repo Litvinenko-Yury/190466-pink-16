@@ -14,11 +14,13 @@
   }
 }
 
+/*стилизация .main-nav__inner при открытом меню*/
 .main-nav__inner {
   position: relative;
   min-height: 69px;
   margin-bottom: 1px;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: $color-main;
+  box-shadow: (0 1px 0 0 #000000);
 
   @media (min-width: $tablet-width) {
     min-height: 109px;
@@ -33,14 +35,19 @@
   }
 }
 
-/*изменение стилизации  .main-nav__inner при открытом меню*/
-.main-nav--opened .main-nav__inner {
+/*изменение стилизации  .main-nav__inner закрытом меню*/
+.main-nav--closed .main-nav__inner {
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: none;
+}
+
+/*изменение стилизации  .main-nav__inner  при "нет JS"*/
+.main-nav--nojs .main-nav__inner {
   background-color: $color-main;
   box-shadow: (0 1px 0 0 #000000);
 }
 
 .main-nav__inner-logo {
-  outline: 1px dotted coral;
   position: absolute;
   top: 50%;
   margin-top: -13px;
@@ -94,7 +101,6 @@
 /*меню закрыто, на кнопке - "бургер"*/
 .main-nav--closed .main-nav__inner-toggle::before {
   content: "";
-
   position: absolute;
   top: 12px;
   left: 0;
@@ -109,14 +115,11 @@
   &::before,
   &::after {
     content: "";
-
     position: absolute;
     top: 21px;
     right: -4px;
-
     width: 30px;
     height: 4px;
-
     background-color: #ffffff;
   }
 
@@ -147,8 +150,10 @@
 
 /*нет JS, меню д.б.открыто*/
 .main-nav--nojs .main-nav__list {
-  @media (max-width: $desktop-width - 1) {
-    display: block;
+  display: block;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
   }
 }
 
@@ -176,18 +181,18 @@
 }
 
 .main-nav__list-item {
+  position: relative;
   min-height: 63px;
   margin-bottom: 1px;
   box-shadow: 0 1px 0 0 #000000, inset 0 1px 0 0 rgba(255, 255, 255, 0.15);
 
   @media (min-width: $desktop-width) {
-    margin-left: 80px;
+    margin-left: 85px;
     box-shadow: none;
     margin-bottom: 0;
-    letter-spacing: 0.4px;
   }
 
-  &--active a {
+  &--active {
     @media (min-width: $desktop-width) {
 
       /*серая полоса под ссылкой*/
@@ -210,23 +215,21 @@
   display: block;
   line-height: 63px;
 
+  @media (min-width: $desktop-width) {
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
+
   &:visited {
     color: #ffffff;
   }
 
-  &[href] {
-    &:hover {
-      color: $color-secondary;
-    }
+  &:hover {
+    color: $color-secondary;
+  }
 
-    &:active {
-      color: $color-secondary--down;
-    }
-
-    @media (min-width: $desktop-width) {
-      &:active {
-        color: rgba(255, 255, 255, 0.3);
-      }
-    }
+  &:active {
+    color: $color-secondary--down;
   }
 }
