@@ -136,5 +136,5 @@ gulp.task("images", function () {
 gulp.task("webp", function () {
   return gulp.src("source/img/**/*.{png,jpg}")
     .pipe(webp({ quality: 75 }))
-    .pipe(gulp.dest("test/img"));
+    .pipe(gulp.dest("source/img"));
 });
