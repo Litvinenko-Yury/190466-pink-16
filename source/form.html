@@ -8,7 +8,8 @@
   <link rel="preload" href="fonts/opensans.woff2" as="font">
   <link rel="preload" href="fonts/opensansbold.woff2" as="font">
   <link rel="preload" href="fonts/opensanslight.woff2" as="font">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=<ваш API-ключ>&lang=ru_RU" type="text/javascript"></script>
   <script>
     document.createElement("picture");
   </script>
@@ -25,13 +26,16 @@
       <nav class="main-nav  main-nav--closed  main-nav--nojs">
         <div class="main-nav__inner">
           <a class="main-nav__inner-logo" href="index.html" title="Переход на главную страницу">
-            <svg class="main-nav__inner-logo-img" width="75" height="22" role="presentation">
+            <svg class="main-nav__inner-logo-img" width="75" height="22" role="img">
+              <title>Логотип PINK</title>
               <use xlink:href="#icon-pink-white-mobile" />
             </svg>
-            <svg class="main-nav__inner-logo-img  main-nav__inner-logo-img--tab" width="147" height="41" role="presentation">
+            <svg class="main-nav__inner-logo-img  main-nav__inner-logo-img--tab" width="147" height="41" role="img">
+              <title>Логотип PINK</title>
               <use xlink:href="#icon-pink-white-tablet" />
             </svg>
-            <svg class="main-nav__inner-logo-img  main-nav__inner-logo-img--desk" width="147" height="41" role="presentation">
+            <svg class="main-nav__inner-logo-img  main-nav__inner-logo-img--desk" width="147" height="41" role="img">
+              <title>Логотип PINK</title>
               <use xlink:href="#icon-pink-white-desktop" />
             </svg>
           </a>
@@ -190,30 +194,35 @@
   <footer class="page-footer  page-footer--no-index">
     <div class="page-footer__links">
       <a class="page-footer__logo" href="index.html">
-        <svg role="presentation" width="147" height="41">
+        <svg role="presentation" width="147" height="41" role="img">
+          <title>Логотип PINK</title>
           <use xlink:href="#icon-pink-blue-mobile" />
+        </svg>
+        <svg class="page-footer__logo-img  page-footer__logo-img--desk" width="147" height="41" role="img">
+          <title>Логотип PINK</title>
+          <use xlink:href="#icon-pink-color-desktop" />
         </svg>
       </a>
 
       <div class="page-footer__social  social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link  social__link--tw" href="https://twitter.com">
-              <svg role="presentation" width="18" height="15">
+            <a class="social__link  social__link--tw" href="https://twitter.com" aria-label="Переход на сайт Twitter">
+              <svg width="18" height="15" role="img">
                 <use xlink:href="#icon-twitter" />
               </svg>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link  social__link--fb" href="https://www.facebook.com">
-              <svg role="presentation" width="9" height="19">
+            <a class="social__link  social__link--fb" href="https://www.facebook.com" aria-label="Переход на сайт Facebook">
+              <svg width="9" height="19" role="img">
                 <use xlink:href="#icon-facebook" />
               </svg>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link  social__link--youtube" href="https://www.youtube.com">
-              <svg role="presentation" width="15" height="14">
+            <a class="social__link  social__link--youtube" href="https://www.youtube.com" aria-label="Переход на сайт Youtube">
+              <svg width="15" height="14" role="img">
                 <use xlink:href="#icon-youtube" />
               </svg>
             </a>
@@ -223,8 +232,8 @@
 
       <div class="page-footer__copyright">
         <span class="page-footer__copyright-text">Разработано</span>
-        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
-          <svg role="presentation" width="27" height="34">
+        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Переход на сайт HTML-Academy">
+          <svg width="27" height="34" role="img">
             <use xlink:href="#icon-htmlacademy" />
           </svg>
         </a>
@@ -233,6 +242,7 @@
   </footer>
 
   <script src="js/script.js"></script>
+  <script src="js/script-map.js"></script>
 </body>
 
 </html>
