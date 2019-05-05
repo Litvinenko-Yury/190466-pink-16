@@ -17,18 +17,23 @@
 </head>
 
 <body>
-  <!--  <div style="display: none;">
-        <include src="build/img/svg_sprite.svg"></include>
-      </div> -->
-
+  <div style="display: none;">
+    <include src="build/img/svg_sprite.svg"></include>
+  </div>
 
   <header class="page-header">
     <div class="page-header__wrap">
       <nav class="main-nav  main-nav--closed  main-nav--nojs">
         <div class="main-nav__inner">
           <a class="main-nav__inner-logo">
-            <svg class="main-nav__inner-logo-img" role="presentation" width="75" height="22">
-              <use xlink:href="#icon-pink" />
+            <svg class="main-nav__inner-logo-img" width="75" height="22" role="presentation">
+              <use xlink:href="#icon-pink-white-mobile" />
+            </svg>
+            <svg class="main-nav__inner-logo-img  main-nav__inner-logo-img--tab" width="147" height="41" role="presentation">
+              <use xlink:href="#icon-pink-white-tablet" />
+            </svg>
+            <svg class="main-nav__inner-logo-img  main-nav__inner-logo-img--desk" width="147" height="41" role="presentation">
+              <use xlink:href="#icon-pink-white-desktop" />
             </svg>
           </a>
 
@@ -52,9 +57,9 @@
     <div class="intro">
       <div class="intro__img-wrap">
         <picture>
-          <!-- <source type="image/webp" media="(min-width: 1200px)" srcset="img/iphone-hand-desktop@1x.webp 1x,  img/iphone-hand-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 1200px)" srcset="img/iphone-hand-desktop@1x.webp 1x,  img/iphone-hand-desktop@2x.webp 2x">
           <source type="image/webp" media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.webp 1x,  img/iphone-hand-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="img/iphone-hand-mobile@1x.webp 1x, img/iphone-hand-mobile@2x.webp 2x"> -->
+          <source type="image/webp" srcset="img/iphone-hand-mobile@1x.webp 1x, img/iphone-hand-mobile@2x.webp 2x">
 
           <source media="(min-width: 1200px)" srcset="img/iphone-hand-desktop@1x.png 1x, img/iphone-hand-desktop@2x.png 2x">
           <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png 1x, img/iphone-hand-tablet@2x.png 2x">
@@ -69,18 +74,18 @@
 
         <div class="intro__marketplace">
           <a class="intro__applestore" href="https://www.apple.com/ru/ios/">
-            <svg class="intro__applestore-logo" role="presentation" width="47" height="56">
-              <use xlink:href="#icon-applestore" />
+            <svg class="intro__applestore-logo" role="presentation" width="46" height="57">
+              <use xlink:href="#icon-apple" />
             </svg>
           </a>
           <a class="intro__googleplay" href="https://play.google.com/store/apps?hl=ru/">
             <svg class="intro__googleplay-logo" role="presentation" width="43" height="47">
-              <use xlink:href="#icon-googleplay" />
+              <use xlink:href="#icon-android" />
             </svg>
           </a>
           <a class="intro__microsoftstore" href="https://www.microsoft.com/ru-ru/store/apps">
             <svg class="intro__microsoftstore-logo" role="presentation" width="44" height="41">
-              <use xlink:href="#icon-microsoftstore" />
+              <use xlink:href="#icon-microsoft" />
             </svg>
           </a>
         </div>
@@ -99,7 +104,7 @@
           <div class="information__advantages">
             <section class="information__advantages-inner">
               <picture>
-                <!--  <source type="image/webp" srcset="img/iphone-screen-1-desktop@1x.webp 1x, img/imgiphone-screen-1-desktop@2x.webp 2x"> -->
+                <source type="image/webp" srcset="img/iphone-screen-1-desktop@1x.webp 1x, img/iphone-screen-1-desktop@2x.webp 2x">
                 <img class="information__advantages-inner-img" src="img/iphone-screen-1-desktop@1x.png" srcset="img/iphone-screen-1-desktop@2x.png 2x" width="292" height="302" alt="Мусорный бак">
               </picture>
               <h3 class="information__advantages-title">Поднимает настроение</h3>
@@ -108,7 +113,7 @@
 
             <section class="information__advantages-inner">
               <picture>
-                <!-- <source type="image/webp" srcset="img/iphone-screen-2-desktop@1x.webp 1x, img/imgiphone-screen-2-desktop@2x.webp 2x"> -->
+                <source type="image/webp" srcset="img/iphone-screen-2-desktop@1x.webp 1x, img/iphone-screen-2-desktop@2x.webp 2x">
                 <img class="information__advantages-inner-img" src="img/iphone-screen-2-desktop@1x.png" srcset="img/iphone-screen-2-desktop@2x.png 2x" width="292" height="302" alt="Мусорный бак">
               </picture>
               <h3 class="information__advantages-title">Меняет мир вокруг</h3>
@@ -117,21 +122,20 @@
 
             <section class="information__advantages-inner">
               <picture>
-                <!-- <source type="image/webp" srcset="img/iphone-screen-3-desktop@1x.webp 1x, img/imgiphone-screen-3-desktop@2x.webp 2x"> -->
+                <source type="image/webp" srcset="img/iphone-screen-3-desktop@1x.webp 1x, img/iphone-screen-3-desktop@2x.webp 2x">
                 <img class="information__advantages-inner-img" src="img/iphone-screen-3-desktop@1x.png" srcset="img/iphone-screen-3-desktop@2x.png 2x" width="292" height="302" alt="Мусорный бак">
               </picture>
               <h3 class="information__advantages-title">Заводит новых друзей</h3>
               <p class="information__advantages-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
             </section>
-
           </div>
 
           <picture>
-            <!--  <source type="image/webp" media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.webp 1x,  img/iphone-screen-3-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/iphone-screen-mobile@1x.webp 1x, img/img/iphone-screen-mobile@2x.webp 2x"> -->
+            <source type="image/webp" media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.webp 1x,  img/iphone-screen-3-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/iphone-screen-mobile@1x.webp 1x, img/iphone-screen-mobile@2x.webp 2x">
 
             <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png 1x, img/iphone-screen-3-tablet@2x.png 2x">
-            <img class="information__img" src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" alt="Телефон с приветствием на экране">
+            <img class="information__img" src="img/iphone-screen-mobile@1x.png 1x" srcset="img/iphone-screen-mobile@2x.png 2x" alt="Телефон с приветствием на экране">
           </picture>
         </div>
       </div>
@@ -273,21 +277,33 @@
   <footer class="page-footer  page-footer--no-footer">
     <div class="page-footer__links">
       <a class="page-footer__logo">
-        <svg class="page-footer__logo-img" role="presentation" width="150" height="41">
-          <use xlink:href="#icon-pink" />
+        <svg role="presentation" width="147" height="41">
+          <use xlink:href="#icon-pink-blue-mobile" />
         </svg>
       </a>
 
       <div class="page-footer__social  social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link  social__link--tw" href="https://twitter.com">Twitter</a>
+            <a class="social__link  social__link--tw" href="https://twitter.com">
+              <svg role="presentation" width="18" height="15">
+                <use xlink:href="#icon-twitter" />
+              </svg>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link  social__link--fb" href="https://www.facebook.com">Facebook</a>
+            <a class="social__link  social__link--fb" href="https://www.facebook.com">
+              <svg role="presentation" width="9" height="19">
+                <use xlink:href="#icon-facebook" />
+              </svg>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link  social__link--youtube" href="https://www.youtube.com">Youtube</a>
+            <a class="social__link  social__link--youtube" href="https://www.youtube.com">
+              <svg role="presentation" width="15" height="14">
+                <use xlink:href="#icon-youtube" />
+              </svg>
+            </a>
           </li>
         </ul>
       </div>
@@ -295,8 +311,8 @@
       <div class="page-footer__copyright">
         <span class="page-footer__copyright-text">Разработано</span>
         <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
-          <svg class="page-footer__logo-academy" role="presentation" width="27" height="34">
-            <use xlink:href="#icon-academy" />
+          <svg role="presentation" width="27" height="34">
+            <use xlink:href="#icon-htmlacademy" />
           </svg>
         </a>
       </div>

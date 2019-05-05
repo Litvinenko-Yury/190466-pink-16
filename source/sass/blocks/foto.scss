@@ -129,8 +129,8 @@
   padding: 0;
   line-height: 2em;
   border: none;
+  background-color: $gray-242;
   cursor: pointer;
-  background-color: yellow;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -156,6 +156,7 @@
 
 .foto__button-icon {
   margin-right: 15px;
+  fill: $color-secondary;
 
   @media (min-width: $tablet-width) {
     margin-right: 0;
