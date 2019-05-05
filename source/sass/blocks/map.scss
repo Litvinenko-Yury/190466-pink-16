@@ -4,7 +4,7 @@
   height: 204px;
   background-image: url("../img/bg-triangle-white-footer.svg"), url("../img/bg-map-mobile@1x.png");
   background-position: center top, center bottom;
-  background-size: contain, cover;
+  background-size: 100% 100px, cover;
   background-repeat: no-repeat;
   background-color: $color-map;
 

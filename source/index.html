@@ -174,13 +174,13 @@
         </div>
 
         <button class="review__btn-prev  slider__prev" type="button" area-label="Предыдущий отзыв">
-          <svg class="review__btn-prev-img" role="presentation" width="21" height="41">
-            <use xlink:href="#icon-pink" />
+          <svg role="presentation" width="22" height="42">
+            <use xlink:href="#icon-review-arrow-left" />
           </svg>
         </button>
         <button class="review__btn-next  slider__next" type="button" area-label="Предыдущий отзыв">
-          <svg class="review__btn-next-img" role="presentation" width="21" height="41">
-            <use xlink:href="#icon-pink" />
+          <svg role="presentation" width="22" height="42">
+            <use xlink:href="#icon-review-arrow-right" />
           </svg>
         </button>
       </div>
@@ -219,33 +219,30 @@
         <tbody class="tariffs__row">
           <tr>
             <td class="tariffs__data  tariffs__data--mob">Розовый фильтр</td>
-            <td class="tariffs__data  tariffs__data--tab">Розовый фильтр</td>
-            <td class="tariffs__data  tariffs__data--tab">Розовый фильтр</td>
-            <td class="tariffs__data  tariffs__data--tab">Розовый фильтр</td>
+            <td class="tariffs__data  tariffs__data--tab  tariffs__data--yes">Розовый фильтр</td>
+            <td class="tariffs__data  tariffs__data--tab  tariffs__data--yes">Розовый фильтр</td>
+            <td class="tariffs__data  tariffs__data--tab  tariffs__data--yes">Розовый фильтр</td>
           </tr>
           <tr class="tariffs__row">
-            <td class="tariffs__data  tariffs__data--mob">Смайлики</td>
-            <td class="tariffs__data  tariffs__data--tab">Смайлики</td>
-            <td class="tariffs__data  tariffs__data--tab">Смайлики</td>
-            <td class="tariffs__data  tariffs__data--tab">Смайлики</td>
+            <td class="tariffs__data  tariffs__data--mob ">Смайлики</td>
+            <td class="tariffs__data  tariffs__data--tab  tariffs__data--no">Смайлики</td>
+            <td class="tariffs__data  tariffs__data--tab  tariffs__data--yes">Смайлики</td>
+            <td class="tariffs__data  tariffs__data--tab  tariffs__data--yes">Смайлики</td>
 
           </tr>
           <tr class="tariffs__row">
             <td class="tariffs__data  tariffs__data--mob">Комментарии</td>
-            <td class="tariffs__data  tariffs__data--tab">Комментарии</td>
-            <td class="tariffs__data  tariffs__data--tab">Комментарии</td>
-            <td class="tariffs__data  tariffs__data--tab">Комментарии</td>
+            <td class="tariffs__data  tariffs__data--tab  tariffs__data--no">Комментарии</td>
+            <td class="tariffs__data  tariffs__data--tab  tariffs__data--no">Комментарии</td>
+            <td class="tariffs__data  tariffs__data--tab  tariffs__data--yes">Комментарии</td>
           </tr>
         </tbody>
       </table>
 
       <div class="tariffs__toggles  slider__toggles  tariffs__toggles--tab">
-        <button class="slider__toggle" type="button">1
-        </button>
-        <button class="slider__toggle  slider__toggle--active" type="button">2
-        </button>
-        <button class="slider__toggle" type="button">3
-        </button>
+        <button class="slider__toggle" type="button"></button>
+        <button class="slider__toggle  slider__toggle--active" type="button"></button>
+        <button class="slider__toggle" type="button"></button>
       </div>
     </section>
 
@@ -277,9 +274,13 @@
   <footer class="page-footer  page-footer--no-footer">
     <div class="page-footer__links">
       <a class="page-footer__logo">
-        <svg role="presentation" width="147" height="41">
+        <svg class="page-footer__logo-img" role="presentation" width="147" height="41">
           <use xlink:href="#icon-pink-blue-mobile" />
         </svg>
+        <svg class="page-footer__logo-img  page-footer__logo-img--desk" width="147" height="41" role="presentation">
+            <use xlink:href="#icon-pink-color-desktop" />
+          </svg>
+
       </a>
 
       <div class="page-footer__social  social">

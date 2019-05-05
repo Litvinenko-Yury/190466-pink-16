@@ -164,6 +164,42 @@
     }
   }
 
+  &--yes::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 18px;
+    width: 31px;
+    height: 21px;
+    margin-top: -10px;
+    background-image: url("../img/icon-yes.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @media (min-width: $tablet-width) {
+      right: 50%;
+      margin-right: -15px;
+    }
+  }
+
+  &--no::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    width: 27px;
+    height: 27px;
+    margin-top: -13px;
+    background-image: url("../img/icon-no.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @media (min-width: $tablet-width) {
+      right: 50%;
+      margin-right: -13px;
+    }
+  }
+
   &--banner::before {
     content: "";
     position: absolute;

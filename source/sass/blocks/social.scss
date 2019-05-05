@@ -29,13 +29,13 @@
 
   &:active {
     border-color: $gray-233;
+
+    &.social__item svg {
+      fill-opacity: 0.3;
+    }
   }
 }
 
-.social__link svg {
+.social__item svg {
   fill: $color-secondary;
-
-  &:hover {
-    fill-opacity: 0.3;
-  }
 }
