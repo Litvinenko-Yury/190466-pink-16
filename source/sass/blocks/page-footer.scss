@@ -47,12 +47,21 @@
 
 .page-footer__logo {
   display: block;
-  width: 150px;
+  width: 147px;
   height: 41px;
   margin-bottom: 40px;
+  fill: $color-main;
 
   @media (min-width: $tablet-width) {
     margin: 0;
+  }
+
+  &:hover svg {
+    fill: $color-secondary;
+  }
+
+  &:active svg {
+    fill-opacity: 0.3;
   }
 }
 
@@ -88,4 +97,16 @@
 .page-footer__copyright-link {
   width: 27px;
   height: 34px;
+}
+
+.page-footer__copyright-link svg {
+  fill: $color-secondary;
+
+  &:hover {
+    fill: $color-main;
+  }
+
+  &:active {
+    fill-opacity: 0.3;
+  }
 }

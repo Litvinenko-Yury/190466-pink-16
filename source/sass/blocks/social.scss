@@ -20,6 +20,8 @@
   border-radius: 25px;
   border: 3px solid $gray-233;
   background-color: #ffffff;
+  text-align: center;
+  line-height: 48px;
 
   &:hover {
     border-color: $color-main;
@@ -27,5 +29,13 @@
 
   &:active {
     border-color: $gray-233;
+  }
+}
+
+.social__link svg {
+  fill: $color-secondary;
+
+  &:hover {
+    fill-opacity: 0.3;
   }
 }
