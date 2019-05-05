@@ -1,3 +1,7 @@
+.upload {
+  padding-bottom: 30px;
+}
+
 .upload__caption {
   padding: 20px 20px 42px 20px;
   line-height: 2.1428em;
@@ -59,7 +63,7 @@
   width: 280px;
   height: 374px;
   margin: 0 auto;
-  margin-bottom: 25px;
+  margin-bottom: 40px;
   padding: 0;
   border: none;
   cursor: pointer;
@@ -76,7 +80,7 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    width: 275px;
+    width: 285px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -88,7 +92,7 @@
 }
 
 .upload__controls-wrap {
-  padding-bottom: 30px;
+  padding-bottom: 28px;
   border-bottom: 1px solid $gray-221;
 
   @media (min-width: $tablet-width) {
@@ -128,6 +132,7 @@
 
   @media (min-width: $tablet-width) {
     width: 260px;
+    margin: 0 auto;
 
     &:last-child {
       margin-top: 27px;
