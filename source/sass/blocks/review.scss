@@ -97,7 +97,18 @@
   }
 
   @media (min-width: $desktop-width) {
+    position: relative;
     margin-bottom: 35px;
+
+    &::before {
+      content: "";
+      width: 79px;
+      height: 64px;
+      position: absolute;
+      top: -100px;
+      left: 310px;
+      background-image: url("../img/icon-quotes.svg");
+    }
   }
 }
 
@@ -119,6 +130,19 @@
 
 .review__btn-next {
   right: 15px;
+}
+
+.review__btn-prev svg,
+.review__btn-next svg {
+  fill: $gray-194;
+
+  &:hover {
+    fill: $gray-126;
+  }
+
+  &:active {
+    fill: $gray-233;
+  }
 }
 
 /*положение трех круглых кнопок слайдера*/
