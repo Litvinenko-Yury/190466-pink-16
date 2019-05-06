@@ -1,5 +1,5 @@
 .popup {
-  display: none;
+  // display: none;
   position: absolute;
   width: 320px;
   top: 700px;
@@ -88,11 +88,11 @@
   background-color: $gray-242;
 
   @media (min-width: $tablet-width) {
-    padding: 46px 80px 53px 80px;
+    padding: 46px 0 53px 0;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 46px 160px 53px 160px;
+    padding: 46px 0 53px 0;
 
     &--error {
       padding: 46px 240px 53px 240px;
