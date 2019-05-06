@@ -8,12 +8,12 @@
   <link rel="preload" href="fonts/opensans.woff2" as="font">
   <link rel="preload" href="fonts/opensansbold.woff2" as="font">
   <link rel="preload" href="fonts/opensanslight.woff2" as="font">
-  <link rel="stylesheet" href="css/style.css">
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=<ваш API-ключ>&lang=ru_RU" type="text/javascript"></script>
+  <link rel="stylesheet" href="css/style.min.css">
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=9bda3bf4-b0e3-42f6-bcda-4baf508132ae&lang=ru_RU"></script>
   <script>
     document.createElement("picture");
   </script>
-  <script src="picturefill.min.js" async></script>
+  <script src="js/picturefill.min.js" async></script>
 </head>
 
 <body>
@@ -26,18 +26,21 @@
       <nav class="main-nav  main-nav--closed  main-nav--nojs">
         <div class="main-nav__inner">
           <a class="main-nav__inner-logo">
-            <svg class="main-nav__inner-logo-img" width="75" height="22" role="presentation">
+            <svg class="main-nav__inner-logo-img" width="75" height="22" role="img">
+              <title>Логотип PINK</title>
               <use xlink:href="#icon-pink-white-mobile" />
             </svg>
-            <svg class="main-nav__inner-logo-img  main-nav__inner-logo-img--tab" width="147" height="41" role="presentation">
+            <svg class="main-nav__inner-logo-img  main-nav__inner-logo-img--tab" width="147" height="41" role="img">
+              <title>Логотип PINK</title>
               <use xlink:href="#icon-pink-white-tablet" />
             </svg>
-            <svg class="main-nav__inner-logo-img  main-nav__inner-logo-img--desk" width="147" height="41" role="presentation">
+            <svg class="main-nav__inner-logo-img  main-nav__inner-logo-img--desk" width="147" height="41" role="img">
+              <title>Логотип PINK</title>
               <use xlink:href="#icon-pink-white-desktop" />
             </svg>
           </a>
 
-          <button class="main-nav__inner-toggle" type="button">
+          <button class="main-nav__inner-toggle" type="button" aria-label="Кнопка открыть/закрыть меню">
             <span class="visually-hidden">Открыть меню</span>
           </button>
         </div>
@@ -73,18 +76,18 @@
         <a class="intro__download  button  button--intro-download" href="https://www.apple.com/ru/ios/app-store/">Скачать приложение</a>
 
         <div class="intro__marketplace">
-          <a class="intro__applestore" href="https://www.apple.com/ru/ios/">
-            <svg class="intro__applestore-logo" role="presentation" width="46" height="57">
+          <a class="intro__applestore" href="https://www.apple.com/ru/ios/" aria-label="Переход на сайт Applestore">
+            <svg class="intro__applestore-logo" role="presentation" width="46" height="57" role="img">
               <use xlink:href="#icon-apple" />
             </svg>
           </a>
-          <a class="intro__googleplay" href="https://play.google.com/store/apps?hl=ru/">
-            <svg class="intro__googleplay-logo" role="presentation" width="43" height="47">
+          <a class="intro__googleplay" href="https://play.google.com/store/apps?hl=ru/" aria-label="Переход на сайт Googleplay">
+            <svg class="intro__googleplay-logo" role="presentation" width="43" height="47" role="img">
               <use xlink:href="#icon-android" />
             </svg>
           </a>
-          <a class="intro__microsoftstore" href="https://www.microsoft.com/ru-ru/store/apps">
-            <svg class="intro__microsoftstore-logo" role="presentation" width="44" height="41">
+          <a class="intro__microsoftstore" href="https://www.microsoft.com/ru-ru/store/apps" aria-label="Переход на сайт Microsoftstore">
+            <svg class="intro__microsoftstore-logo" role="presentation" width="44" height="41" role="img">
               <use xlink:href="#icon-microsoft" />
             </svg>
           </a>
@@ -126,7 +129,7 @@
                 <img class="information__advantages-inner-img" src="img/iphone-screen-3-desktop@1x.png" srcset="img/iphone-screen-3-desktop@2x.png 2x" width="292" height="302" alt="Мусорный бак">
               </picture>
               <h3 class="information__advantages-title">Заводит новых друзей</h3>
-              <p class="information__advantages-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+              <p class="information__advantages-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых.</p>
             </section>
           </div>
 
@@ -135,7 +138,7 @@
             <source type="image/webp" srcset="img/iphone-screen-mobile@1x.webp 1x, img/iphone-screen-mobile@2x.webp 2x">
 
             <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png 1x, img/iphone-screen-3-tablet@2x.png 2x">
-            <img class="information__img" src="img/iphone-screen-mobile@1x.png 1x" srcset="img/iphone-screen-mobile@2x.png 2x" alt="Телефон с приветствием на экране">
+            <img class="information__img" src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" alt="Телефон с приветствием на экране">
           </picture>
         </div>
       </div>
@@ -173,13 +176,13 @@
           </blockquote>
         </div>
 
-        <button class="review__btn-prev  slider__prev" type="button" area-label="Предыдущий отзыв">
-          <svg role="presentation" width="22" height="42">
+        <button class="review__btn-prev  slider__prev" type="button" aria-label="Предыдущий отзыв">
+          <svg role="presentation" width="22" height="42" aria-hidden="true" role="presentation">
             <use xlink:href="#icon-review-arrow-left" />
           </svg>
         </button>
-        <button class="review__btn-next  slider__next" type="button" area-label="Предыдущий отзыв">
-          <svg role="presentation" width="22" height="42">
+        <button class="review__btn-next  slider__next" type="button" aria-label="Предыдущий отзыв">
+          <svg role="presentation" width="22" height="42" aria-hidden="true" role="presentation">
             <use xlink:href="#icon-review-arrow-right" />
           </svg>
         </button>
@@ -198,7 +201,7 @@
       </p>
     </section>
 
-    <section class="tariffs">
+    <div class="tariffs">
       <table class="tariffs__table  tariffs__table--slide2">
         <tbody>
           <tr class="tariffs__caption">
@@ -244,7 +247,7 @@
         <button class="slider__toggle  slider__toggle--active" type="button"></button>
         <button class="slider__toggle" type="button"></button>
       </div>
-    </section>
+    </div>
 
     <div class="contacts">
       <section class="contacts__wrap">
@@ -273,35 +276,36 @@
 
   <footer class="page-footer  page-footer--no-footer">
     <div class="page-footer__links">
-      <a class="page-footer__logo">
-        <svg class="page-footer__logo-img" role="presentation" width="147" height="41">
+      <a class="page-footer__logo" aria-label="Переход на главную страницу">
+        <svg class="page-footer__logo-img" width="147" height="41" role="img">
+          <title>Логотип PINK</title>
           <use xlink:href="#icon-pink-blue-mobile" />
         </svg>
-        <svg class="page-footer__logo-img  page-footer__logo-img--desk" width="147" height="41" role="presentation">
-            <use xlink:href="#icon-pink-color-desktop" />
-          </svg>
-
+        <svg class="page-footer__logo-img  page-footer__logo-img--desk" width="147" height="41" role="img">
+          <title>Логотип PINK</title>
+          <use xlink:href="#icon-pink-color-desktop" />
+        </svg>
       </a>
 
       <div class="page-footer__social  social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link  social__link--tw" href="https://twitter.com">
-              <svg role="presentation" width="18" height="15">
+            <a class="social__link  social__link--tw" href="https://twitter.com" aria-label="Переход на сайт Twitter">
+              <svg width="18" height="15" role="img">
                 <use xlink:href="#icon-twitter" />
               </svg>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link  social__link--fb" href="https://www.facebook.com">
-              <svg role="presentation" width="9" height="19">
+            <a class="social__link  social__link--fb" href="https://www.facebook.com" aria-label="Переход на сайт Facebook">
+              <svg width="9" height="19" role="img">
                 <use xlink:href="#icon-facebook" />
               </svg>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link  social__link--youtube" href="https://www.youtube.com">
-              <svg role="presentation" width="15" height="14">
+            <a class="social__link  social__link--youtube" href="https://www.youtube.com" aria-label="Переход на сайт Youtube">
+              <svg width="15" height="14" role="img">
                 <use xlink:href="#icon-youtube" />
               </svg>
             </a>
@@ -311,8 +315,8 @@
 
       <div class="page-footer__copyright">
         <span class="page-footer__copyright-text">Разработано</span>
-        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
-          <svg role="presentation" width="27" height="34">
+        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Переход на сайт HTML-Academy">
+          <svg width="27" height="34" role="img">
             <use xlink:href="#icon-htmlacademy" />
           </svg>
         </a>
