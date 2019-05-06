@@ -9,7 +9,7 @@
   <link rel="preload" href="fonts/opensansbold.woff2" as="font">
   <link rel="preload" href="fonts/opensanslight.woff2" as="font">
   <link rel="stylesheet" href="css/style.min.css">
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=<ваш API-ключ>&lang=ru_RU" type="text/javascript"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=9bda3bf4-b0e3-42f6-bcda-4baf508132ae&lang=ru_RU"></script>
   <script>
     document.createElement("picture");
   </script>
@@ -138,7 +138,7 @@
             <source type="image/webp" srcset="img/iphone-screen-mobile@1x.webp 1x, img/iphone-screen-mobile@2x.webp 2x">
 
             <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png 1x, img/iphone-screen-3-tablet@2x.png 2x">
-            <img class="information__img" src="img/iphone-screen-mobile@1x.png 1x" srcset="img/iphone-screen-mobile@2x.png 2x" alt="Телефон с приветствием на экране">
+            <img class="information__img" src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" alt="Телефон с приветствием на экране">
           </picture>
         </div>
       </div>
@@ -176,12 +176,12 @@
           </blockquote>
         </div>
 
-        <button class="review__btn-prev  slider__prev" type="button" area-label="Предыдущий отзыв">
+        <button class="review__btn-prev  slider__prev" type="button" aria-label="Предыдущий отзыв">
           <svg role="presentation" width="22" height="42" aria-hidden="true" role="presentation">
             <use xlink:href="#icon-review-arrow-left" />
           </svg>
         </button>
-        <button class="review__btn-next  slider__next" type="button" area-label="Предыдущий отзыв">
+        <button class="review__btn-next  slider__next" type="button" aria-label="Предыдущий отзыв">
           <svg role="presentation" width="22" height="42" aria-hidden="true" role="presentation">
             <use xlink:href="#icon-review-arrow-right" />
           </svg>
@@ -201,7 +201,7 @@
       </p>
     </section>
 
-    <section class="tariffs">
+    <div class="tariffs">
       <table class="tariffs__table  tariffs__table--slide2">
         <tbody>
           <tr class="tariffs__caption">
@@ -247,7 +247,7 @@
         <button class="slider__toggle  slider__toggle--active" type="button"></button>
         <button class="slider__toggle" type="button"></button>
       </div>
-    </section>
+    </div>
 
     <div class="contacts">
       <section class="contacts__wrap">
