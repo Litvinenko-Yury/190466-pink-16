@@ -80,9 +80,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 1050px;
+    width: 560px;
     height: 645px;
-    margin-left: -455px;
+    margin-left: -125px;
+    overflow: hidden;
   }
 }
 
@@ -100,7 +101,7 @@
   @media (min-width: $desktop-width) {
     position: relative;
     margin-top: 215px;
-    margin-right: 635px;
+    margin-right: 630px;
   }
 }
 

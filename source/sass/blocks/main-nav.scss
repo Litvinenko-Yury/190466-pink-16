@@ -135,15 +135,27 @@
 }
 
 /*меню закрыто, на кнопке - "бургер"*/
-.main-nav--closed .main-nav__inner-toggle::before {
-  content: "";
-  position: absolute;
-  top: 12px;
-  left: 0;
-  width: 50px;
-  height: 4px;
-  background-color: #ffffff;
-  box-shadow: 0 10px 0 0 #ffffff, 0 21px 0 0 #ffffff;
+.main-nav--closed .main-nav__inner-toggle {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 0;
+    width: 50px;
+    height: 4px;
+    background-color: #ffffff;
+    box-shadow: 0 10px 0 0 #ffffff, 0 21px 0 0 #ffffff;
+  }
+
+  &:hover::before {
+    background-color: $color-secondary;
+    box-shadow: 0 10px 0 0 $color-secondary, 0 21px 0 0 $color-secondary;
+  }
+
+  &:active::before {
+    background-color: $color-secondary--down;
+    box-shadow: 0 10px 0 0 $color-secondary--down, 0 21px 0 0 $color-secondary--down;
+  }
 }
 
 /*меню открыто, на кнопке - "крестик"*/

@@ -7,7 +7,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 73px 130px 74px 130px;
+    padding: 73px 10px 74px 10px;
   }
 
   &--no-footer {
@@ -18,13 +18,9 @@
     }
   }
 
-  &--no-index {
-    @media (min-width: $tablet-width) {
-      margin-top: 0;
-    }
-
+  &--photo-index {
     @media (min-width: $desktop-width) {
-      padding-top: 71px;
+      padding-top: 100px;
       padding-bottom: 72px;
     }
   }
