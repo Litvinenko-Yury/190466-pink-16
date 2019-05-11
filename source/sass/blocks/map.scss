@@ -2,9 +2,13 @@
   position: relative;
   width: 100%;
   height: 204px;
-  background-image: url("../img/bg-triangle-white-footer.svg"), url("../img/bg-map-mobile@1x.png");
+  /* background-image: url("../img/bg-triangle-white-footer.svg"), url("../img/bg-map-mobile@1x.png");
   background-position: center top, center bottom;
-  background-size: 100% 100px, cover;
+  background-size: 100% 100px, cover; */
+  background-image: url("../img/bg-map-mobile@1x.png");
+  background-position: center bottom;
+  background-size: cover;
+
   background-repeat: no-repeat;
   background-color: $color-map;
 
@@ -41,13 +45,14 @@
   &::after {
     content: "";
     width: 100%;
-    height: 100%;
+    height: 100px;
     position: absolute;
     top: 0;
     left: 0;
     background-image: url("../img/bg-triangle-white-footer.svg");
     background-position: center top;
-    background-size: contain;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
+    outline: 2px dotted red;
   }
 }
