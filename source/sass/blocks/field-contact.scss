@@ -11,6 +11,8 @@
       right: 2px;
       width: 59px;
       height: 59px;
+      border-top-right-radius: 2px;
+      border-bottom-right-radius: 2px;
       background-color: $gray-229;
     }
 
@@ -21,7 +23,7 @@
         content: "";
         position: absolute;
         top: 20px;
-        right: 22px;
+        right: 20px;
         width: 19px;
         height: 19px;
         background-image: url("../img/icon-phone.svg");
@@ -35,7 +37,7 @@
         content: "";
         position: absolute;
         top: 24px;
-        right: 21px;
+        right: 20px;
         width: 18px;
         height: 14px;
         background-image: url("../img/icon-mail.svg");
