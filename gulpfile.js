@@ -17,6 +17,7 @@ var include = require("posthtml-include");
 var del = require("del");
 var htmlmin = require("gulp-htmlmin");
 var uglify = require("gulp-uglify");
+const ghPages = require("gh-pages");
 
 //копируем папки из папки source в папку build.
 gulp.task("copyFolderBuild", function () {
@@ -137,4 +138,10 @@ gulp.task("webp", function () {
   return gulp.src("source/img/**/*.{png,jpg}")
     .pipe(webp({ quality: 75 }))
     .pipe(gulp.dest("source/img"));
+});
+
+//----------------------------------------------------------------
+//задача публикации на gh-pages
+gulp.task("gh-pages", function () {
+  ghpages.publish("build", callback);
 });
