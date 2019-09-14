@@ -143,11 +143,7 @@ gulp.task("webp", function () {
 
 //----------------------------------------------------------------
 //задача публикации на gh-pages
-gulp.task("gh-pages", function () {
-  ghpages.publish("build", callback);
-});
-
-// function deploy(cb) {
-//   ghPages.publish(path.join(process.cwd(), './build'), cb);
-// }
-// exports.deploy = deploy;
+function deploy(cb) {
+  ghPages.publish(path.join(process.cwd(), './build'), cb);
+}
+exports.deploy = deploy;
