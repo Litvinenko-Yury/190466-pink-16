@@ -52,6 +52,7 @@
   height: 181px;
   cursor: pointer;
   object-fit: cover;
+  font-family: "object-fit:cover;"; /* stylelint-disable-line */
 
   @media (min-width: $tablet-width) {
     height: 300px;
