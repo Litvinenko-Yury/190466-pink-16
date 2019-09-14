@@ -1438,7 +1438,9 @@ fieldset {
   height: 181px;
   cursor: pointer;
   -o-object-fit: cover;
-     object-fit: cover; }
+     object-fit: cover;
+  font-family: "object-fit:cover;";
+  /* stylelint-disable-line */ }
   @media (min-width: 660px) {
     .foto__img {
       height: 300px; } }
