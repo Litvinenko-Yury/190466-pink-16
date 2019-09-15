@@ -65,7 +65,7 @@
     padding-bottom: 15px;
     color: $color-secondary;
     border-color: $color-secondary;
-    background-color: transparent;
+    background-color: $transparent;
 
     @media (min-width: $tablet-width) {
       margin-top: 28px;
@@ -87,7 +87,7 @@
     padding-bottom: 15px;
     color: $color-main--lightest;
     border-color: $gray-221;
-    background-color: transparent;
+    background-color: $transparent;
 
     &:hover {
       color: $color-main--lighten;

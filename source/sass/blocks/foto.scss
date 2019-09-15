@@ -17,7 +17,7 @@
 
   &--wide {
     width: 100%;
-    background-color: transparent;
+    background-color: $transparent;
 
     @media (min-width: $tablet-width) {
       margin-bottom: 49px;
@@ -132,7 +132,7 @@
   padding: 0;
   line-height: 2em;
   border: none;
-  background-color: transparent;
+  background-color: $transparent;
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
@@ -149,7 +149,7 @@
       right: 30px;
       top: 23px;
       min-width: 120px;
-      background-color: transparent;
+      background-color: $transparent;
     }
   }
 }
