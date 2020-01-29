@@ -1,8 +1,8 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 
-Собранный проект на gh-pages: https://litvinenko-yury.github.io/Sparta/
-Обзор проекта: https://www.youtube.com/watch?v=5gGJ5Qcc-MU&list=PLQJNT2fdCJnhoGNGl-kIVbxiiyJRZOmZZ&index=2
+Собранный проект на gh-pages: https://litvinenko-yury.github.io/Sparta/  
+Обзор проекта: https://www.youtube.com/watch?v=5gGJ5Qcc-MU&list=PLQJNT2fdCJnhoGNGl-kIVbxiiyJRZOmZZ&index=2  
 
 
 * Студент: [Юрий Литвиненко](https://up.htmlacademy.ru/adaptive/16/user/190466).
