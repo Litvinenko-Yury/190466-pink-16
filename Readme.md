@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 
-Собранный проект на gh-pages: https://litvinenko-yury.github.io/Sparta/  
+Собранный проект на gh-pages: https://litvinenko-yury.github.io/190466-pink-16/  
 Обзор проекта: https://www.youtube.com/watch?v=5gGJ5Qcc-MU&list=PLQJNT2fdCJnhoGNGl-kIVbxiiyJRZOmZZ&index=2  
 
 
