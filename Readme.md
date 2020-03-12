@@ -1,4 +1,4 @@
-# Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
+# Личный проект «Пинк»  
 
 
 Собранный проект на gh-pages: https://litvinenko-yury.github.io/190466-pink-16/  
